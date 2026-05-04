@@ -3773,7 +3773,7 @@ DetailedDR_m{building_type}_c{cIndex}_iter{NUM_OF_ITERATIONS}.csv</p>
 
 
 <a href="#cheersafe.damage_probability_calculation.main.DamageProbabilityCalculation.process_single_iteration" class="headerlink" title="Permanent link">#</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">process_single_iteration</span><span class="p">(</span><span class="n">ComponentSample</span><span class="p">,</span> <span class="n">Iter</span><span class="p">,</span> <span class="n">building</span><span class="p">,</span> <span class="n">WindOrientation_oIndex</span><span class="p">,</span> <span class="n">NumComponent</span><span class="p">,</span> <span class="n">wIndex_range</span><span class="p">,</span> <span class="n">fIndex_range</span><span class="p">,</span> <span class="n">cIndex</span><span class="p">,</span> <span class="n">collect_detailed</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#bool">bool</a></span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">process_single_iteration</span><span class="p">(</span><span class="n">ComponentSample</span><span class="p">,</span> <span class="n">Iter</span><span class="p">,</span> <span class="n">building</span><span class="p">,</span> <span class="n">WindOrientation_oIndex</span><span class="p">,</span> <span class="n">NumComponent</span><span class="p">,</span> <span class="n">wIndex_range</span><span class="p">,</span> <span class="n">fIndex_range</span><span class="p">,</span> <span class="n">cIndex</span><span class="p">,</span> <span class="n">collect_detailed</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#bool">bool</a></span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">rng_seed</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="typing.Optional" href="https://docs.python.org/3/library/typing.html#typing.Optional">Optional</a></span><span class="p">[</span><span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -3941,6 +3941,22 @@ Config.EXPORT_DETAILED_DAMAGE_RATIOS.</p>
             </td>
             <td>
                   <code>False</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>rng_seed</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-external" title="typing.Optional" href="https://docs.python.org/3/library/typing.html#typing.Optional">Optional</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a>]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Seed for the per-iteration damage-ratio random stream.</p>
+              </div>
+            </td>
+            <td>
+                  <code>None</code>
             </td>
           </tr>
       </tbody>
