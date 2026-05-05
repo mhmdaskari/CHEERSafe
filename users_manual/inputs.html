@@ -710,27 +710,16 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#scenario-and-exposure-inputs" class="md-nav__link">
+  <a href="#hurricane-hazard-and-exposure-inputs" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Scenario And Exposure Inputs
+        Hurricane Hazard And Exposure Inputs
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Scenario And Exposure Inputs">
+    <nav class="md-nav" aria-label="Hurricane Hazard And Exposure Inputs">
       <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#hurricane-count" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Hurricane Count
-      
-    </span>
-  </a>
-  
-</li>
         
           <li class="md-nav__item">
   <a href="#hurricane-probability-wind-flood-and-flood-ratio" class="md-nav__link">
@@ -1118,34 +1107,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../API/scenario_creation_and_analysis.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Scenario Creation and Analysis
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../API/tools.html" class="md-nav__link">
         
   
@@ -1362,27 +1323,16 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#scenario-and-exposure-inputs" class="md-nav__link">
+  <a href="#hurricane-hazard-and-exposure-inputs" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Scenario And Exposure Inputs
+        Hurricane Hazard And Exposure Inputs
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Scenario And Exposure Inputs">
+    <nav class="md-nav" aria-label="Hurricane Hazard And Exposure Inputs">
       <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#hurricane-count" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Hurricane Count
-      
-    </span>
-  </a>
-  
-</li>
         
           <li class="md-nav__item">
   <a href="#hurricane-probability-wind-flood-and-flood-ratio" class="md-nav__link">
@@ -1500,7 +1450,7 @@ to zero-based values.</p>
 </tr>
 <tr>
 <td><code>h</code></td>
-<td>Hurricane or scenario index. The bundled hurricane input has 97 scenarios.</td>
+<td>Hurricane event index. The bundled hurricane input has 97 events.</td>
 </tr>
 <tr>
 <td><code>f</code></td>
@@ -1644,17 +1594,10 @@ to zero-based values.</p>
 <td>Yes, for cost-model changes</td>
 </tr>
 <tr>
-<td><code>HurricaneCount.json</code></td>
-<td style="text-align: right;"><code>[217, 4]</code></td>
-<td>Weekly and daily hurricane count assumptions for hurricane-season simulation.</td>
-<td>Scenario simulation</td>
-<td>Yes, for scenario generation</td>
-</tr>
-<tr>
 <td><code>Hurricane_ProbWindFlood.json</code></td>
 <td style="text-align: right;">object</td>
-<td>Scenario wind, flood, flood-ratio, and probability arrays.</td>
-<td>Loss estimation and scenario analysis</td>
+<td>Hurricane wind, flood, flood-ratio, and probability arrays.</td>
+<td>Loss estimation</td>
 <td>Yes, for regional studies</td>
 </tr>
 <tr>
@@ -2258,43 +2201,7 @@ distribution before sampling.</p>
 <p>The workbook includes a <code>Sum</code> column for checking totals, but the runtime JSON
 stores only the 9 component-share columns. Current row totals are about 1.10 or
 1.11 depending on building type.</p>
-<h2 id="scenario-and-exposure-inputs">Scenario And Exposure Inputs<a class="headerlink" href="#scenario-and-exposure-inputs" title="Permanent link">#</a></h2>
-<h3 id="hurricane-count">Hurricane Count<a class="headerlink" href="#hurricane-count" title="Permanent link">#</a></h3>
-<p><code>HurricaneCount.json</code> is used by the hurricane simulator. It has 217 rows and
-4 columns:</p>
-<table>
-<thead>
-<tr>
-<th>Column</th>
-<th>Meaning</th>
-<th>Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>Week</td>
-<td>Hurricane-season week number.</td>
-</tr>
-<tr>
-<td>2</td>
-<td><code>HurricaneCountPerWeek</code></td>
-<td>Count assigned to the week.</td>
-</tr>
-<tr>
-<td>3</td>
-<td>Day</td>
-<td>Day-of-year index.</td>
-</tr>
-<tr>
-<td>4</td>
-<td><code>HurricaneCountPerDay</code></td>
-<td>Weekly count divided across days.</td>
-</tr>
-</tbody>
-</table>
-<p>The workbook notes that the table counts only hurricane season, from May 14 to
-December 16, for 216 days total. The runtime file spans days 134 through 350.</p>
+<h2 id="hurricane-hazard-and-exposure-inputs">Hurricane Hazard And Exposure Inputs<a class="headerlink" href="#hurricane-hazard-and-exposure-inputs" title="Permanent link">#</a></h2>
 <h3 id="hurricane-probability-wind-flood-and-flood-ratio">Hurricane Probability, Wind, Flood, And Flood Ratio<a class="headerlink" href="#hurricane-probability-wind-flood-and-flood-ratio" title="Permanent link">#</a></h3>
 <p><code>Hurricane_ProbWindFlood.json</code> is a JSON object with four keys:</p>
 <table>
@@ -2309,22 +2216,22 @@ December 16, for 216 days total. The runtime file spans days 134 through 350.</p
 <tr>
 <td><code>Hurricane_WindSpeed</code></td>
 <td style="text-align: right;"><code>[1509, 97]</code></td>
-<td>Wind speed by zone and hurricane scenario.</td>
+<td>Wind speed by zone and hurricane event.</td>
 </tr>
 <tr>
 <td><code>Hurricane_FloodDepth</code></td>
 <td style="text-align: right;"><code>[1509, 97]</code></td>
-<td>Flood depth by zone and hurricane scenario.</td>
+<td>Flood depth by zone and hurricane event.</td>
 </tr>
 <tr>
 <td><code>Hurricane_FloodRatio</code></td>
 <td style="text-align: right;"><code>[1509, 97]</code></td>
-<td>Flood-exposed share or ratio by zone and hurricane scenario.</td>
+<td>Flood-exposed share or ratio by zone and hurricane event.</td>
 </tr>
 <tr>
 <td><code>Hurricane_Prob</code></td>
 <td style="text-align: right;"><code>[97, 2]</code></td>
-<td>Hurricane scenario probability table.</td>
+<td>Hurricane event probability table.</td>
 </tr>
 </tbody>
 </table>
@@ -2427,7 +2334,7 @@ when preparing a custom CSV.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 5, 2026 03:09:31 UTC">May 5, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 5, 2026 22:40:37 UTC">May 5, 2026</span>
   </span>
 
     
