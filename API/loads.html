@@ -2269,7 +2269,14 @@
   </span>
 
 <a href="#cheersafe.loads.initial_loading.InitialLoad" class="headerlink" title="Permanent link">#</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">InitialLoad</span><span class="p">(</span><span class="n">Building</span><span class="p">:</span> <span class="n"><span title="cheersafe.loads.base.BaseLoad.Building">Building</span></span><span class="p">,</span> <span class="n">WindOrientation</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></span><span class="p">,</span> <span class="n">WindSpeed</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#float">float</a></span><span class="p">,</span> <span class="n">datasets_loaded</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#bool">bool</a></span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">G</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#float">float</a></span> <span class="o">=</span> <span class="mf">0.85</span><span class="p">,</span> <span class="n">GCpi</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#float">float</a></span> <span class="o">=</span> <span class="mf">0.18</span><span class="p">)</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">InitialLoad</span><span class="p">(</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="n">Building</span><span class="p">:</span> <span class="n"><span title="cheersafe.loads.base.BaseLoad.Building">Building</span></span><span class="p">,</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="n">WindOrientation</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></span><span class="p">,</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="n">WindSpeed</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#float">float</a></span><span class="p">,</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="n">datasets_loaded</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#bool">bool</a></span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="n">G</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#float">float</a></span> <span class="o">=</span> <span class="mf">0.85</span><span class="p">,</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="n">GCpi</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#float">float</a></span> <span class="o">=</span> <span class="mf">0.18</span><span class="p">,</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="p">)</span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -2436,8 +2443,8 @@ as defined by ASCE standards.</p>
 </ul>
 </details>
 
-<details class="note" open>
-  <summary>Note</summary>
+<details class="notes" open>
+  <summary>Notes</summary>
   <p>The attributes defined in the class are initialized in the constructor, and then updated in the <code>__post_init__</code> method.</p>
 </details>
 
@@ -2474,7 +2481,7 @@ as defined by ASCE standards.</p>
 
 
 <a href="#cheersafe.loads.initial_loading.InitialLoad.fn_initial_load_o" class="headerlink" title="Permanent link">#</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">fn_initial_load_o</span><span class="p">()</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">fn_initial_load_o</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -2485,32 +2492,9 @@ wind pressure on various types of openings, including doors and windows, based o
 in the building structure.</p>
 
 
-<p><span class="doc-section-title">Parameters:</span></p>
-    <table>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Type</th>
-          <th>Description</th>
-          <th>Default</th>
-        </tr>
-      </thead>
-      <tbody>
-          <tr class="doc-section-item">
-            <td>
-                <code>self</code>
-            </td>
-            <td>
-                  <code><a class="autorefs autorefs-internal" title="            InitialLoad
-
-
-  
-      dataclass
-   (cheersafe.loads.initial_loading.InitialLoad)" href="#cheersafe.loads.initial_loading.InitialLoad">InitialLoad</a></code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>An instance of the InitialLoad class. It uses the following attributes:</p>
+<details class="notes" open>
+  <summary>Notes</summary>
+  <p>Instance attributes used:</p>
 <ul>
 <li><code>qh</code> (float): The external wind pressure coefficient.</li>
 <li><code>CCWallGCp</code> (list): The coordinates of the wall's centerline.</li>
@@ -2525,22 +2509,35 @@ in the building structure.</p>
 </ul>
 </li>
 </ul>
-              </div>
+</details>
+
+<details class="outputs" open>
+  <summary>Outputs</summary>
+  <p>None beyond the returned value.</p>
+</details>
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                  <code><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></code>
             </td>
             <td>
-                <em>required</em>
+              <div class="doc-md-description">
+                <p>np.ndarray: The initial opening load array.</p>
+              </div>
             </td>
           </tr>
       </tbody>
     </table>
 
-
-<details class="info" open>
-  <summary>This method does not return any value and updates the following class attributes:</summary>
-  <ul>
-<li><code>pO</code></li>
-</ul>
-</details>
 
     </div>
 
@@ -2554,7 +2551,7 @@ in the building structure.</p>
 
 
 <a href="#cheersafe.loads.initial_loading.InitialLoad.fn_initial_load_rc" class="headerlink" title="Permanent link">#</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">fn_initial_load_rc</span><span class="p">()</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">fn_initial_load_rc</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -2564,51 +2561,41 @@ in the building structure.</p>
 pressure on roof sheathing panels, as the two are closely related in terms of their exposure to wind pressures.</p>
 
 
-<p><span class="doc-section-title">Parameters:</span></p>
+<details class="notes" open>
+  <summary>Notes</summary>
+  <p>Instance attributes used:</p>
+<ul>
+<li><code>pRS</code> (np.ndarray): The initial wind pressure on each panel of roof sheathing.</li>
+</ul>
+</details>
+
+<details class="outputs" open>
+  <summary>Outputs</summary>
+  <p>None beyond the returned value.</p>
+</details>
+
+    <p><span class="doc-section-title">Returns:</span></p>
     <table>
       <thead>
         <tr>
-          <th>Name</th>
           <th>Type</th>
           <th>Description</th>
-          <th>Default</th>
         </tr>
       </thead>
       <tbody>
           <tr class="doc-section-item">
             <td>
-                <code>self</code>
-            </td>
-            <td>
-                  <code><a class="autorefs autorefs-internal" title="            InitialLoad
-
-
-  
-      dataclass
-   (cheersafe.loads.initial_loading.InitialLoad)" href="#cheersafe.loads.initial_loading.InitialLoad">InitialLoad</a></code>
+                  <code><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>An instance of the InitialLoad class. It uses the following attributes:</p>
-<ul>
-<li><code>pRS</code> (np.ndarray): The initial wind pressure on each panel of roof sheathing.</li>
-</ul>
+                <p>np.ndarray: The initial roof covering load array.</p>
               </div>
-            </td>
-            <td>
-                <em>required</em>
             </td>
           </tr>
       </tbody>
     </table>
 
-
-<details class="info" open>
-  <summary>This method does not return any value and updates the following class attributes:</summary>
-  <ul>
-<li><code>pRC</code></li>
-</ul>
-</details>
 
     </div>
 
@@ -2622,7 +2609,7 @@ pressure on roof sheathing panels, as the two are closely related in terms of th
 
 
 <a href="#cheersafe.loads.initial_loading.InitialLoad.fn_initial_load_rs" class="headerlink" title="Permanent link">#</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">fn_initial_load_rs</span><span class="p">()</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">fn_initial_load_rs</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -2634,32 +2621,9 @@ sheathing panels. These factors are essential in accurately assessing the wind l
 integrity of the roof sheathing.</p>
 
 
-<p><span class="doc-section-title">Parameters:</span></p>
-    <table>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Type</th>
-          <th>Description</th>
-          <th>Default</th>
-        </tr>
-      </thead>
-      <tbody>
-          <tr class="doc-section-item">
-            <td>
-                <code>self</code>
-            </td>
-            <td>
-                  <code><a class="autorefs autorefs-internal" title="            InitialLoad
-
-
-  
-      dataclass
-   (cheersafe.loads.initial_loading.InitialLoad)" href="#cheersafe.loads.initial_loading.InitialLoad">InitialLoad</a></code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>An instance of the InitialLoad class. It uses the following attributes:</p>
+<details class="notes" open>
+  <summary>Notes</summary>
+  <p>Instance attributes used:</p>
 <ul>
 <li><code>WindOrientationIndex</code> (int): The orientation of the wind direction.</li>
 <li><code>GCpi</code> (float): The ASCE-defined internal pressure coefficient.</li>
@@ -2667,22 +2631,35 @@ integrity of the roof sheathing.</p>
 <li><code>CCRoofGCp</code> (list): The coordinates of the roof's centerline.</li>
 <li><code>PressureZoneArea</code> (numpy.ndarray): The area of each pressure zone.</li>
 </ul>
-              </div>
+</details>
+
+<details class="outputs" open>
+  <summary>Outputs</summary>
+  <p>None beyond the returned value.</p>
+</details>
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                  <code><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></code>
             </td>
             <td>
-                <em>required</em>
+              <div class="doc-md-description">
+                <p>np.ndarray: The initial roof sheathing load array.</p>
+              </div>
             </td>
           </tr>
       </tbody>
     </table>
 
-
-<details class="info" open>
-  <summary>This method does not return any value and updates the following class attributes:</summary>
-  <ul>
-<li><code>pRS</code></li>
-</ul>
-</details>
 
     </div>
 
@@ -2696,7 +2673,7 @@ integrity of the roof sheathing.</p>
 
 
 <a href="#cheersafe.loads.initial_loading.InitialLoad.fn_initial_load_rwc" class="headerlink" title="Permanent link">#</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">fn_initial_load_rwc</span><span class="p">()</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">fn_initial_load_rwc</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -2707,32 +2684,9 @@ building characteristics including the number of connections, panel counts, roof
 the coordinates of connections and panels to determine the initial loads on roof-to-wall connections.</p>
 
 
-<p><span class="doc-section-title">Parameters:</span></p>
-    <table>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Type</th>
-          <th>Description</th>
-          <th>Default</th>
-        </tr>
-      </thead>
-      <tbody>
-          <tr class="doc-section-item">
-            <td>
-                <code>self</code>
-            </td>
-            <td>
-                  <code><a class="autorefs autorefs-internal" title="            InitialLoad
-
-
-  
-      dataclass
-   (cheersafe.loads.initial_loading.InitialLoad)" href="#cheersafe.loads.initial_loading.InitialLoad">InitialLoad</a></code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>An instance of the InitialLoad class. It uses the following attributes:</p>
+<details class="notes" open>
+  <summary>Notes</summary>
+  <p>Instance attributes used:</p>
 <ul>
 <li><code>PressureZoneArea</code> (numpy.array): The area of each pressure zone.</li>
 <li><code>GCpi</code> (float): The ASCE-defined internal pressure coefficient.</li>
@@ -2751,22 +2705,35 @@ the coordinates of connections and panels to determine the initial loads on roof
 </ul>
 </li>
 </ul>
-              </div>
+</details>
+
+<details class="outputs" open>
+  <summary>Outputs</summary>
+  <p>None beyond the returned value.</p>
+</details>
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                  <code><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></code>
             </td>
             <td>
-                <em>required</em>
+              <div class="doc-md-description">
+                <p>np.ndarray: The initial roof-to-wall connection load array.</p>
+              </div>
             </td>
           </tr>
       </tbody>
     </table>
 
-
-<details class="info" open>
-  <summary>This method does not return any value and updates the following class attributes:</summary>
-  <ul>
-<li><code>pRWC</code></li>
-</ul>
-</details>
 
     </div>
 
@@ -2780,7 +2747,7 @@ the coordinates of connections and panels to determine the initial loads on roof
 
 
 <a href="#cheersafe.loads.initial_loading.InitialLoad.fn_initial_load_w" class="headerlink" title="Permanent link">#</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">fn_initial_load_w</span><span class="p">()</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">fn_initial_load_w</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -2791,32 +2758,9 @@ pressure coefficients, material weight factors, and building attributes to deter
 on each wall.</p>
 
 
-<p><span class="doc-section-title">Parameters:</span></p>
-    <table>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Type</th>
-          <th>Description</th>
-          <th>Default</th>
-        </tr>
-      </thead>
-      <tbody>
-          <tr class="doc-section-item">
-            <td>
-                <code>self</code>
-            </td>
-            <td>
-                  <code><a class="autorefs autorefs-internal" title="            InitialLoad
-
-
-  
-      dataclass
-   (cheersafe.loads.initial_loading.InitialLoad)" href="#cheersafe.loads.initial_loading.InitialLoad">InitialLoad</a></code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>An instance of the InitialLoad class. It uses the following attributes:</p>
+<details class="notes" open>
+  <summary>Notes</summary>
+  <p>Instance attributes used:</p>
 <ul>
 <li><code>WindOrientationIndex</code> (int): The orientation of the wind direction.</li>
 <li><code>G</code> (float): The gust factor, applied to obtain GCp.</li>
@@ -2846,22 +2790,35 @@ on each wall.</p>
 </ul>
 </li>
 </ul>
-              </div>
+</details>
+
+<details class="outputs" open>
+  <summary>Outputs</summary>
+  <p>None beyond the returned value.</p>
+</details>
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                  <code><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></code>
             </td>
             <td>
-                <em>required</em>
+              <div class="doc-md-description">
+                <p>np.ndarray: The initial wall load matrix.</p>
+              </div>
             </td>
           </tr>
       </tbody>
     </table>
 
-
-<details class="info" open>
-  <summary>This method does not return any value and updates the following class attributes:</summary>
-  <ul>
-<li><code>pW</code></li>
-</ul>
-</details>
 
     </div>
 
@@ -2960,7 +2917,19 @@ on each wall.</p>
   </span>
 
 <a href="#cheersafe.loads.initial_failure_check.InitialFailureCheck" class="headerlink" title="Permanent link">#</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">InitialFailureCheck</span><span class="p">(</span><span class="n">rRSt</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span> <span class="n">rRCt</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span> <span class="n">rRWCt</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span> <span class="n">rOt</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span> <span class="n">rWt</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span> <span class="n">Building</span><span class="p">:</span> <span class="n"><span title="cheersafe.loads.base.BaseLoad.Building">Building</span></span><span class="p">,</span> <span class="n">WindOrientation</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></span><span class="p">,</span> <span class="n">WindSpeed</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#float">float</a></span><span class="p">,</span> <span class="n">datasets_loaded</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#bool">bool</a></span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">G</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#float">float</a></span> <span class="o">=</span> <span class="mf">0.85</span><span class="p">,</span> <span class="n">GCpi</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#float">float</a></span> <span class="o">=</span> <span class="mf">0.18</span><span class="p">)</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">InitialFailureCheck</span><span class="p">(</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="n">rRSt</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="n">rRCt</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="n">rRWCt</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="n">rOt</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="n">rWt</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="n">Building</span><span class="p">:</span> <span class="n"><span title="cheersafe.loads.base.BaseLoad.Building">Building</span></span><span class="p">,</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="n">WindOrientation</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></span><span class="p">,</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span class="n">WindSpeed</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#float">float</a></span><span class="p">,</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    <span class="n">datasets_loaded</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#bool">bool</a></span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    <span class="n">G</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#float">float</a></span> <span class="o">=</span> <span class="mf">0.85</span><span class="p">,</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    <span class="n">GCpi</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#float">float</a></span> <span class="o">=</span> <span class="mf">0.18</span><span class="p">,</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="p">)</span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -3056,7 +3025,7 @@ issues of dataclass decorator with Python 3.9 and 3.10. Therefore, they are defi
 
 
 <a href="#cheersafe.loads.initial_failure_check.InitialFailureCheck.fn_initial_failure_check" class="headerlink" title="Permanent link">#</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">fn_initial_failure_check</span><span class="p">()</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">fn_initial_failure_check</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#dict">dict</a></span><span class="p">[</span><span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></span><span class="p">,</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#object">object</a></span><span class="p">]</span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -3064,32 +3033,9 @@ issues of dataclass decorator with Python 3.9 and 3.10. Therefore, they are defi
         <p>Performs the initial failure check by comparing the initial loads with the resistance values.</p>
 
 
-<p><span class="doc-section-title">Parameters:</span></p>
-    <table>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Type</th>
-          <th>Description</th>
-          <th>Default</th>
-        </tr>
-      </thead>
-      <tbody>
-          <tr class="doc-section-item">
-            <td>
-                <code>self</code>
-            </td>
-            <td>
-                  <code><a class="autorefs autorefs-internal" title="            InitialFailureCheck
-
-
-  
-      dataclass
-   (cheersafe.loads.initial_failure_check.InitialFailureCheck)" href="#cheersafe.loads.initial_failure_check.InitialFailureCheck">InitialFailureCheck</a></code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>The InitialFailureCheck object to perform the initial failure check for. It uses following attributes:</p>
+<details class="notes" open>
+  <summary>Notes</summary>
+  <p>Instance attributes used:</p>
 <ul>
 <li><code>rRSt</code> (np.ndarray): Initial roof sheathings resistance values.</li>
 <li><code>rRCt</code> (np.ndarray): Initial roof coverings resistance values.</li>
@@ -3100,26 +3046,35 @@ issues of dataclass decorator with Python 3.9 and 3.10. Therefore, they are defi
 <li><code>pO</code> (np.ndarray): Initial wind pressure on each opening.</li>
 <li><code>pW</code> (np.ndarray): Initial load for wall.</li>
 </ul>
-              </div>
+</details>
+
+<details class="outputs" open>
+  <summary>Outputs</summary>
+  <p>None beyond the returned value.</p>
+</details>
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                  <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#dict">dict</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#object">object</a>]</code>
             </td>
             <td>
-                <em>required</em>
+              <div class="doc-md-description">
+                <p>dict[str, object]: The updated resistance arrays keyed by component name.</p>
+              </div>
             </td>
           </tr>
       </tbody>
     </table>
 
-
-<details class="info" open>
-  <summary>This method does not return any value and updates the following class attributes:</summary>
-  <ul>
-<li><code>rRSt</code></li>
-<li><code>rRCt</code></li>
-<li><code>rRWCt</code></li>
-<li><code>rOt</code></li>
-<li><code>rWt</code></li>
-</ul>
-</details>
 
     </div>
 
@@ -3218,7 +3173,19 @@ issues of dataclass decorator with Python 3.9 and 3.10. Therefore, they are defi
   </span>
 
 <a href="#cheersafe.loads.final_loading.FinalLoad" class="headerlink" title="Permanent link">#</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">FinalLoad</span><span class="p">(</span><span class="n">rRSt</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span> <span class="n">rRCt</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span> <span class="n">rRWCt</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span> <span class="n">rOt</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span> <span class="n">rWt</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span> <span class="n">Building</span><span class="p">:</span> <span class="n"><span title="cheersafe.loads.base.BaseLoad.Building">Building</span></span><span class="p">,</span> <span class="n">WindOrientation</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></span><span class="p">,</span> <span class="n">WindSpeed</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#float">float</a></span><span class="p">,</span> <span class="n">datasets_loaded</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#bool">bool</a></span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">G</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#float">float</a></span> <span class="o">=</span> <span class="mf">0.85</span><span class="p">,</span> <span class="n">GCpi</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#float">float</a></span> <span class="o">=</span> <span class="mf">0.18</span><span class="p">)</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">FinalLoad</span><span class="p">(</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="n">rRSt</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="n">rRCt</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="n">rRWCt</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="n">rOt</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="n">rWt</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="n">Building</span><span class="p">:</span> <span class="n"><span title="cheersafe.loads.base.BaseLoad.Building">Building</span></span><span class="p">,</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="n">WindOrientation</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></span><span class="p">,</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span class="n">WindSpeed</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#float">float</a></span><span class="p">,</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    <span class="n">datasets_loaded</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#bool">bool</a></span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    <span class="n">G</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#float">float</a></span> <span class="o">=</span> <span class="mf">0.85</span><span class="p">,</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    <span class="n">GCpi</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#float">float</a></span> <span class="o">=</span> <span class="mf">0.18</span><span class="p">,</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="p">)</span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -3436,7 +3403,7 @@ issues of dataclass decorator with Python 3.9 and 3.10. Therefore, they are defi
 
 
 <a href="#cheersafe.loads.final_loading.FinalLoad.fn_final_load_o" class="headerlink" title="Permanent link">#</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">fn_final_load_o</span><span class="p">()</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">fn_final_load_o</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a></span><span class="p">[</span><span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#float">float</a></span><span class="p">]</span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -3444,32 +3411,9 @@ issues of dataclass decorator with Python 3.9 and 3.10. Therefore, they are defi
         <p>Calculate final wind pressure on each opening.</p>
 
 
-<p><span class="doc-section-title">Parameters:</span></p>
-    <table>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Type</th>
-          <th>Description</th>
-          <th>Default</th>
-        </tr>
-      </thead>
-      <tbody>
-          <tr class="doc-section-item">
-            <td>
-                <code>self</code>
-            </td>
-            <td>
-                  <code><a class="autorefs autorefs-internal" title="            FinalLoad
-
-
-  
-      dataclass
-   (cheersafe.loads.final_loading.FinalLoad)" href="#cheersafe.loads.final_loading.FinalLoad">FinalLoad</a></code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>The FinalLoad object to calculate the final wind pressure on each opening for. It uses the following attributes:</p>
+<details class="notes" open>
+  <summary>Notes</summary>
+  <p>Instance attributes used:</p>
 <ul>
 <li><code>Building</code> (Building): An object of Building class, which contains the following used attributes:<ul>
 <li><code>DoorFront</code>: The number of front doors.</li>
@@ -3488,22 +3432,35 @@ issues of dataclass decorator with Python 3.9 and 3.10. Therefore, they are defi
 <li><code>pInternal</code> (float): The internal pressure after initial failure check.</li>
 <li><code>WindOrientation</code> (int): The wind orientation index.</li>
 </ul>
-              </div>
+</details>
+
+<details class="outputs" open>
+  <summary>Outputs</summary>
+  <p>None beyond the returned value.</p>
+</details>
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                  <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#float">float</a>]</code>
             </td>
             <td>
-                <em>required</em>
+              <div class="doc-md-description">
+                <p>list[float]: The final opening load values.</p>
+              </div>
             </td>
           </tr>
       </tbody>
     </table>
 
-
-<details class="info" open>
-  <summary>This method does not return any value and updates the following class attributes:</summary>
-  <ul>
-<li><code>pfO</code></li>
-</ul>
-</details>
 
     </div>
 
@@ -3517,7 +3474,7 @@ issues of dataclass decorator with Python 3.9 and 3.10. Therefore, they are defi
 
 
 <a href="#cheersafe.loads.final_loading.FinalLoad.fn_final_load_rc" class="headerlink" title="Permanent link">#</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">fn_final_load_rc</span><span class="p">()</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">fn_final_load_rc</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -3536,21 +3493,35 @@ issues of dataclass decorator with Python 3.9 and 3.10. Therefore, they are defi
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code><span title="cheersafe.loads.final_loading.FinalLoad.fn_final_load_rc.self">self</span></code></td>
+            <td><code><span title="cheersafe.loads.final_loading.FinalLoad.fn_final_load_rc.*">*</span></code></td>
             <td>
-                  <code><a class="autorefs autorefs-internal" title="            FinalLoad
-
-
-  
-      dataclass
-   (cheersafe.loads.final_loading.FinalLoad)" href="#cheersafe.loads.final_loading.FinalLoad">FinalLoad</a></code>
+                  <code>`qh` (float</code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>The FinalLoad object to calculate the final load on a roof column for. It uses the following attributes:
-* <code>qh</code> (float): Velocity pressure.
-* <code>CCRoofGCp</code> (np.ndarray): Wind pressure coefficient values for Roof C&amp;C (ASCE-defined).
-* <code>PressureZoneArea</code> (np.ndarray): The area of each pressure zone.</p>
+                <p>Velocity pressure.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="cheersafe.loads.final_loading.FinalLoad.fn_final_load_rc.*">*</span></code></td>
+            <td>
+                  <code>`CCRoofGCp` (np.ndarray</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Wind pressure coefficient values for Roof C&amp;C (ASCE-defined).</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="cheersafe.loads.final_loading.FinalLoad.fn_final_load_rc.*">*</span></code></td>
+            <td>
+                  <code>`PressureZoneArea` (np.ndarray</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The area of each pressure zone.</p>
               </div>
             </td>
           </tr>
@@ -3558,12 +3529,33 @@ issues of dataclass decorator with Python 3.9 and 3.10. Therefore, they are defi
     </table>
 
 
-<details class="info" open>
-  <summary>This method does not return any value and updates the following class attributes:</summary>
-  <ul>
-<li><code>pfRC</code></li>
-</ul>
+<details class="outputs" open>
+  <summary>Outputs</summary>
+  <p>None beyond the returned value.</p>
 </details>
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                  <code><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>np.ndarray: The final roof covering load array.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
 
     </div>
 
@@ -3577,58 +3569,49 @@ issues of dataclass decorator with Python 3.9 and 3.10. Therefore, they are defi
 
 
 <a href="#cheersafe.loads.final_loading.FinalLoad.fn_final_load_rs" class="headerlink" title="Permanent link">#</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">fn_final_load_rs</span><span class="p">()</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">fn_final_load_rs</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
 
         <p>Calculate final wind pressure on each panel of roof sheathing.</p>
+<p>Attributes:</p>
+<div class="language-text highlight"><pre><span></span><code>* `qh` (float): Velocity pressure.
+* `G` (float): Gust effect factor.
+* `GCpi` (float): Internal pressure coefficient.
+* `CCRoofGCp` (np.ndarray): Wind pressure coefficient values for Roof C&amp;C (ASCE-defined).
+* `pInternal` (float): The internal pressure after initial failure check.
+* `PressureZoneArea` (np.ndarray): The area of each pressure zone.
+</code></pre></div>
 
 
-<p><span class="doc-section-title">Attributes:</span></p>
+<details class="outputs" open>
+  <summary>Outputs</summary>
+  <p>None beyond the returned value.</p>
+</details>
+
+    <p><span class="doc-section-title">Returns:</span></p>
     <table>
       <thead>
         <tr>
-          <th>Name</th>
           <th>Type</th>
           <th>Description</th>
         </tr>
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code><span title="cheersafe.loads.final_loading.FinalLoad.fn_final_load_rs.self">self</span></code></td>
             <td>
-                  <code><a class="autorefs autorefs-internal" title="            FinalLoad
-
-
-  
-      dataclass
-   (cheersafe.loads.final_loading.FinalLoad)" href="#cheersafe.loads.final_loading.FinalLoad">FinalLoad</a></code>
+                  <code><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>The FinalLoad object to calculate the final wind pressure on each panel of roof sheathing for. It uses the following attributes:</p>
-<ul>
-<li><code>qh</code> (float): Velocity pressure.</li>
-<li><code>G</code> (float): Gust effect factor.</li>
-<li><code>GCpi</code> (float): Internal pressure coefficient.</li>
-<li><code>CCRoofGCp</code> (np.ndarray): Wind pressure coefficient values for Roof C&amp;C (ASCE-defined).</li>
-<li><code>pInternal</code> (float): The internal pressure after initial failure check.</li>
-<li><code>PressureZoneArea</code> (np.ndarray): The area of each pressure zone.</li>
-</ul>
+                <p>np.ndarray: The final roof sheathing load array.</p>
               </div>
             </td>
           </tr>
       </tbody>
     </table>
 
-
-<details class="info" open>
-  <summary>This method does not return any value and updates the following class attributes:</summary>
-  <ul>
-<li><code>pfRS</code></li>
-</ul>
-</details>
 
     </div>
 
@@ -3642,7 +3625,7 @@ issues of dataclass decorator with Python 3.9 and 3.10. Therefore, they are defi
 
 
 <a href="#cheersafe.loads.final_loading.FinalLoad.fn_final_load_rwc" class="headerlink" title="Permanent link">#</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">fn_final_load_rwc</span><span class="p">()</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">fn_final_load_rwc</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -3650,32 +3633,9 @@ issues of dataclass decorator with Python 3.9 and 3.10. Therefore, they are defi
         <p>Calculate final wind pressure on each roof-to-wall connection.</p>
 
 
-<p><span class="doc-section-title">Parameters:</span></p>
-    <table>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Type</th>
-          <th>Description</th>
-          <th>Default</th>
-        </tr>
-      </thead>
-      <tbody>
-          <tr class="doc-section-item">
-            <td>
-                <code>self</code>
-            </td>
-            <td>
-                  <code><a class="autorefs autorefs-internal" title="            FinalLoad
-
-
-  
-      dataclass
-   (cheersafe.loads.final_loading.FinalLoad)" href="#cheersafe.loads.final_loading.FinalLoad">FinalLoad</a></code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>The FinalLoad object to calculate the final wind pressure on each roof-to-wall connection for. It uses the following attributes:</p>
+<details class="notes" open>
+  <summary>Notes</summary>
+  <p>Instance attributes used:</p>
 <ul>
 <li><code>Building</code> (Building): An object of Building class, which contains the following used attributes:<ul>
 <li><code>RoofShape</code>: shape of the roof.</li>
@@ -3697,22 +3657,35 @@ issues of dataclass decorator with Python 3.9 and 3.10. Therefore, they are defi
 <li><code>PressureZoneArea</code> (np.ndarray): The area of each pressure zone.</li>
 <li><code>pfRS</code> (np.ndarray): The final wind pressures on each panel of roof sheathing.</li>
 </ul>
-              </div>
+</details>
+
+<details class="outputs" open>
+  <summary>Outputs</summary>
+  <p>None beyond the returned value.</p>
+</details>
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                  <code><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></code>
             </td>
             <td>
-                <em>required</em>
+              <div class="doc-md-description">
+                <p>np.ndarray: The final roof-to-wall connection load array.</p>
+              </div>
             </td>
           </tr>
       </tbody>
     </table>
 
-
-<details class="info" open>
-  <summary>This method does not return any value and updates the following class attributes:</summary>
-  <ul>
-<li><code>pfRWC</code></li>
-</ul>
-</details>
 
     </div>
 
@@ -3726,7 +3699,7 @@ issues of dataclass decorator with Python 3.9 and 3.10. Therefore, they are defi
 
 
 <a href="#cheersafe.loads.final_loading.FinalLoad.fn_final_load_w" class="headerlink" title="Permanent link">#</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">fn_final_load_w</span><span class="p">()</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">fn_final_load_w</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -3734,32 +3707,9 @@ issues of dataclass decorator with Python 3.9 and 3.10. Therefore, they are defi
         <p>Calculates the final loads on walls due to wind.</p>
 
 
-<p><span class="doc-section-title">Parameters:</span></p>
-    <table>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Type</th>
-          <th>Description</th>
-          <th>Default</th>
-        </tr>
-      </thead>
-      <tbody>
-          <tr class="doc-section-item">
-            <td>
-                <code>self</code>
-            </td>
-            <td>
-                  <code><a class="autorefs autorefs-internal" title="            FinalLoad
-
-
-  
-      dataclass
-   (cheersafe.loads.final_loading.FinalLoad)" href="#cheersafe.loads.final_loading.FinalLoad">FinalLoad</a></code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>The FinalLoad object to calculate the final loads on walls due to wind for. It uses the following attributes:</p>
+<details class="notes" open>
+  <summary>Notes</summary>
+  <p>Instance attributes used:</p>
 <ul>
 <li><code>Building</code> (Building): An object of Building class, which contains the following used attributes:<ul>
 <li><code>RoofWidth</code>: The width of the roof.</li>
@@ -3781,22 +3731,35 @@ issues of dataclass decorator with Python 3.9 and 3.10. Therefore, they are defi
 <li><code>pRWC</code> (np.ndarray): The initial wind pressure on each roof-to-wall connection.</li>
 <li><code>WindOrientation</code> (int): The wind orientation index.</li>
 </ul>
-              </div>
+</details>
+
+<details class="outputs" open>
+  <summary>Outputs</summary>
+  <p>None beyond the returned value.</p>
+</details>
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                  <code><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></code>
             </td>
             <td>
-                <em>required</em>
+              <div class="doc-md-description">
+                <p>np.ndarray: The final wall load matrix.</p>
+              </div>
             </td>
           </tr>
       </tbody>
     </table>
 
-
-<details class="info" open>
-  <summary>This method does not return any value and updates the following class attributes:</summary>
-  <ul>
-<li><code>pfW</code></li>
-</ul>
-</details>
 
     </div>
 
@@ -3810,7 +3773,7 @@ issues of dataclass decorator with Python 3.9 and 3.10. Therefore, they are defi
 
 
 <a href="#cheersafe.loads.final_loading.FinalLoad.fn_pressure_internal" class="headerlink" title="Permanent link">#</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">fn_pressure_internal</span><span class="p">()</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">fn_pressure_internal</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#float">float</a></span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -3818,32 +3781,9 @@ issues of dataclass decorator with Python 3.9 and 3.10. Therefore, they are defi
         <p>Calculate internal pressure after initial failure check.</p>
 
 
-<p><span class="doc-section-title">Parameters:</span></p>
-    <table>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Type</th>
-          <th>Description</th>
-          <th>Default</th>
-        </tr>
-      </thead>
-      <tbody>
-          <tr class="doc-section-item">
-            <td>
-                <code>self</code>
-            </td>
-            <td>
-                  <code><a class="autorefs autorefs-internal" title="            FinalLoad
-
-
-  
-      dataclass
-   (cheersafe.loads.final_loading.FinalLoad)" href="#cheersafe.loads.final_loading.FinalLoad">FinalLoad</a></code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>The FinalLoad object to calculate the internal pressure after initial failure check for. It uses the following attributes:</p>
+<details class="notes" open>
+  <summary>Notes</summary>
+  <p>Instance attributes used:</p>
 <ul>
 <li><code>pO</code> (np.ndarray): The initial wind pressure on each opening.</li>
 <li><code>Building</code> (Building): An object of Building class, which contains the following used attributes:<ul>
@@ -3873,22 +3813,35 @@ issues of dataclass decorator with Python 3.9 and 3.10. Therefore, they are defi
 <li><code>MWFRSCp</code> (np.ndarray): Main Wind Force Resisting System coefficient values for zones 1 - 8.</li>
 <li><code>WindOrientation</code> (int): The wind orientation index.</li>
 </ul>
-              </div>
+</details>
+
+<details class="outputs" open>
+  <summary>Outputs</summary>
+  <p>None beyond the returned value.</p>
+</details>
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+<th>Name</th>          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+<td><code>float</code></td>            <td>
+                  <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#float">float</a></code>
             </td>
             <td>
-                <em>required</em>
+              <div class="doc-md-description">
+                <p>The internal pressure.</p>
+              </div>
             </td>
           </tr>
       </tbody>
     </table>
 
-
-<details class="info" open>
-  <summary>This method does not return any value and updates the following class attributes:</summary>
-  <ul>
-<li><code>pInternal</code></li>
-</ul>
-</details>
 
     </div>
 
@@ -3987,7 +3940,19 @@ issues of dataclass decorator with Python 3.9 and 3.10. Therefore, they are defi
   </span>
 
 <a href="#cheersafe.loads.final_failure_check.FinalFailureCheck" class="headerlink" title="Permanent link">#</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">FinalFailureCheck</span><span class="p">(</span><span class="n">rRSt</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span> <span class="n">rRCt</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span> <span class="n">rRWCt</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span> <span class="n">rOt</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span> <span class="n">rWt</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span> <span class="n">Building</span><span class="p">:</span> <span class="n"><span title="cheersafe.loads.base.BaseLoad.Building">Building</span></span><span class="p">,</span> <span class="n">WindOrientation</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></span><span class="p">,</span> <span class="n">WindSpeed</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#float">float</a></span><span class="p">,</span> <span class="n">datasets_loaded</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#bool">bool</a></span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">G</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#float">float</a></span> <span class="o">=</span> <span class="mf">0.85</span><span class="p">,</span> <span class="n">GCpi</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#float">float</a></span> <span class="o">=</span> <span class="mf">0.18</span><span class="p">)</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">FinalFailureCheck</span><span class="p">(</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="n">rRSt</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="n">rRCt</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="n">rRWCt</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="n">rOt</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="n">rWt</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="n">Building</span><span class="p">:</span> <span class="n"><span title="cheersafe.loads.base.BaseLoad.Building">Building</span></span><span class="p">,</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="n">WindOrientation</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></span><span class="p">,</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span class="n">WindSpeed</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#float">float</a></span><span class="p">,</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    <span class="n">datasets_loaded</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#bool">bool</a></span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    <span class="n">G</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#float">float</a></span> <span class="o">=</span> <span class="mf">0.85</span><span class="p">,</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    <span class="n">GCpi</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#float">float</a></span> <span class="o">=</span> <span class="mf">0.18</span><span class="p">,</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="p">)</span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -4117,7 +4082,7 @@ issues of dataclass decorator with Python 3.9 and 3.10. Therefore, they are defi
 
 
 <a href="#cheersafe.loads.final_failure_check.FinalFailureCheck.fn_final_failure_check_rwc" class="headerlink" title="Permanent link">#</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">fn_final_failure_check_rwc</span><span class="p">()</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">fn_final_failure_check_rwc</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#tuple">tuple</a></span><span class="p">[</span><span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">]</span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -4125,32 +4090,9 @@ issues of dataclass decorator with Python 3.9 and 3.10. Therefore, they are defi
         <p>Calculates the resistance of each roof-to-wall connection on each side of the building.</p>
 
 
-<p><span class="doc-section-title">Parameters:</span></p>
-    <table>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Type</th>
-          <th>Description</th>
-          <th>Default</th>
-        </tr>
-      </thead>
-      <tbody>
-          <tr class="doc-section-item">
-            <td>
-                <code>self</code>
-            </td>
-            <td>
-                  <code><a class="autorefs autorefs-internal" title="            FinalFailureCheck
-
-
-  
-      dataclass
-   (cheersafe.loads.final_failure_check.FinalFailureCheck)" href="#cheersafe.loads.final_failure_check.FinalFailureCheck">FinalFailureCheck</a></code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>The FinalFailureCheck object to perform the final failure check for. It uses following attributes:</p>
+<details class="notes" open>
+  <summary>Notes</summary>
+  <p>Instance attributes used:</p>
 <ul>
 <li><code>rRWCt</code> (np.ndarray): The resistance of each roof-to-wall connection.</li>
 <li><code>pfRWC</code> (np.ndarray): The pressure on each roof-to-wall connection.</li>
@@ -4165,23 +4107,36 @@ issues of dataclass decorator with Python 3.9 and 3.10. Therefore, they are defi
 </ul>
 </li>
 </ul>
-              </div>
+</details>
+
+<details class="outputs" open>
+  <summary>Outputs</summary>
+  <p>None beyond the returned value.</p>
+</details>
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                  <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#tuple">tuple</a>[<a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a>, <a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a>]</code>
             </td>
             <td>
-                <em>required</em>
+              <div class="doc-md-description">
+                <p>tuple[np.ndarray, np.ndarray]: The updated roof-to-wall connection
+resistance array and side-failure flags.</p>
+              </div>
             </td>
           </tr>
       </tbody>
     </table>
 
-
-<details class="info" open>
-  <summary>This method does not return any value and updates the following class attribute:</summary>
-  <ul>
-<li><code>rRWCt</code></li>
-<li><code>RWCFails</code></li>
-</ul>
-</details>
 
     </div>
 
@@ -4195,7 +4150,7 @@ issues of dataclass decorator with Python 3.9 and 3.10. Therefore, they are defi
 
 
 <a href="#cheersafe.loads.final_failure_check.FinalFailureCheck.fn_final_failure_check_w" class="headerlink" title="Permanent link">#</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">fn_final_failure_check_w</span><span class="p">()</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">fn_final_failure_check_w</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -4203,32 +4158,9 @@ issues of dataclass decorator with Python 3.9 and 3.10. Therefore, they are defi
         <p>Rechecks the walls after failure checks for other components.</p>
 
 
-<p><span class="doc-section-title">Parameters:</span></p>
-    <table>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Type</th>
-          <th>Description</th>
-          <th>Default</th>
-        </tr>
-      </thead>
-      <tbody>
-          <tr class="doc-section-item">
-            <td>
-                <code>self</code>
-            </td>
-            <td>
-                  <code><a class="autorefs autorefs-internal" title="            FinalFailureCheck
-
-
-  
-      dataclass
-   (cheersafe.loads.final_failure_check.FinalFailureCheck)" href="#cheersafe.loads.final_failure_check.FinalFailureCheck">FinalFailureCheck</a></code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>The FinalFailureCheck object to perform the final failure check for. It uses following attributes:</p>
+<details class="notes" open>
+  <summary>Notes</summary>
+  <p>Instance attributes used:</p>
 <ul>
 <li><code>WindOrientationIndex</code> (int): Wind orientation index.</li>
 <li><code>qh</code> (float): Wind pressure.</li>
@@ -4249,22 +4181,35 @@ issues of dataclass decorator with Python 3.9 and 3.10. Therefore, they are defi
 </ul>
 </li>
 </ul>
-              </div>
+</details>
+
+<details class="outputs" open>
+  <summary>Outputs</summary>
+  <p>None beyond the returned value.</p>
+</details>
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                  <code><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></code>
             </td>
             <td>
-                <em>required</em>
+              <div class="doc-md-description">
+                <p>np.ndarray: The updated final wall load matrix.</p>
+              </div>
             </td>
           </tr>
       </tbody>
     </table>
 
-
-<details class="info" open>
-  <summary>This method does not return any value and updates the following class attribute:</summary>
-  <ul>
-<li><code>pfW</code></li>
-</ul>
-</details>
 
     </div>
 
@@ -4363,7 +4308,14 @@ issues of dataclass decorator with Python 3.9 and 3.10. Therefore, they are defi
   </span>
 
 <a href="#cheersafe.loads.preprocessing.PreProcessLoad" class="headerlink" title="Permanent link">#</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">PreProcessLoad</span><span class="p">(</span><span class="n">Building</span><span class="p">:</span> <span class="n"><span title="cheersafe.loads.base.BaseLoad.Building">Building</span></span><span class="p">,</span> <span class="n">WindOrientation</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></span><span class="p">,</span> <span class="n">WindSpeed</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#float">float</a></span><span class="p">,</span> <span class="n">datasets_loaded</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#bool">bool</a></span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">G</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#float">float</a></span> <span class="o">=</span> <span class="mf">0.85</span><span class="p">,</span> <span class="n">GCpi</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#float">float</a></span> <span class="o">=</span> <span class="mf">0.18</span><span class="p">)</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">PreProcessLoad</span><span class="p">(</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="n">Building</span><span class="p">:</span> <span class="n"><span title="cheersafe.loads.base.BaseLoad.Building">Building</span></span><span class="p">,</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="n">WindOrientation</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></span><span class="p">,</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="n">WindSpeed</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#float">float</a></span><span class="p">,</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="n">datasets_loaded</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#bool">bool</a></span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="n">G</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#float">float</a></span> <span class="o">=</span> <span class="mf">0.85</span><span class="p">,</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="n">GCpi</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#float">float</a></span> <span class="o">=</span> <span class="mf">0.18</span><span class="p">,</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="p">)</span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -4472,8 +4424,8 @@ issues of dataclass decorator with Python 3.9 and 3.10. Therefore, they are defi
     </table>
 
 
-<details class="note" open>
-  <summary>Note</summary>
+<details class="notes" open>
+  <summary>Notes</summary>
   <p>The attributes defined in the class are initialized in the constructor, and then updated in the <code>__post_init__</code> method.</p>
 </details>
 
@@ -4510,7 +4462,7 @@ issues of dataclass decorator with Python 3.9 and 3.10. Therefore, they are defi
 
 
 <a href="#cheersafe.loads.preprocessing.PreProcessLoad.fn_preprocess_rs" class="headerlink" title="Permanent link">#</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">fn_preprocess_rs</span><span class="p">()</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">fn_preprocess_rs</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n"><a class="autorefs autorefs-external" title="typing.Optional" href="https://docs.python.org/3/library/typing.html#typing.Optional">Optional</a></span><span class="p">[</span><span class="n"><a class="autorefs autorefs-external" title="typing.Tuple" href="https://docs.python.org/3/library/typing.html#typing.Tuple">Tuple</a></span><span class="p">[</span><span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">]]</span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -4518,32 +4470,9 @@ issues of dataclass decorator with Python 3.9 and 3.10. Therefore, they are defi
         <p>Preprocesses the Roof Sheathing (RS) by calculating panel areas and dividing them into pressure zones.</p>
 
 
-<p><span class="doc-section-title">Parameters:</span></p>
-    <table>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Type</th>
-          <th>Description</th>
-          <th>Default</th>
-        </tr>
-      </thead>
-      <tbody>
-          <tr class="doc-section-item">
-            <td>
-                <code>self</code>
-            </td>
-            <td>
-                  <code><a class="autorefs autorefs-internal" title="            PreProcessLoad
-
-
-  
-      dataclass
-   (cheersafe.loads.preprocessing.PreProcessLoad)" href="#cheersafe.loads.preprocessing.PreProcessLoad">PreProcessLoad</a></code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>An instance of the PreProcessLoad class. It uses following attributes:</p>
+<details class="notes" open>
+  <summary>Notes</summary>
+  <p>Instance attributes used:</p>
 <ul>
 <li><code>Building</code> (Building): An instance of the Building class. It uses the following attributes:<ul>
 <li><code>HipRidgeAngle</code> (float): The angle between eave and roof hip joint ridge in degrees.</li>
@@ -4556,23 +4485,49 @@ issues of dataclass decorator with Python 3.9 and 3.10. Therefore, they are defi
 <li><code>PanelCoordinate</code> (list): Array containing the coordinates of panels.</li>
 <li><code>NumPanel</code> (list): Array containing the number of panels on each side.</li>
 </ul>
-              </div>
+</details>
+
+<details class="outputs" open>
+  <summary>Outputs</summary>
+  <p>Updates the following class attributes:</p>
+<ul>
+<li><code>PressureZoneArea</code></li>
+<li><code>PanelArea</code></li>
+</ul>
+</details>
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+<th>Name</th>          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+<td></td>            <td>
+                  <code><a class="autorefs autorefs-external" title="typing.Optional" href="https://docs.python.org/3/library/typing.html#typing.Optional">Optional</a>[<a class="autorefs autorefs-external" title="typing.Tuple" href="https://docs.python.org/3/library/typing.html#typing.Tuple">Tuple</a>[<a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a>, <a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a>]]</code>
             </td>
             <td>
-                <em>required</em>
+              <div class="doc-md-description">
+                <p>tuple[np.ndarray, np.ndarray]: The pressure-zone area matrix and panel-area array.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+<td><code>None</code></td>            <td>
+                  <code><a class="autorefs autorefs-external" title="typing.Optional" href="https://docs.python.org/3/library/typing.html#typing.Optional">Optional</a>[<a class="autorefs autorefs-external" title="typing.Tuple" href="https://docs.python.org/3/library/typing.html#typing.Tuple">Tuple</a>[<a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a>, <a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a>]]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Returned only for invalid geometry paths that currently abort preprocessing.</p>
+              </div>
             </td>
           </tr>
       </tbody>
     </table>
 
-
-<details class="info" open>
-  <summary>This method does not return any value and updates the following class attributes:</summary>
-  <ul>
-<li><code>PressureZoneArea</code></li>
-<li><code>PanelArea</code></li>
-</ul>
-</details>
 
     </div>
 
@@ -4586,7 +4541,9 @@ issues of dataclass decorator with Python 3.9 and 3.10. Therefore, they are defi
 
 
 <a href="#cheersafe.loads.preprocessing.PreProcessLoad.fn_pressure_zone_coordinate" class="headerlink" title="Permanent link">#</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">fn_pressure_zone_coordinate</span><span class="p">()</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">fn_pressure_zone_coordinate</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n"><a class="autorefs autorefs-external" title="typing.Optional" href="https://docs.python.org/3/library/typing.html#typing.Optional">Optional</a></span><span class="p">[</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="n"><a class="autorefs autorefs-external" title="typing.Tuple" href="https://docs.python.org/3/library/typing.html#typing.Tuple">Tuple</a></span><span class="p">[</span><span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a></span><span class="p">[</span><span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></span><span class="p">]]</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">]</span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -4594,32 +4551,9 @@ issues of dataclass decorator with Python 3.9 and 3.10. Therefore, they are defi
         <p>Calculate coordinates of pressure zones, given wind orientation.</p>
 
 
-<p><span class="doc-section-title">Parameters:</span></p>
-    <table>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Type</th>
-          <th>Description</th>
-          <th>Default</th>
-        </tr>
-      </thead>
-      <tbody>
-          <tr class="doc-section-item">
-            <td>
-                <code>self</code>
-            </td>
-            <td>
-                  <code><a class="autorefs autorefs-internal" title="            PreProcessLoad
-
-
-  
-      dataclass
-   (cheersafe.loads.preprocessing.PreProcessLoad)" href="#cheersafe.loads.preprocessing.PreProcessLoad">PreProcessLoad</a></code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>An instance of the PreProcessLoad class. It uses following attributes:</p>
+<details class="notes" open>
+  <summary>Notes</summary>
+  <p>Instance attributes used:</p>
 <ul>
 <li><code>Building</code>: An instance of the Building class, which contains the following used attributes:<ul>
 <li><code>BldgWidth</code>: The width of the building.</li>
@@ -4633,23 +4567,49 @@ issues of dataclass decorator with Python 3.9 and 3.10. Therefore, they are defi
 <li><code>PressureZoneCoordinate</code>: Array containing coordinates of pressure zones.</li>
 <li><code>NumZone</code>: Array containing the number of zones for each side of the building.</li>
 </ul>
-              </div>
+</details>
+
+<details class="outputs" open>
+  <summary>Outputs</summary>
+  <p>Updates the following class attributes:</p>
+<ul>
+<li><code>PressureZoneCoordinate</code></li>
+<li><code>NumZone</code></li>
+</ul>
+</details>
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+<th>Name</th>          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+<td></td>            <td>
+                  <code><a class="autorefs autorefs-external" title="typing.Optional" href="https://docs.python.org/3/library/typing.html#typing.Optional">Optional</a>[<a class="autorefs autorefs-external" title="typing.Tuple" href="https://docs.python.org/3/library/typing.html#typing.Tuple">Tuple</a>[<a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a>]]]</code>
             </td>
             <td>
-                <em>required</em>
+              <div class="doc-md-description">
+                <p>tuple[np.ndarray, list[int]]: The pressure-zone coordinates and zone counts.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+<td><code>None</code></td>            <td>
+                  <code><a class="autorefs autorefs-external" title="typing.Optional" href="https://docs.python.org/3/library/typing.html#typing.Optional">Optional</a>[<a class="autorefs autorefs-external" title="typing.Tuple" href="https://docs.python.org/3/library/typing.html#typing.Tuple">Tuple</a>[<a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a>]]]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Returned only for unsupported wind-orientation paths that currently abort preprocessing.</p>
+              </div>
             </td>
           </tr>
       </tbody>
     </table>
 
-
-<details class="info" open>
-  <summary>This method does not return any value and updates the following class attributes:</summary>
-  <ul>
-<li><code>PressureZoneCoordinate</code></li>
-<li><code>NumZone</code></li>
-</ul>
-</details>
 
     </div>
 
@@ -4748,7 +4708,19 @@ issues of dataclass decorator with Python 3.9 and 3.10. Therefore, they are defi
   </span>
 
 <a href="#cheersafe.loads.main.LoadingAndFailureCheck" class="headerlink" title="Permanent link">#</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">LoadingAndFailureCheck</span><span class="p">(</span><span class="n">rRSt</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span> <span class="n">rRCt</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span> <span class="n">rRWCt</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span> <span class="n">rOt</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span> <span class="n">rWt</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span> <span class="n">Building</span><span class="p">:</span> <span class="n"><span title="cheersafe.loads.base.BaseLoad.Building">Building</span></span><span class="p">,</span> <span class="n">WindOrientation</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></span><span class="p">,</span> <span class="n">WindSpeed</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#float">float</a></span><span class="p">,</span> <span class="n">datasets_loaded</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#bool">bool</a></span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">G</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#float">float</a></span> <span class="o">=</span> <span class="mf">0.85</span><span class="p">,</span> <span class="n">GCpi</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#float">float</a></span> <span class="o">=</span> <span class="mf">0.18</span><span class="p">)</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">LoadingAndFailureCheck</span><span class="p">(</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="n">rRSt</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="n">rRCt</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="n">rRWCt</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="n">rOt</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="n">rWt</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="n">Building</span><span class="p">:</span> <span class="n"><span title="cheersafe.loads.base.BaseLoad.Building">Building</span></span><span class="p">,</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="n">WindOrientation</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></span><span class="p">,</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span class="n">WindSpeed</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#float">float</a></span><span class="p">,</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    <span class="n">datasets_loaded</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#bool">bool</a></span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    <span class="n">G</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#float">float</a></span> <span class="o">=</span> <span class="mf">0.85</span><span class="p">,</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    <span class="n">GCpi</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#float">float</a></span> <span class="o">=</span> <span class="mf">0.18</span><span class="p">,</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="p">)</span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -4859,32 +4831,9 @@ issues of dataclass decorator with Python 3.9 and 3.10. Therefore, they are defi
         <p>Returns the final loads on various components.</p>
 
 
-<p><span class="doc-section-title">Parameters:</span></p>
-    <table>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Type</th>
-          <th>Description</th>
-          <th>Default</th>
-        </tr>
-      </thead>
-      <tbody>
-          <tr class="doc-section-item">
-            <td>
-                <code>self</code>
-            </td>
-            <td>
-                  <code><a class="autorefs autorefs-internal" title="            LoadingAndFailureCheck
-
-
-  
-      dataclass
-   (cheersafe.loads.main.LoadingAndFailureCheck)" href="#cheersafe.loads.main.LoadingAndFailureCheck">LoadingAndFailureCheck</a></code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>The LoadingAndFailureCheck object to get the final loads for. It uses the following attributes:</p>
+<details class="notes" open>
+  <summary>Notes</summary>
+  <p>Instance attributes used:</p>
 <ul>
 <li><code>pfO</code> (np.ndarray): Load on the openings.</li>
 <li><code>pfW</code> (np.ndarray): Load on the walls.</li>
@@ -4892,15 +4841,7 @@ issues of dataclass decorator with Python 3.9 and 3.10. Therefore, they are defi
 <li><code>pfRC</code> (np.ndarray): Load on the roof coverings.</li>
 <li><code>pfRWC</code> (np.ndarray): Load on the roof-wall connections.</li>
 </ul>
-              </div>
-            </td>
-            <td>
-                <em>required</em>
-            </td>
-          </tr>
-      </tbody>
-    </table>
-
+</details>
 
     <p><span class="doc-section-title">Returns:</span></p>
     <table>
@@ -4925,6 +4866,11 @@ issues of dataclass decorator with Python 3.9 and 3.10. Therefore, they are defi
     </table>
 
 
+<details class="outputs" open>
+  <summary>Outputs</summary>
+  <p>None beyond the returned value.</p>
+</details>
+
     </div>
 
 </div>
@@ -4945,32 +4891,9 @@ issues of dataclass decorator with Python 3.9 and 3.10. Therefore, they are defi
         <p>Returns the final resistance of various components.</p>
 
 
-<p><span class="doc-section-title">Parameters:</span></p>
-    <table>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Type</th>
-          <th>Description</th>
-          <th>Default</th>
-        </tr>
-      </thead>
-      <tbody>
-          <tr class="doc-section-item">
-            <td>
-                <code>self</code>
-            </td>
-            <td>
-                  <code><a class="autorefs autorefs-internal" title="            LoadingAndFailureCheck
-
-
-  
-      dataclass
-   (cheersafe.loads.main.LoadingAndFailureCheck)" href="#cheersafe.loads.main.LoadingAndFailureCheck">LoadingAndFailureCheck</a></code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>The LoadingAndFailureCheck object to get the final resistance for. It uses the following attributes:</p>
+<details class="notes" open>
+  <summary>Notes</summary>
+  <p>Instance attributes used:</p>
 <ul>
 <li><code>rOt</code> (np.ndarray): Resistance of the openings.</li>
 <li><code>rWt</code> (np.ndarray): Resistance of the walls.</li>
@@ -4978,15 +4901,7 @@ issues of dataclass decorator with Python 3.9 and 3.10. Therefore, they are defi
 <li><code>rRCt</code> (np.ndarray): Resistance of the roof coverings.</li>
 <li><code>rRWCt</code> (np.ndarray): Resistance of the roof-wall connections.</li>
 </ul>
-              </div>
-            </td>
-            <td>
-                <em>required</em>
-            </td>
-          </tr>
-      </tbody>
-    </table>
-
+</details>
 
     <p><span class="doc-section-title">Returns:</span></p>
     <table>
@@ -5011,6 +4926,11 @@ issues of dataclass decorator with Python 3.9 and 3.10. Therefore, they are defi
     </table>
 
 
+<details class="outputs" open>
+  <summary>Outputs</summary>
+  <p>None beyond the returned value.</p>
+</details>
+
     </div>
 
 </div>
@@ -5023,12 +4943,21 @@ issues of dataclass decorator with Python 3.9 and 3.10. Therefore, they are defi
 
 
 <a href="#cheersafe.loads.main.LoadingAndFailureCheck.update_inputs_and_outputs" class="headerlink" title="Permanent link">#</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">update_inputs_and_outputs</span><span class="p">(</span><span class="n">rRSt</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span> <span class="n">rRCt</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span> <span class="n">rRWCt</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span> <span class="n">rOt</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span> <span class="n">rWt</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span> <span class="n">Building</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-internal" title="            Building
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">update_inputs_and_outputs</span><span class="p">(</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="n">rRSt</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="n">rRCt</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="n">rRWCt</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="n">rOt</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="n">rWt</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="n">Building</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-internal" title="            Building
 
 
   
       dataclass
-   (cheersafe.inventory.Building)" href="inventory.html#cheersafe.inventory.building.Building">Building</a></span><span class="p">,</span> <span class="n">WindOrientation</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></span><span class="p">,</span> <span class="n">WindSpeed</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#float">float</a></span><span class="p">)</span>
+   (cheersafe.inventory.Building)" href="inventory.html#cheersafe.inventory.building.Building">Building</a></span><span class="p">,</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="n">WindOrientation</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></span><span class="p">,</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span class="n">WindSpeed</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#float">float</a></span><span class="p">,</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -5184,10 +5113,33 @@ issues of dataclass decorator with Python 3.9 and 3.10. Therefore, they are defi
     </table>
 
 
-<details class="info" open>
-  <summary>Info</summary>
+<details class="outputs" open>
+  <summary>Outputs</summary>
   <p>This method updates the inputs and outputs of the class object by calling the <code>__post_init__</code> method.</p>
 </details>
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                  <code>None</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>None</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
 
     </div>
 
@@ -5312,7 +5264,13 @@ issues of dataclass decorator with Python 3.9 and 3.10. Therefore, they are defi
   </span>
 
 <a href="#cheersafe.loads.base.BaseFailureCheck" class="headerlink" title="Permanent link">#</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">BaseFailureCheck</span><span class="p">(</span><span class="n">rRSt</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span> <span class="n">rRCt</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span> <span class="n">rRWCt</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span> <span class="n">rOt</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span> <span class="n">rWt</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">)</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">BaseFailureCheck</span><span class="p">(</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="n">rRSt</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="n">rRCt</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="n">rRWCt</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="n">rOt</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="n">rWt</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="p">)</span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -5437,7 +5395,12 @@ issues of dataclass decorator with Python 3.9 and 3.10. Therefore, they are defi
   </span>
 
 <a href="#cheersafe.loads.base.BaseLoad" class="headerlink" title="Permanent link">#</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">BaseLoad</span><span class="p">(</span><span class="n">Building</span><span class="p">:</span> <span class="n"><span title="cheersafe.loads.base.BaseLoad.Building">Building</span></span><span class="p">,</span> <span class="n">WindOrientation</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></span><span class="p">,</span> <span class="n">WindSpeed</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#float">float</a></span><span class="p">,</span> <span class="n">datasets_loaded</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#bool">bool</a></span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">BaseLoad</span><span class="p">(</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="n">Building</span><span class="p">:</span> <span class="n"><span title="cheersafe.loads.base.BaseLoad.Building">Building</span></span><span class="p">,</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="n">WindOrientation</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></span><span class="p">,</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="n">WindSpeed</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#float">float</a></span><span class="p">,</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="n">datasets_loaded</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#bool">bool</a></span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="p">)</span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -5607,27 +5570,6 @@ issues of dataclass decorator with Python 3.9 and 3.10. Therefore, they are defi
       <tbody>
           <tr class="doc-section-item">
             <td>
-                <code>self</code>
-            </td>
-            <td>
-                  <code><a class="autorefs autorefs-internal" title="            BaseLoad
-
-
-  
-      dataclass
-   (cheersafe.loads.base.BaseLoad)" href="#cheersafe.loads.base.BaseLoad">BaseLoad</a></code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>An instance of the BaseLoad class.</p>
-              </div>
-            </td>
-            <td>
-                <em>required</em>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td>
                 <code>file_name</code>
             </td>
             <td>
@@ -5684,27 +5626,6 @@ issues of dataclass decorator with Python 3.9 and 3.10. Therefore, they are defi
         </tr>
       </thead>
       <tbody>
-          <tr class="doc-section-item">
-            <td>
-                <code>self</code>
-            </td>
-            <td>
-                  <code><a class="autorefs autorefs-internal" title="            BaseLoad
-
-
-  
-      dataclass
-   (cheersafe.loads.base.BaseLoad)" href="#cheersafe.loads.base.BaseLoad">BaseLoad</a></code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>An instance of the BaseLoad class.</p>
-              </div>
-            </td>
-            <td>
-                <em>required</em>
-            </td>
-          </tr>
           <tr class="doc-section-item">
             <td>
                 <code>file_name</code>
@@ -5765,27 +5686,6 @@ issues of dataclass decorator with Python 3.9 and 3.10. Therefore, they are defi
       <tbody>
           <tr class="doc-section-item">
             <td>
-                <code>self</code>
-            </td>
-            <td>
-                  <code><a class="autorefs autorefs-internal" title="            BaseLoad
-
-
-  
-      dataclass
-   (cheersafe.loads.base.BaseLoad)" href="#cheersafe.loads.base.BaseLoad">BaseLoad</a></code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>An instance of the BaseLoad class.</p>
-              </div>
-            </td>
-            <td>
-                <em>required</em>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td>
                 <code>file_name</code>
             </td>
             <td>
@@ -5823,13 +5723,41 @@ issues of dataclass decorator with Python 3.9 and 3.10. Therefore, they are defi
 
 
 <a href="#cheersafe.loads.base.BaseLoad.update_outputs" class="headerlink" title="Permanent link">#</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">update_outputs</span><span class="p">()</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">update_outputs</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kc">None</span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
 
         <p>Updates the outputs of the class object by calling the <code>__post_init__</code> method.
 This method can be called when a change is made to some of the inputs of the class.</p>
+
+
+<details class="outputs" open>
+  <summary>Outputs</summary>
+  <p>Performs initialization or configuration side effects described above.</p>
+</details>
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                  <code>None</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>None</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
 
 
     </div>
