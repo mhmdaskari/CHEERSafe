@@ -8,31 +8,31 @@
       
       
       
-        <link rel="canonical" href="https://mhmdaskari.github.io/CHEERSafe/get_started/installation.html">
+        <link rel="canonical" href="https://mhmdaskari.github.io/CHEERSafe/users_manual/loss_estimation/loss_estimation.html">
       
       
-        <link rel="prev" href="../cheersafe_flowchart.html">
+        <link rel="prev" href="regional_loss_estimator.html">
       
       
-        <link rel="next" href="quickstart.html">
+        <link rel="next" href="../tools/index.html">
       
       
         
       
       
-      <link rel="icon" href="../cheersafe_favicon.svg">
+      <link rel="icon" href="../../cheersafe_favicon.svg">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>Installation - CHEERSafe: A Python library to assess hurricane damage and loss</title>
+        <title>LossEstimation - CHEERSafe: A Python library to assess hurricane damage and loss</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -53,11 +53,11 @@
       
     
     
-      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+      <link rel="stylesheet" href="../../assets/_mkdocstrings.css">
     
-      <link rel="stylesheet" href="../assets/css/custom.css">
+      <link rel="stylesheet" href="../../assets/css/custom.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#installation-guide-for-cheersafe-package" class="md-skip">
+        <a href="#lossestimation" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +98,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../index.html" title="CHEERSafe: A Python library to assess hurricane damage and loss" class="md-header__button md-logo" aria-label="CHEERSafe: A Python library to assess hurricane damage and loss" data-md-component="logo">
+    <a href="../../index.html" title="CHEERSafe: A Python library to assess hurricane damage and loss" class="md-header__button md-logo" aria-label="CHEERSafe: A Python library to assess hurricane damage and loss" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 6.79c1.86 1.07 3 3.06 3 5.21C18 22 6 22 6 22c1.25-.94 2.38-2.05 3.34-3.29a.99.99 0 0 0-.34-1.5C7.14 16.14 6 14.15 6 12 6 2 18 2 18 2c-1.25.94-2.38 2.05-3.34 3.29a.99.99 0 0 0 .34 1.5M12 14a2 2 0 0 0 2-2 2 2 0 0 0-2-2 2 2 0 0 0-2 2 2 2 0 0 0 2 2"/></svg>
@@ -118,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Installation
+              LossEstimation
             
           </span>
         </div>
@@ -246,7 +246,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../index.html" title="CHEERSafe: A Python library to assess hurricane damage and loss" class="md-nav__button md-logo" aria-label="CHEERSafe: A Python library to assess hurricane damage and loss" data-md-component="logo">
+    <a href="../../index.html" title="CHEERSafe: A Python library to assess hurricane damage and loss" class="md-nav__button md-logo" aria-label="CHEERSafe: A Python library to assess hurricane damage and loss" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 6.79c1.86 1.07 3 3.06 3 5.21C18 22 6 22 6 22c1.25-.94 2.38-2.05 3.34-3.29a.99.99 0 0 0-.34-1.5C7.14 16.14 6 14.15 6 12 6 2 18 2 18 2c-1.25.94-2.38 2.05-3.34 3.29a.99.99 0 0 0 .34 1.5M12 14a2 2 0 0 0 2-2 2 2 0 0 0-2-2 2 2 0 0 0-2 2 2 2 0 0 0 2 2"/></svg>
@@ -276,7 +276,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../index.html" class="md-nav__link">
+      <a href="../../index.html" class="md-nav__link">
         
   
   
@@ -303,7 +303,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../cheersafe_flowchart.html" class="md-nav__link">
+      <a href="../../cheersafe_flowchart.html" class="md-nav__link">
         
   
   
@@ -327,20 +327,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -361,7 +359,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -376,37 +374,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Installation
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="installation.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../get_started/installation.html" class="md-nav__link">
         
   
   
@@ -422,109 +393,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Prerequisites
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#installation-steps" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Installation Steps
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#optional-dependencies" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Optional Dependencies
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Optional Dependencies">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#development-dependencies" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Development Dependencies
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#documentation-dependencies" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Documentation Dependencies
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#jupyter-dependencies" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Jupyter Dependencies
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#install-all-optional-dependencies" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Install All Optional Dependencies
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -537,7 +405,7 @@
   
   
     <li class="md-nav__item">
-      <a href="quickstart.html" class="md-nav__link">
+      <a href="../../get_started/quickstart.html" class="md-nav__link">
         
   
   
@@ -569,18 +437,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -601,7 +471,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             
@@ -619,7 +489,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../users_manual/inputs.html" class="md-nav__link">
+      <a href="../inputs.html" class="md-nav__link">
         
   
   
@@ -694,7 +564,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../users_manual/config/index.html" class="md-nav__link">
+      <a href="../config/index.html" class="md-nav__link">
         
   
   
@@ -722,7 +592,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../users_manual/config/config.html" class="md-nav__link">
+      <a href="../config/config.html" class="md-nav__link">
         
   
   
@@ -805,7 +675,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../users_manual/inventory/index.html" class="md-nav__link">
+      <a href="../inventory/index.html" class="md-nav__link">
         
   
   
@@ -833,7 +703,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../users_manual/inventory/building.html" class="md-nav__link">
+      <a href="../inventory/building.html" class="md-nav__link">
         
   
   
@@ -861,7 +731,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../users_manual/inventory/building_inventory.html" class="md-nav__link">
+      <a href="../inventory/building_inventory.html" class="md-nav__link">
         
   
   
@@ -944,7 +814,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../users_manual/loads/index.html" class="md-nav__link">
+      <a href="../loads/index.html" class="md-nav__link">
         
   
   
@@ -972,7 +842,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../users_manual/loads/preprocess_load.html" class="md-nav__link">
+      <a href="../loads/preprocess_load.html" class="md-nav__link">
         
   
   
@@ -1000,7 +870,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../users_manual/loads/initial_load.html" class="md-nav__link">
+      <a href="../loads/initial_load.html" class="md-nav__link">
         
   
   
@@ -1028,7 +898,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../users_manual/loads/initial_failure_check.html" class="md-nav__link">
+      <a href="../loads/initial_failure_check.html" class="md-nav__link">
         
   
   
@@ -1056,7 +926,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../users_manual/loads/final_load.html" class="md-nav__link">
+      <a href="../loads/final_load.html" class="md-nav__link">
         
   
   
@@ -1084,7 +954,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../users_manual/loads/final_failure_check.html" class="md-nav__link">
+      <a href="../loads/final_failure_check.html" class="md-nav__link">
         
   
   
@@ -1112,7 +982,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../users_manual/loads/loading_and_failure_check.html" class="md-nav__link">
+      <a href="../loads/loading_and_failure_check.html" class="md-nav__link">
         
   
   
@@ -1195,7 +1065,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../users_manual/damage_ratio_calculation/index.html" class="md-nav__link">
+      <a href="../damage_ratio_calculation/index.html" class="md-nav__link">
         
   
   
@@ -1223,7 +1093,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../users_manual/damage_ratio_calculation/explicit_damage_ratio.html" class="md-nav__link">
+      <a href="../damage_ratio_calculation/explicit_damage_ratio.html" class="md-nav__link">
         
   
   
@@ -1251,7 +1121,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../users_manual/damage_ratio_calculation/implicit_damage_ratio.html" class="md-nav__link">
+      <a href="../damage_ratio_calculation/implicit_damage_ratio.html" class="md-nav__link">
         
   
   
@@ -1279,7 +1149,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../users_manual/damage_ratio_calculation/damage_ratio_calculation.html" class="md-nav__link">
+      <a href="../damage_ratio_calculation/damage_ratio_calculation.html" class="md-nav__link">
         
   
   
@@ -1362,7 +1232,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../users_manual/damage_probability_calculation/index.html" class="md-nav__link">
+      <a href="../damage_probability_calculation/index.html" class="md-nav__link">
         
   
   
@@ -1390,7 +1260,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../users_manual/damage_probability_calculation/damage_calculator.html" class="md-nav__link">
+      <a href="../damage_probability_calculation/damage_calculator.html" class="md-nav__link">
         
   
   
@@ -1418,7 +1288,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../users_manual/damage_probability_calculation/damage_probability_calculation.html" class="md-nav__link">
+      <a href="../damage_probability_calculation/damage_probability_calculation.html" class="md-nav__link">
         
   
   
@@ -1446,7 +1316,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../users_manual/damage_probability_calculation/damage_ratio_exporter.html" class="md-nav__link">
+      <a href="../damage_probability_calculation/damage_ratio_exporter.html" class="md-nav__link">
         
   
   
@@ -1529,7 +1399,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../users_manual/damage_probability_analysis/index.html" class="md-nav__link">
+      <a href="../damage_probability_analysis/index.html" class="md-nav__link">
         
   
   
@@ -1557,7 +1427,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../users_manual/damage_probability_analysis/vulnerability_calculator.html" class="md-nav__link">
+      <a href="../damage_probability_analysis/vulnerability_calculator.html" class="md-nav__link">
         
   
   
@@ -1585,7 +1455,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../users_manual/damage_probability_analysis/fragility_calculator.html" class="md-nav__link">
+      <a href="../damage_probability_analysis/fragility_calculator.html" class="md-nav__link">
         
   
   
@@ -1613,7 +1483,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../users_manual/damage_probability_analysis/damage_probability_analysis.html" class="md-nav__link">
+      <a href="../damage_probability_analysis/damage_probability_analysis.html" class="md-nav__link">
         
   
   
@@ -1646,18 +1516,20 @@
                 
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_8" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_8" checked>
         
           
           <label class="md-nav__link" for="__nav_4_8" id="__nav_4_8_label" tabindex="0">
@@ -1678,7 +1550,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_8_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_8_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4_8">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1696,7 +1568,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../users_manual/loss_estimation/index.html" class="md-nav__link">
+      <a href="index.html" class="md-nav__link">
         
   
   
@@ -1724,7 +1596,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../users_manual/loss_estimation/damage_probability_provider.html" class="md-nav__link">
+      <a href="damage_probability_provider.html" class="md-nav__link">
         
   
   
@@ -1752,7 +1624,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../users_manual/loss_estimation/building_loss_estimator.html" class="md-nav__link">
+      <a href="building_loss_estimator.html" class="md-nav__link">
         
   
   
@@ -1780,7 +1652,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../users_manual/loss_estimation/component_loss_estimator.html" class="md-nav__link">
+      <a href="component_loss_estimator.html" class="md-nav__link">
         
   
   
@@ -1808,7 +1680,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../users_manual/loss_estimation/regional_loss_estimator.html" class="md-nav__link">
+      <a href="regional_loss_estimator.html" class="md-nav__link">
         
   
   
@@ -1833,10 +1705,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../users_manual/loss_estimation/loss_estimation.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LossEstimation
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="loss_estimation.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1852,6 +1751,81 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#inputs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inputs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#outputs-and-returns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Outputs And Returns
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration-behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuration Behavior
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#minimal-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Minimal Examples
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related-references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Related References
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1919,7 +1893,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../users_manual/tools/index.html" class="md-nav__link">
+      <a href="../tools/index.html" class="md-nav__link">
         
   
   
@@ -1947,7 +1921,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../users_manual/tools/utils.html" class="md-nav__link">
+      <a href="../tools/utils.html" class="md-nav__link">
         
   
   
@@ -1975,7 +1949,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../users_manual/tools/sampling.html" class="md-nav__link">
+      <a href="../tools/sampling.html" class="md-nav__link">
         
   
   
@@ -2003,7 +1977,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../users_manual/tools/covariance.html" class="md-nav__link">
+      <a href="../tools/covariance.html" class="md-nav__link">
         
   
   
@@ -2093,7 +2067,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../examples/configuration_execution_modes.html" class="md-nav__link">
+      <a href="../../examples/configuration_execution_modes.html" class="md-nav__link">
         
   
   
@@ -2121,7 +2095,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../examples/inventory_building_geometry.html" class="md-nav__link">
+      <a href="../../examples/inventory_building_geometry.html" class="md-nav__link">
         
   
   
@@ -2149,7 +2123,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../examples/loads_failure_check_workflow.html" class="md-nav__link">
+      <a href="../../examples/loads_failure_check_workflow.html" class="md-nav__link">
         
   
   
@@ -2177,7 +2151,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../examples/fragility_curve_calculation.html" class="md-nav__link">
+      <a href="../../examples/fragility_curve_calculation.html" class="md-nav__link">
         
   
   
@@ -2205,7 +2179,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../examples/fragility_curve_calculation_with_detailed_damage_ratio_analysis.html" class="md-nav__link">
+      <a href="../../examples/fragility_curve_calculation_with_detailed_damage_ratio_analysis.html" class="md-nav__link">
         
   
   
@@ -2233,7 +2207,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../examples/loss_estimation_workflow.html" class="md-nav__link">
+      <a href="../../examples/loss_estimation_workflow.html" class="md-nav__link">
         
   
   
@@ -2261,7 +2235,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../examples/tools_sampling_covariance.html" class="md-nav__link">
+      <a href="../../examples/tools_sampling_covariance.html" class="md-nav__link">
         
   
   
@@ -2343,7 +2317,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../API/config.html" class="md-nav__link">
+      <a href="../../API/config.html" class="md-nav__link">
         
   
   
@@ -2371,7 +2345,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../API/inventory.html" class="md-nav__link">
+      <a href="../../API/inventory.html" class="md-nav__link">
         
   
   
@@ -2399,7 +2373,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../API/loads.html" class="md-nav__link">
+      <a href="../../API/loads.html" class="md-nav__link">
         
   
   
@@ -2427,7 +2401,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../API/damage_ratio_calculation.html" class="md-nav__link">
+      <a href="../../API/damage_ratio_calculation.html" class="md-nav__link">
         
   
   
@@ -2455,7 +2429,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../API/damage_probability_calculation.html" class="md-nav__link">
+      <a href="../../API/damage_probability_calculation.html" class="md-nav__link">
         
   
   
@@ -2483,7 +2457,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../API/damage_probability_analysis.html" class="md-nav__link">
+      <a href="../../API/damage_probability_analysis.html" class="md-nav__link">
         
   
   
@@ -2511,7 +2485,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../API/loss_estimation.html" class="md-nav__link">
+      <a href="../../API/loss_estimation.html" class="md-nav__link">
         
   
   
@@ -2539,7 +2513,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../API/tools.html" class="md-nav__link">
+      <a href="../../API/tools.html" class="md-nav__link">
         
   
   
@@ -2594,10 +2568,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
+  <a href="#inputs" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Prerequisites
+        Inputs
       
     </span>
   </a>
@@ -2605,10 +2579,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#installation-steps" class="md-nav__link">
+  <a href="#outputs-and-returns" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Installation Steps
+        Outputs And Returns
       
     </span>
   </a>
@@ -2616,63 +2590,35 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#optional-dependencies" class="md-nav__link">
+  <a href="#configuration-behavior" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Optional Dependencies
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Optional Dependencies">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#development-dependencies" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Development Dependencies
+        Configuration Behavior
       
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#documentation-dependencies" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#minimal-examples" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Documentation Dependencies
+        Minimal Examples
       
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#jupyter-dependencies" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#related-references" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Jupyter Dependencies
+        Related References
       
     </span>
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#install-all-optional-dependencies" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Install All Optional Dependencies
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -2696,49 +2642,131 @@
   
 
 
-<h1 id="installation-guide-for-cheersafe-package">Installation Guide for cheersafe package<a class="headerlink" href="#installation-guide-for-cheersafe-package" title="Permanent link">#</a></h1>
-<p>This guide will help you install the <code>cheersafe</code> package on your system.</p>
-<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">#</a></h2>
-<p>Ensure that you have Python and pip installed on your system. You can check this by running the following commands in your terminal:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>python<span class="w"> </span>--version
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>pip<span class="w"> </span>--version
+<h1 id="lossestimation">LossEstimation<a class="headerlink" href="#lossestimation" title="Permanent link">#</a></h1>
+<p><code>LossEstimation</code> is the end-to-end orchestrator for loss workflows. Use it
+when you want one object to coordinate damage-probability lookup, wind and
+flood building losses, component losses, regional losses, and loss-ratio
+outputs.</p>
+<h2 id="inputs">Inputs<a class="headerlink" href="#inputs" title="Permanent link">#</a></h2>
+<p>Required constructor inputs:</p>
+<table>
+<thead>
+<tr>
+<th>Input</th>
+<th>Type</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>hurricane_data_path</code></td>
+<td><code>str</code></td>
+<td>Path to hurricane probability, wind, flood, and flood-ratio data.</td>
+</tr>
+<tr>
+<td><code>inventory_path</code></td>
+<td><code>str</code></td>
+<td>Path to <code>X_imc</code> inventory counts.</td>
+</tr>
+</tbody>
+</table>
+<p>Optional inputs:</p>
+<table>
+<thead>
+<tr>
+<th>Input</th>
+<th>Default</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>building_values_path</code></td>
+<td><code>Inputs/Building_imc_Component_ZTRAXPropValueSample.csv</code></td>
+<td>Building-level values and component configuration sample.</td>
+</tr>
+<tr>
+<td><code>prob_ds_file_path</code></td>
+<td><code>None</code></td>
+<td>Passed to <code>DamageProbabilityProvider</code>; default uses <code>Config.OUTPUTS_PATH</code> and <code>Config.NUM_OF_ITERATIONS</code>.</td>
+</tr>
+<tr>
+<td><code>output_dir</code></td>
+<td><code>Outputs</code></td>
+<td>Created during initialization.</td>
+</tr>
+</tbody>
+</table>
+<p>During initialization the class creates one shared <code>DamageProbabilityProvider</code>,
+wind and flood building estimators, wind and flood component estimators, and a
+regional estimator.</p>
+<h2 id="outputs-and-returns">Outputs And Returns<a class="headerlink" href="#outputs-and-returns" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Returns</th>
+<th>Files</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>estimate_building_losses(peril)</code></td>
+<td>Dict with <code>peril</code>, <code>building_losses</code>, and <code>output_path</code>.</td>
+<td><code>Outputs/L_bh_{peril}.json</code>; for direct building estimators, CSV tables are also written.</td>
+</tr>
+<tr>
+<td><code>estimate_component_losses(peril)</code></td>
+<td>Dict with <code>peril</code>, <code>component_losses</code>, and <code>output_path</code>.</td>
+<td><code>Outputs/L_imch_Single_{peril}.json</code>.</td>
+</tr>
+<tr>
+<td><code>estimate_regional_losses(peril)</code></td>
+<td>Dict with <code>peril</code>, <code>regional_losses</code>, and <code>output_path</code>.</td>
+<td><code>Outputs/HurricaneLoss_{peril}.json</code>.</td>
+</tr>
+<tr>
+<td><code>estimate_all_losses()</code></td>
+<td>Dict containing building, component, regional, and loss-ratio results.</td>
+<td>All files above plus loss-ratio JSON files.</td>
+</tr>
+</tbody>
+</table>
+<p><code>peril</code> is one of <code>WIND</code>, <code>FLOOD</code>, or <code>HURR</code>.</p>
+<h2 id="configuration-behavior">Configuration Behavior<a class="headerlink" href="#configuration-behavior" title="Permanent link">#</a></h2>
+<p><code>LossEstimation</code> does not check <code>Config.AUTO_LOAD_DATASETS</code> before creating
+providers and estimators; those nested objects load their data immediately.
+It also does not use <code>Config.AUTO_EXECUTE_METHODS</code>; no losses are estimated
+until an <code>estimate_*</code> method is called.</p>
+<h2 id="minimal-examples">Minimal Examples<a class="headerlink" href="#minimal-examples" title="Permanent link">#</a></h2>
+<p>Automatic orchestration:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">cheersafe.loss_estimation</span><span class="w"> </span><span class="kn">import</span> <span class="n">LossEstimation</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">workflow</span> <span class="o">=</span> <span class="n">LossEstimation</span><span class="p">(</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="n">hurricane_data_path</span><span class="o">=</span><span class="s2">&quot;Inputs/Hurricane_ProbWindFlood.json&quot;</span><span class="p">,</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="n">inventory_path</span><span class="o">=</span><span class="s2">&quot;Inputs/X_imc.json&quot;</span><span class="p">,</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="n">prob_ds_file_path</span><span class="o">=</span><span class="s2">&quot;Outputs/ProbDS_wfd_dictMaxIter50_aggregated.pkl&quot;</span><span class="p">,</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="p">)</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="n">wind</span><span class="p">,</span> <span class="n">flood</span> <span class="o">=</span> <span class="n">workflow</span><span class="o">.</span><span class="n">building_estimator_wind</span><span class="o">.</span><span class="n">get_adjusted_hazard_data</span><span class="p">()</span>
 </span></code></pre></div>
-<p>If you do not have Python or pip installed, please install them first.</p>
-<h2 id="installation-steps">Installation Steps<a class="headerlink" href="#installation-steps" title="Permanent link">#</a></h2>
-<ol>
-<li>Clone the <code>cheersafe</code> repository to your local machine:</li>
-</ol>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/CHEER-Hub/LossModel.git
+<p>Manual-control execution:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">cheersafe.loss_estimation</span><span class="w"> </span><span class="kn">import</span> <span class="n">LossEstimation</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">workflow</span> <span class="o">=</span> <span class="n">LossEstimation</span><span class="p">(</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    <span class="n">hurricane_data_path</span><span class="o">=</span><span class="s2">&quot;Inputs/Hurricane_ProbWindFlood.json&quot;</span><span class="p">,</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    <span class="n">inventory_path</span><span class="o">=</span><span class="s2">&quot;Inputs/X_imc.json&quot;</span><span class="p">,</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    <span class="n">building_values_path</span><span class="o">=</span><span class="s2">&quot;Inputs/Building_imc_Component_ZTRAXPropValueSample.csv&quot;</span><span class="p">,</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>    <span class="n">prob_ds_file_path</span><span class="o">=</span><span class="s2">&quot;Outputs/ProbDS_wfd_dictMaxIter50_aggregated.pkl&quot;</span><span class="p">,</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="p">)</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="c1"># Run only the scale and peril you need.</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="n">building_result</span> <span class="o">=</span> <span class="n">workflow</span><span class="o">.</span><span class="n">estimate_building_losses</span><span class="p">(</span><span class="n">peril</span><span class="o">=</span><span class="s2">&quot;WIND&quot;</span><span class="p">)</span>
 </span></code></pre></div>
-<ol>
-<li>Navigate to the cloned repository:</li>
-</ol>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">cd</span><span class="w"> </span>LossModel
-</span></code></pre></div>
-<ol>
-<li>Install the package using pip:</li>
-</ol>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>pip<span class="w"> </span>install<span class="w"> </span>.
-</span></code></pre></div>
-<h2 id="optional-dependencies">Optional Dependencies<a class="headerlink" href="#optional-dependencies" title="Permanent link">#</a></h2>
-<p>The package comes with optional dependencies for development and documentation:</p>
-<h3 id="development-dependencies">Development Dependencies<a class="headerlink" href="#development-dependencies" title="Permanent link">#</a></h3>
-<p>To install development tools (pytest, pytest-cov, tox):</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>pip<span class="w"> </span>install<span class="w"> </span>.<span class="o">[</span>dev<span class="o">]</span>
-</span></code></pre></div>
-<h3 id="documentation-dependencies">Documentation Dependencies<a class="headerlink" href="#documentation-dependencies" title="Permanent link">#</a></h3>
-<p>To install documentation tools (mkdocs and related packages):</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>pip<span class="w"> </span>install<span class="w"> </span>.<span class="o">[</span>docs<span class="o">]</span>
-</span></code></pre></div>
-<h3 id="jupyter-dependencies">Jupyter Dependencies<a class="headerlink" href="#jupyter-dependencies" title="Permanent link">#</a></h3>
-<p>To install Jupyter kernel support:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>pip<span class="w"> </span>install<span class="w"> </span>.<span class="o">[</span>jupyter<span class="o">]</span>
-</span></code></pre></div>
-<h3 id="install-all-optional-dependencies">Install All Optional Dependencies<a class="headerlink" href="#install-all-optional-dependencies" title="Permanent link">#</a></h3>
-<p>To install all optional dependencies at once:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>pip<span class="w"> </span>install<span class="w"> </span>.<span class="o">[</span>dev,docs,jupyter<span class="o">]</span>
-</span></code></pre></div>
-<p>That's it! You have successfully installed the <code>cheersafe</code> package on your system.</p>
+<h2 id="related-references">Related References<a class="headerlink" href="#related-references" title="Permanent link">#</a></h2>
+<ul>
+<li>API: <a href="../../API/loss_estimation.html">Loss Estimation</a></li>
+<li>Planned notebook: <a href="../../examples/loss_estimation_workflow.html">Loss Estimation Workflow</a></li>
+</ul>
 
 
 
@@ -2761,7 +2789,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="June 24, 2025 22:33:47 UTC">June 24, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 13, 2026 14:29:00 UTC">May 13, 2026</span>
   </span>
 
     
@@ -2771,7 +2799,7 @@
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="April 24, 2024 00:26:33 UTC">April 24, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 13, 2026 14:29:00 UTC">May 13, 2026</span>
   </span>
 
     
@@ -2806,7 +2834,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../cheersafe_flowchart.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: CHEERSafe Flowchart">
+          <a href="regional_loss_estimator.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: RegionalLossEstimator">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2816,20 +2844,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                CHEERSafe Flowchart
+                RegionalLossEstimator
               </div>
             </div>
           </a>
         
         
           
-          <a href="quickstart.html" class="md-footer__link md-footer__link--next" aria-label="Next: Quickstart">
+          <a href="../tools/index.html" class="md-footer__link md-footer__link--next" aria-label="Next: Overview">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Quickstart
+                Overview
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -2866,10 +2894,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["toc.follow", "navigation.top", "navigation.footer", "content.code.annotate", "content.code.copy", "content.code.select", "search.highlight", "search.suggest"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["toc.follow", "navigation.top", "navigation.footer", "content.code.annotate", "content.code.copy", "content.code.select", "search.highlight", "search.suggest"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>
