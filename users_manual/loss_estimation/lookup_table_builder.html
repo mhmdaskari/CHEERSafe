@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://mhmdaskari.github.io/CHEERSafe/users_manual/damage_probability_calculation/damage_probability_calculation.html">
+        <link rel="canonical" href="https://mhmdaskari.github.io/CHEERSafe/users_manual/loss_estimation/lookup_table_builder.html">
       
       
-        <link rel="prev" href="damage_calculator.html">
+        <link rel="prev" href="damage_probability_provider.html">
       
       
-        <link rel="next" href="damage_ratio_exporter.html">
+        <link rel="next" href="building_loss_estimator.html">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>DamageProbabilityCalculation - CHEERSafe: A Python library to assess hurricane damage and loss</title>
+        <title>LookupTableBuilder - CHEERSafe: A Python library to assess hurricane damage and loss</title>
       
     
     
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#damageprobabilitycalculation" class="md-skip">
+        <a href="#lookuptablebuilder" class="md-skip">
           Skip to content
         </a>
       
@@ -118,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              DamageProbabilityCalculation
+              LookupTableBuilder
             
           </span>
         </div>
@@ -1182,20 +1182,18 @@
                 
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_6" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_6" >
         
           
           <label class="md-nav__link" for="__nav_4_6" id="__nav_4_6_label" tabindex="0">
@@ -1216,7 +1214,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_6_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_6">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1234,7 +1232,7 @@
   
   
     <li class="md-nav__item">
-      <a href="index.html" class="md-nav__link">
+      <a href="../damage_probability_calculation/index.html" class="md-nav__link">
         
   
   
@@ -1262,7 +1260,7 @@
   
   
     <li class="md-nav__item">
-      <a href="damage_calculator.html" class="md-nav__link">
+      <a href="../damage_probability_calculation/damage_calculator.html" class="md-nav__link">
         
   
   
@@ -1287,37 +1285,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    DamageProbabilityCalculation
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="damage_probability_calculation.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../damage_probability_calculation/damage_probability_calculation.html" class="md-nav__link">
         
   
   
@@ -1333,81 +1304,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#inputs" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Inputs
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#outputs-and-returns" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Outputs And Returns
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configuration-behavior" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Configuration Behavior
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#minimal-examples" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Minimal Examples
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#related-references" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Related References
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1420,7 +1316,7 @@
   
   
     <li class="md-nav__item">
-      <a href="damage_ratio_exporter.html" class="md-nav__link">
+      <a href="../damage_probability_calculation/damage_ratio_exporter.html" class="md-nav__link">
         
   
   
@@ -1815,18 +1711,20 @@
                 
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_9" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_9" checked>
         
           
           <label class="md-nav__link" for="__nav_4_9" id="__nav_4_9_label" tabindex="0">
@@ -1847,7 +1745,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_9_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_9_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4_9">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1865,7 +1763,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../loss_estimation/index.html" class="md-nav__link">
+      <a href="index.html" class="md-nav__link">
         
   
   
@@ -1893,7 +1791,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../loss_estimation/damage_probability_provider.html" class="md-nav__link">
+      <a href="damage_probability_provider.html" class="md-nav__link">
         
   
   
@@ -1918,10 +1816,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../loss_estimation/lookup_table_builder.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LookupTableBuilder
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="lookup_table_builder.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1937,6 +1862,92 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#inputs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inputs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Definition
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#outputs-and-returns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Outputs And Returns
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration-behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuration Behavior
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#minimal-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Minimal Examples
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related-references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Related References
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1949,7 +1960,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../loss_estimation/building_loss_estimator.html" class="md-nav__link">
+      <a href="building_loss_estimator.html" class="md-nav__link">
         
   
   
@@ -1977,7 +1988,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../loss_estimation/regional_loss_estimator.html" class="md-nav__link">
+      <a href="regional_loss_estimator.html" class="md-nav__link">
         
   
   
@@ -2005,7 +2016,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../loss_estimation/loss_estimation.html" class="md-nav__link">
+      <a href="loss_estimation.html" class="md-nav__link">
         
   
   
@@ -2858,6 +2869,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Definition
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#outputs-and-returns" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2921,193 +2943,125 @@
   
 
 
-<h1 id="damageprobabilitycalculation">DamageProbabilityCalculation<a class="headerlink" href="#damageprobabilitycalculation" title="Permanent link">#</a></h1>
-<p><code>DamageProbabilityCalculation</code> is the full Monte Carlo engine for generating
-damage-state probability arrays by building type and component configuration.
-Use it after inventory, loading, damage-ratio, and resistance inputs are ready.</p>
+<h1 id="lookuptablebuilder">LookupTableBuilder<a class="headerlink" href="#lookuptablebuilder" title="Permanent link">#</a></h1>
+<p><code>LookupTableBuilder</code> turns the damage library into the two expected loss-ratio
+tables that STARR and the building loss estimator use, and optionally into the
+full wind-flood surface. Use it when you need <code>L_mcw_wd</code> / <code>L_mcf_fld</code> as
+files, or when you want to inspect expected loss ratios by archetype and
+configuration.</p>
 <h2 id="inputs">Inputs<a class="headerlink" href="#inputs" title="Permanent link">#</a></h2>
-<p>Constructor inputs:</p>
+<p>Inherited from <code>BaseLossEstimation</code>: the damage library (through the
+provider), <code>DamageState.json</code>, <code>WindSpeed.json</code>, <code>FloodDepth.json</code> and the
+event probabilities.</p>
 <table>
 <thead>
 <tr>
-<th>Input</th>
-<th>Type</th>
+<th>Field</th>
+<th>Default</th>
 <th>Notes</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>BuildingInventory</code></td>
-<td><code>BuildingInventory</code></td>
-<td>Supplies <code>buildings</code>; each building must already have inventory outputs such as panels and connections available.</td>
+<td><code>n_building_types</code></td>
+<td><code>8</code></td>
+<td>Size of the <code>m</code> axis of the tables.</td>
 </tr>
 <tr>
-<td><code>Sampling</code></td>
-<td><code>Sampling</code></td>
-<td>Generates Latin-hypercube resistance samples and derived random seeds.</td>
+<td><code>n_component_configurations</code></td>
+<td><code>192</code></td>
+<td>Size of the <code>c</code> axis.</td>
 </tr>
 <tr>
-<td><code>Covariance</code></td>
-<td><code>Covariance</code></td>
-<td>Builds covariance matrices from component means and CVs.</td>
+<td><code>lookup_dtype</code></td>
+<td><code>float32</code></td>
+<td>Storage dtype; <code>float32</code> matches the frozen source tables.</td>
 </tr>
 <tr>
-<td><code>building_types_to_process</code></td>
-<td><code>list[int]</code> or <code>None</code></td>
-<td>Optional filter. Values are building-type ids such as <code>1</code>.</td>
-</tr>
-<tr>
-<td><code>cindex_to_process</code></td>
-<td><code>list[int]</code> or <code>None</code></td>
-<td>Optional filter. Public <code>cIndex</code> values are 1-based.</td>
+<td><code>normalization_tolerance</code></td>
+<td><code>1e-3</code></td>
+<td>Probability rows farther than this from summing to one are counted and reported once.</td>
 </tr>
 </tbody>
 </table>
-<p>Loaded file inputs are listed in <a href="index.html">the module overview</a>. The workflow
-also creates <code>LoadingAndFailureCheck</code> and <code>DamageRatioCalculation</code> objects for
-each sampled condition, so their required inventory, pressure coefficient,
-replacement ratio, and damage-ratio inputs must be available too.</p>
-<p>Key indexing and shapes:</p>
-<table>
-<thead>
-<tr>
-<th>Value</th>
-<th style="text-align: right;">Shape</th>
-<th>Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>wind grid</td>
-<td style="text-align: right;"><code>len(WindSpeeds)</code></td>
-<td>Bundled input has 25 wind-speed rows.</td>
-</tr>
-<tr>
-<td>flood grid</td>
-<td style="text-align: right;"><code>ProbDS_Flood.shape[2]</code></td>
-<td>Bundled input has 136 flood-depth rows.</td>
-</tr>
-<tr>
-<td>damage states</td>
-<td style="text-align: right;"><code>len(DamageStates)</code></td>
-<td>Bundled input has 50 states.</td>
-</tr>
-<tr>
-<td>per-run output</td>
-<td style="text-align: right;"><code>[wind, flood, damage_state]</code></td>
-<td>Saved for each <code>(building_type, cIndex)</code>.</td>
-</tr>
-<tr>
-<td>aggregate output</td>
-<td style="text-align: right;"><code>dict[(m, c), array]</code></td>
-<td>Keys are integer building type and 1-based <code>cIndex</code>.</td>
-</tr>
-</tbody>
-</table>
+<h2 id="definition">Definition<a class="headerlink" href="#definition" title="Permanent link">#</a></h2>
+<p>With <code>P[m, c]</code> the <code>(n_wind, n_flood, n_states)</code> tensor of the library and
+<code>DR</code> the damage-state ratios,</p>
+<ul>
+<li><code>L_w[m-1, c-1, w] = sum_d P[m, c][w, 0, d] DR_d</code> (wind only; flood held at
+  ID 1, the zero-hazard bin),</li>
+<li><code>L_f[m-1, c-1, f] = sum_d P[m, c][0, f, d] DR_d</code> (flood only; wind held at
+  ID 1),</li>
+<li><code>E[m-1, c-1, w, f] = sum_d P[m, c][w, f, d] DR_d</code> (the joint surface).</li>
+</ul>
+<p>The tables have shapes <code>(8, 192, 25)</code> and <code>(8, 192, 136)</code>; the surface has
+shape <code>(8, 192, 25, 136)</code> (about 21 MB for the full library). Index meaning:
+<code>L_mcw_wd[m-1, c-1, w-1]</code> is the wind-only expected loss ratio for archetype
+<code>m</code>, configuration <code>c</code> and wind ID <code>w</code>. Pairs <code>(m, c)</code> absent from the library
+are <code>NaN</code>, not zero, so a partial library surfaces in the results instead of
+silently producing zero loss. Rows are summed on a contiguous float64 copy in
+the order of the verified scripts, and the resulting tables are byte-identical
+to the frozen Eastern North Carolina export.</p>
 <h2 id="outputs-and-returns">Outputs And Returns<a class="headerlink" href="#outputs-and-returns" title="Permanent link">#</a></h2>
 <table>
 <thead>
 <tr>
 <th>Method</th>
 <th>Returns</th>
-<th>Files or state</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>set_building_types_to_process(building_types)</code></td>
-<td><code>None</code></td>
-<td>Stores the building-type filter.</td>
+<td><code>calculate_marginal_lookups(prob_damage_states, damage_ratios, n_building_types, n_component_configurations)</code></td>
+<td><code>(wind_lookup, flood_lookup)</code>; one warning reports missing pairs and one reports unnormalized rows.</td>
 </tr>
 <tr>
-<td><code>set_cindex_to_process(cindices)</code></td>
-<td><code>None</code></td>
-<td>Stores the 1-based component-index filter. Rejects values below 1.</td>
+<td><code>calculate_expected_ratio_surface(prob_damage_states, damage_ratios, n_building_types, n_component_configurations)</code></td>
+<td>The joint surface.</td>
 </tr>
 <tr>
-<td><code>process_single_iteration(...)</code></td>
-<td><code>(iter_results, detailed_results)</code></td>
-<td>No persistent state.</td>
+<td><code>save_lookup_tables(output_dir=None)</code></td>
+<td>Writes <code>L_mcw_wd.npy</code>, <code>L_mcf_fld.npy</code> and <code>STARR_lookup_metadata.txt</code>; returns their paths.</td>
 </tr>
 <tr>
-<td><code>process_component_combination(building, ComponentCombination, cIndex)</code></td>
-<td><code>(m, cIndex, ProbDS_wfd)</code> or <code>None</code></td>
-<td>Writes <code>ProbDS_wfd_m{m}_c{cIndex}_iter{NUM_OF_ITERATIONS}.pkl</code>; may write detailed CSV.</td>
-</tr>
-<tr>
-<td><code>get_available_building_types()</code></td>
-<td><code>list[int]</code></td>
-<td>None.</td>
-</tr>
-<tr>
-<td><code>get_available_cindices()</code></td>
-<td><code>list[int]</code></td>
-<td>None.</td>
-</tr>
-<tr>
-<td><code>get_average_damage_probability()</code></td>
-<td><code>True</code></td>
-<td>Writes one pickle per processed <code>(m, cIndex)</code>.</td>
-</tr>
-<tr>
-<td><code>aggregate_results(output_dir=None)</code></td>
-<td><code>dict[(int, int), np.ndarray]</code></td>
-<td>Sets <code>ProbDS_wfd_dict</code> and writes <code>ProbDS_wfd_dictMaxIter{NUM_OF_ITERATIONS}_aggregated.pkl</code>.</td>
+<td><code>load_lookup_tables(wind_path, flood_path)</code></td>
+<td>Sets <code>wind_lookup</code> and <code>flood_lookup</code> from saved files, for users with frozen tables and no library.</td>
 </tr>
 </tbody>
 </table>
-<p>Detailed CSV export is controlled by <code>Config.EXPORT_DETAILED_DAMAGE_RATIOS</code>.
-When enabled, files are named
-<code>DetailedDR_m{m}_c{cIndex}_iter{NUM_OF_ITERATIONS}.csv</code>.</p>
 <h2 id="configuration-behavior">Configuration Behavior<a class="headerlink" href="#configuration-behavior" title="Permanent link">#</a></h2>
-<p><code>Config.AUTO_LOAD_DATASETS=True</code> loads shared probability-calculation datasets
-during initialization. With <code>False</code>, call all required <code>load_*</code> methods before
-running workflow methods. Current limitation: this class also creates
-<code>IterationResult</code> in <code>__post_init__</code> from <code>WindSpeeds</code> and <code>ProbDS_Flood</code>, so a
-plain construction with <code>AUTO_LOAD_DATASETS=False</code> raises before manual
-loaders can be called. Keep auto-loading enabled for this class unless you are
-subclassing or otherwise pre-populating those attributes before <code>__post_init__</code>.</p>
-<p><code>DamageProbabilityCalculation.__post_init__</code> initializes compatibility storage
-but does not call <code>get_average_damage_probability()</code>. <code>Config.AUTO_EXECUTE_METHODS</code>
-affects downstream CHEERSafe objects constructed during the run.</p>
+<p>Loading follows <code>Config.AUTO_LOAD_DATASETS</code>. With
+<code>Config.AUTO_EXECUTE_METHODS=True</code>, <code>__post_init__</code> assigns <code>wind_lookup</code> and
+<code>flood_lookup</code> when the library is non-empty; an empty library logs a warning
+and leaves the tables unset so <code>load_lookup_tables</code> can supply them.</p>
 <h2 id="minimal-examples">Minimal Examples<a class="headerlink" href="#minimal-examples" title="Permanent link">#</a></h2>
-<p>Automatic workflow for a small filtered run:</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">cheersafe.config</span><span class="w"> </span><span class="kn">import</span> <span class="n">Config</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">cheersafe.inventory</span><span class="w"> </span><span class="kn">import</span> <span class="n">BuildingInventory</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">cheersafe.tools</span><span class="w"> </span><span class="kn">import</span> <span class="n">Sampling</span><span class="p">,</span> <span class="n">Covariance</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="kn">from</span><span class="w"> </span><span class="nn">cheersafe.damage_probability_calculation</span><span class="w"> </span><span class="kn">import</span> <span class="n">DamageProbabilityCalculation</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="n">Config</span><span class="o">.</span><span class="n">AUTO_LOAD_DATASETS</span> <span class="o">=</span> <span class="kc">True</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="n">Config</span><span class="o">.</span><span class="n">NUM_OF_ITERATIONS</span> <span class="o">=</span> <span class="mi">50</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="n">Config</span><span class="o">.</span><span class="n">NUM_OF_WORKERS</span> <span class="o">=</span> <span class="mi">1</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="n">calc</span> <span class="o">=</span> <span class="n">DamageProbabilityCalculation</span><span class="p">(</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    <span class="n">BuildingInventory</span><span class="o">=</span><span class="n">BuildingInventory</span><span class="p">(),</span>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    <span class="n">Sampling</span><span class="o">=</span><span class="n">Sampling</span><span class="p">(),</span>
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>    <span class="n">Covariance</span><span class="o">=</span><span class="n">Covariance</span><span class="p">(),</span>
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="p">)</span>
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="n">calc</span><span class="o">.</span><span class="n">set_building_types_to_process</span><span class="p">([</span><span class="mi">1</span><span class="p">])</span>
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="n">calc</span><span class="o">.</span><span class="n">set_cindex_to_process</span><span class="p">([</span><span class="mi">1</span><span class="p">])</span>
-</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="n">calc</span><span class="o">.</span><span class="n">get_average_damage_probability</span><span class="p">()</span>
-</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="n">prob_by_key</span> <span class="o">=</span> <span class="n">calc</span><span class="o">.</span><span class="n">aggregate_results</span><span class="p">()</span>
+<p>Automatic build and export:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">cheersafe.loss_estimation</span><span class="w"> </span><span class="kn">import</span> <span class="n">LookupTableBuilder</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">builder</span> <span class="o">=</span> <span class="n">LookupTableBuilder</span><span class="p">(</span><span class="n">prob_ds_file_path</span><span class="o">=</span><span class="s2">"Outputs/ProbDS_wfd_dictMaxIter3000_aggregated.pkl"</span><span class="p">)</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">paths</span> <span class="o">=</span> <span class="n">builder</span><span class="o">.</span><span class="n">save_lookup_tables</span><span class="p">(</span><span class="s2">"Outputs/loss_estimation"</span><span class="p">)</span>
 </span></code></pre></div>
-<p>Manual-control setup without running the Monte Carlo loop:</p>
+<p>Manual build and joint surface:</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">cheersafe.config</span><span class="w"> </span><span class="kn">import</span> <span class="n">Config</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">cheersafe.inventory</span><span class="w"> </span><span class="kn">import</span> <span class="n">BuildingInventory</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">cheersafe.tools</span><span class="w"> </span><span class="kn">import</span> <span class="n">Sampling</span><span class="p">,</span> <span class="n">Covariance</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="kn">from</span><span class="w"> </span><span class="nn">cheersafe.damage_probability_calculation</span><span class="w"> </span><span class="kn">import</span> <span class="n">DamageProbabilityCalculation</span>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="n">Config</span><span class="o">.</span><span class="n">AUTO_LOAD_DATASETS</span> <span class="o">=</span> <span class="kc">True</span>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="n">Config</span><span class="o">.</span><span class="n">AUTO_EXECUTE_METHODS</span> <span class="o">=</span> <span class="kc">False</span>
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="n">calc</span> <span class="o">=</span> <span class="n">DamageProbabilityCalculation</span><span class="p">(</span><span class="n">BuildingInventory</span><span class="p">(),</span> <span class="n">Sampling</span><span class="p">(),</span> <span class="n">Covariance</span><span class="p">())</span>
-</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="n">building_types</span> <span class="o">=</span> <span class="n">calc</span><span class="o">.</span><span class="n">get_available_building_types</span><span class="p">()</span>
-</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="n">cindices</span> <span class="o">=</span> <span class="n">calc</span><span class="o">.</span><span class="n">get_available_cindices</span><span class="p">()</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">cheersafe.loss_estimation</span><span class="w"> </span><span class="kn">import</span> <span class="n">LookupTableBuilder</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="n">Config</span><span class="o">.</span><span class="n">AUTO_LOAD_DATASETS</span> <span class="o">=</span> <span class="kc">False</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="n">Config</span><span class="o">.</span><span class="n">AUTO_EXECUTE_METHODS</span> <span class="o">=</span> <span class="kc">False</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="n">builder</span> <span class="o">=</span> <span class="n">LookupTableBuilder</span><span class="p">(</span><span class="n">prob_ds_file_path</span><span class="o">=</span><span class="s2">"Outputs/ProbDS_wfd_dictMaxIter3000_aggregated.pkl"</span><span class="p">)</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="n">builder</span><span class="o">.</span><span class="n">load_damage_library</span><span class="p">()</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="n">builder</span><span class="o">.</span><span class="n">load_hurricane_probabilities</span><span class="p">()</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="n">ratios</span> <span class="o">=</span> <span class="n">builder</span><span class="o">.</span><span class="n">damage_states</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">]</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="n">builder</span><span class="o">.</span><span class="n">wind_lookup</span><span class="p">,</span> <span class="n">builder</span><span class="o">.</span><span class="n">flood_lookup</span> <span class="o">=</span> <span class="n">builder</span><span class="o">.</span><span class="n">calculate_marginal_lookups</span><span class="p">(</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>    <span class="n">builder</span><span class="o">.</span><span class="n">prob_damage_states</span><span class="p">,</span> <span class="n">ratios</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">192</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="p">)</span>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="n">surface</span> <span class="o">=</span> <span class="n">builder</span><span class="o">.</span><span class="n">calculate_expected_ratio_surface</span><span class="p">(</span><span class="n">builder</span><span class="o">.</span><span class="n">prob_damage_states</span><span class="p">,</span> <span class="n">ratios</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">192</span><span class="p">)</span>
 </span></code></pre></div>
 <h2 id="related-references">Related References<a class="headerlink" href="#related-references" title="Permanent link">#</a></h2>
 <ul>
-<li>API: <a href="../../API/damage_probability_calculation.html">Damage Probability Calculation</a></li>
-<li>Planned notebook: <a href="../../examples/fragility_curve_calculation.html">Fragility Curve Calculation</a></li>
+<li>API: <a href="../../API/loss_estimation.html">Loss Estimation</a></li>
+<li>Next step: <a href="building_loss_estimator.html">BuildingLossEstimator</a></li>
+<li>Related notebook: <a href="../../examples/loss_estimation_workflow.html">Loss Estimation Workflow</a></li>
 </ul>
 
 
@@ -3131,7 +3085,7 @@ affects downstream CHEERSafe objects constructed during the run.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 13, 2026 14:29:00 UTC">May 13, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="September 20, 2026 17:48:30 UTC">September 20, 2026</span>
   </span>
 
     
@@ -3141,7 +3095,7 @@ affects downstream CHEERSafe objects constructed during the run.</p>
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 13, 2026 14:29:00 UTC">May 13, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="September 20, 2026 17:48:30 UTC">September 20, 2026</span>
   </span>
 
     
@@ -3199,7 +3153,7 @@ affects downstream CHEERSafe objects constructed during the run.</p>
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="damage_calculator.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: DamageCalculator">
+          <a href="damage_probability_provider.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: DamageProbabilityProvider">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -3209,20 +3163,20 @@ affects downstream CHEERSafe objects constructed during the run.</p>
                 Previous
               </span>
               <div class="md-ellipsis">
-                DamageCalculator
+                DamageProbabilityProvider
               </div>
             </div>
           </a>
         
         
           
-          <a href="damage_ratio_exporter.html" class="md-footer__link md-footer__link--next" aria-label="Next: DamageRatioExporter">
+          <a href="building_loss_estimator.html" class="md-footer__link md-footer__link--next" aria-label="Next: BuildingLossEstimator">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                DamageRatioExporter
+                BuildingLossEstimator
               </div>
             </div>
             <div class="md-footer__button md-icon">

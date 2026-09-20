@@ -8,28 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://mhmdaskari.github.io/CHEERSafe/users_manual/loss_estimation/component_loss_estimator.html">
+        <link rel="canonical" href="https://mhmdaskari.github.io/CHEERSafe/users_manual/exposure/hazard_mapper.html">
       
       
-        <link rel="prev" href="building_loss_estimator.html">
+        <link rel="prev" href="archetype_assigner.html">
       
       
-        <link rel="next" href="regional_loss_estimator.html">
+        <link rel="next" href="exposure.html">
       
       
         
       
       
       <link rel="icon" href="../../cheersafe_favicon.svg">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
-        <title>ComponentLossEstimator - CHEERSafe: A Python library to assess hurricane damage and loss</title>
+        <title>HazardMapper - CHEERSafe: A Python library to assess hurricane damage and loss</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#componentlossestimator" class="md-skip">
+        <a href="#hazardmapper" class="md-skip">
           Skip to content
         </a>
       
@@ -118,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              ComponentLossEstimator
+              HazardMapper
             
           </span>
         </div>
@@ -1539,7 +1539,7 @@
   <span class="md-ellipsis">
     
   
-    Loss Estimation
+    Exposure
   
 
     
@@ -1555,7 +1555,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Loss Estimation
+    Exposure
   
 
           </label>
@@ -1596,14 +1596,14 @@
   
   
     <li class="md-nav__item">
-      <a href="damage_probability_provider.html" class="md-nav__link">
+      <a href="base_exposure.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    DamageProbabilityProvider
+    BaseExposure
   
 
     
@@ -1624,14 +1624,14 @@
   
   
     <li class="md-nav__item">
-      <a href="building_loss_estimator.html" class="md-nav__link">
+      <a href="archetype_assigner.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    BuildingLossEstimator
+    ArchetypeAssigner
   
 
     
@@ -1668,7 +1668,7 @@
   <span class="md-ellipsis">
     
   
-    ComponentLossEstimator
+    HazardMapper
   
 
     
@@ -1679,14 +1679,14 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="component_loss_estimator.html" class="md-nav__link md-nav__link--active">
+      <a href="hazard_mapper.html" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
     
   
-    ComponentLossEstimator
+    HazardMapper
   
 
     
@@ -1720,6 +1720,45 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Inputs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#control-point-layers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Control-point layers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mapping-modes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mapping modes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unit-conversion-and-hazard-ids" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Unit conversion and hazard IDs
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1730,6 +1769,23 @@
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Outputs And Returns">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#grid-helpers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Grid helpers
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1782,42 +1838,14 @@
   
   
     <li class="md-nav__item">
-      <a href="regional_loss_estimator.html" class="md-nav__link">
+      <a href="exposure.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    RegionalLossEstimator
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="loss_estimation.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    LossEstimation
+    Exposure
   
 
     
@@ -1864,7 +1892,7 @@
   <span class="md-ellipsis">
     
   
-    Tools
+    Loss Estimation
   
 
     
@@ -1877,6 +1905,229 @@
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_9_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Loss Estimation
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../loss_estimation/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../loss_estimation/damage_probability_provider.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DamageProbabilityProvider
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../loss_estimation/lookup_table_builder.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LookupTableBuilder
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../loss_estimation/building_loss_estimator.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BuildingLossEstimator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../loss_estimation/regional_loss_estimator.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RegionalLossEstimator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../loss_estimation/loss_estimation.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LossEstimation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_10" id="__nav_4_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tools
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_10">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2207,6 +2458,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../../examples/exposure_workflow.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CHEERSafe Exposure Workflow
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../examples/loss_estimation_workflow.html" class="md-nav__link">
         
   
@@ -2215,6 +2494,34 @@
     
   
     CHEERSafe Loss Estimation Workflow
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../examples/eastern_nc_loss_figures.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Eastern North Carolina Loss Figures
   
 
     
@@ -2485,6 +2792,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../../API/exposure.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exposure
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../API/loss_estimation.html" class="md-nav__link">
         
   
@@ -2576,6 +2911,45 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Inputs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#control-point-layers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Control-point layers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mapping-modes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mapping modes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unit-conversion-and-hazard-ids" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Unit conversion and hazard IDs
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2586,6 +2960,23 @@
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Outputs And Returns">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#grid-helpers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Grid helpers
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2642,115 +3033,212 @@
   
 
 
-<h1 id="componentlossestimator">ComponentLossEstimator<a class="headerlink" href="#componentlossestimator" title="Permanent link">#</a></h1>
-<p><code>ComponentLossEstimator</code> aggregates building losses into the regional
-<code>i x m x c x h</code> component-loss cube. Use it when downstream regional or
-portfolio calculations need losses by zone, building type, component
-configuration, and hurricane.</p>
+<h1 id="hazardmapper">HazardMapper<a class="headerlink" href="#hazardmapper" title="Permanent link">#</a></h1>
+<p><code>HazardMapper</code> assigns each event's wind speed and flood depth from the hazard
+control points to the buildings, converts them to mph and inches and
+interpolates them onto the package's discrete hazard IDs. The result is one
+continuous, 1-based wind ID and flood ID per building and event (<code>Wind_Tr</code>,
+<code>Flood_Tr</code>), which the loss module later rounds onto lookup-table bins.</p>
 <h2 id="inputs">Inputs<a class="headerlink" href="#inputs" title="Permanent link">#</a></h2>
-<p>Inherited base inputs are the hurricane, damage-state, wind-speed, and
-flood-depth files described in <a href="index.html">the module overview</a>.</p>
-<p>Class-specific input:</p>
+<p>Inherited from <a href="archetype_assigner.html">ArchetypeAssigner</a>: the archetype
+inventory, the hazard arrays and the wind and flood tables.</p>
 <table>
 <thead>
 <tr>
-<th>Input</th>
-<th>Type</th>
+<th>Field</th>
+<th>Default</th>
 <th>Notes</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>building_loss_estimator</code></td>
-<td><code>BuildingLossEstimator</code> or <code>None</code></td>
-<td>When <code>None</code>, a new building estimator is created with matching base paths and <code>peril</code>.</td>
+<td><code>average_mode</code></td>
+<td><code>Nearest</code></td>
+<td><code>Nearest</code> takes the closest control point (the verified run). <code>Inverse_d4</code> averages the <code>idw_neighbors</code> closest points with weights <code>distance ** -idw_power</code>.</td>
+</tr>
+<tr>
+<td><code>idw_neighbors</code></td>
+<td><code>4</code></td>
+<td>Neighbours used by <code>Inverse_d4</code>.</td>
+</tr>
+<tr>
+<td><code>idw_power</code></td>
+<td><code>4.0</code></td>
+<td>Exponent of the inverse-distance weights.</td>
+</tr>
+<tr>
+<td><code>wind_to_mph</code></td>
+<td><code>2.23694</code></td>
+<td>Factor from the hazard wind unit (m/s) to mph.</td>
+</tr>
+<tr>
+<td><code>flood_to_inches</code></td>
+<td><code>39.3701</code></td>
+<td>Factor from the hazard flood unit (m) to inches.</td>
+</tr>
+<tr>
+<td><code>clip_to_hazard_bounds</code></td>
+<td><code>True</code></td>
+<td>Drop buildings whose centroid lies outside the control-point bounding box.</td>
+</tr>
+<tr>
+<td><code>hazard_id_dtype</code></td>
+<td><code>float32</code></td>
+<td>Storage dtype of the hazard-ID arrays.</td>
 </tr>
 </tbody>
 </table>
-<p>Fixed runtime dimensions in the current implementation:</p>
+<h3 id="control-point-layers">Control-point layers<a class="headerlink" href="#control-point-layers" title="Permanent link">#</a></h3>
+<p>Each event layer is a point layer with columns such as
+<code>cell_ID, x, y, Wind, Flood, geometry</code>; <code>Wind</code> is in m/s and <code>Flood</code> in metres.
+Missing values and the <code>nodata_value</code> (<code>-9999</code>) are set to zero before
+averaging, as in the verified scripts. The neighbour match is built once from
+the control-point coordinates and reused for every event, which is why
+<code>BaseExposure.load_hazard_events</code> requires identical geometry across files.</p>
+<h3 id="mapping-modes">Mapping modes<a class="headerlink" href="#mapping-modes" title="Permanent link">#</a></h3>
+<p>For building <code>j</code> with the four nearest control points at distances <code>d_i</code> and
+intensities <code>F_i</code>, <code>Inverse_d4</code> computes</p>
+<p><code>F_j = sum_i F_i d_i^-4 / sum_i d_i^-4</code>,</p>
+<p>with zero distances clamped to a nanometre. <code>Nearest</code> takes <code>F_j</code> of the
+closest point. The inverse-distance mode replicates the scripts but was not
+used for the published figures.</p>
+<h3 id="unit-conversion-and-hazard-ids">Unit conversion and hazard IDs<a class="headerlink" href="#unit-conversion-and-hazard-ids" title="Permanent link">#</a></h3>
+<p>The intensity is multiplied by <code>wind_to_mph</code> or <code>flood_to_inches</code> and
+interpolated linearly onto the ID column of <code>WindSpeed.json</code> or
+<code>FloodDepth.json</code> using its physical-unit column as knots (<code>np.interp</code>).
+Values beyond the knots clamp to the first or last ID; missing values become
+ID 1.</p>
 <table>
 <thead>
 <tr>
-<th>Axis</th>
-<th style="text-align: right;">Size</th>
-<th>Meaning</th>
+<th style="text-align: right;">Wind speed (mph)</th>
+<th style="text-align: right;">Wind ID</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>i</code></td>
-<td style="text-align: right;">from hurricane wind-speed rows</td>
-<td>Spatial zone. Bundled data uses 1509.</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
 </tr>
 <tr>
-<td><code>m</code></td>
-<td style="text-align: right;"><code>8</code></td>
-<td>Building type.</td>
+<td style="text-align: right;">50, 55, ..., 140</td>
+<td style="text-align: right;">2, 3, ..., 20</td>
 </tr>
 <tr>
-<td><code>c</code></td>
-<td style="text-align: right;"><code>192</code></td>
-<td>Component configuration, stored internally as zero-based axis positions for 1-based ids.</td>
-</tr>
-<tr>
-<td><code>h</code></td>
-<td style="text-align: right;">from hurricane probability rows</td>
-<td>Hurricane event.</td>
+<td style="text-align: right;">155, 170, 185, 200, 215</td>
+<td style="text-align: right;">21, 22, 23, 24, 25</td>
 </tr>
 </tbody>
 </table>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Flood depth (inches)</th>
+<th style="text-align: right;">Flood ID</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0, 1, ..., 120</td>
+<td style="text-align: right;">1, 2, ..., 121</td>
+</tr>
+<tr>
+<td style="text-align: right;">130, 140, ..., 270</td>
+<td style="text-align: right;">122, 123, ..., 136</td>
+</tr>
+</tbody>
+</table>
+<p>For example 52.5 mph maps to ID 2.5 and 121 inches to ID 121.1.</p>
 <h2 id="outputs-and-returns">Outputs And Returns<a class="headerlink" href="#outputs-and-returns" title="Permanent link">#</a></h2>
 <table>
 <thead>
 <tr>
 <th>Method</th>
 <th>Returns</th>
-<th>Files</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>calculate_component_losses()</code></td>
-<td><code>component_losses</code> shaped <code>[i, m, c, h]</code>.</td>
-<td><code>Outputs/L_imch_Single_{peril}.json</code>.</td>
+<td><code>calculate_clipped_inventory(inventory)</code></td>
+<td>Inventory reprojected to the hazard CRS, clipped to the control-point bounds, re-indexed from zero, with a 1-based <code>building_ID</code> column.</td>
 </tr>
 <tr>
-<td><code>calculate_loss_ratios()</code></td>
-<td><code>(loss_ratio_wind, loss_ratio_flood)</code> shaped <code>[i, m, c, h]</code>.</td>
-<td><code>Outputs/LossRatio_imch_WIND.json</code> and <code>Outputs/LossRatio_imch_FLOOD.json</code>.</td>
+<td><code>calculate_neighbor_match(building_xy, hazard_xy, k)</code></td>
+<td>Neighbour indices and distances, each <code>(n_buildings, k)</code>.</td>
+</tr>
+<tr>
+<td><code>calculate_event_intensity(values, neighbor_index, neighbor_distance, mode=None, power=None)</code></td>
+<td>One intensity per building for one event.</td>
+</tr>
+<tr>
+<td><code>calculate_hazard_id(values, table, unit_factor)</code></td>
+<td>Continuous 1-based IDs in <code>hazard_id_dtype</code>.</td>
+</tr>
+<tr>
+<td><code>calculate_hazard_ids(neighbor_index, neighbor_distance, hazard_wind, hazard_flood)</code></td>
+<td><code>wind_ids</code> and <code>flood_ids</code>, each <code>(n_buildings, n_events)</code>; column <code>j</code> is event <code>j</code> of <code>event_names</code>.</td>
+</tr>
+<tr>
+<td><code>save_hazard_ids(output_dir=None)</code></td>
+<td>Writes <code>Wind_Tr.npy</code>, <code>Flood_Tr.npy</code> and <code>Hurricane_name.npy</code> (unicode, loadable without <code>allow_pickle</code>) and returns their paths.</td>
 </tr>
 </tbody>
 </table>
-<p>Both methods return arrays. They do not assign returned arrays to
-<code>self.component_losses</code>, <code>self.loss_ratio_wind</code>, or <code>self.loss_ratio_flood</code>
-unless a caller does that assignment.</p>
+<h3 id="grid-helpers">Grid helpers<a class="headerlink" href="#grid-helpers" title="Permanent link">#</a></h3>
+<p>Three module-level functions in <code>cheersafe.exposure.hazard_mapping</code> support
+the Eastern North Carolina figure notebook:</p>
+<ul>
+<li><code>calculate_cell_index(x, y, origin_x, origin_y, cell_size, method)</code> bins
+  coordinates onto the 1 km control-point grid (<code>nearest</code> mirrors
+  nearest-neighbour mapping; <code>corner</code> floors).</li>
+<li><code>calculate_grid_mask(x, y, ...)</code> returns the occupancy mask of the control
+  points and the raster extent for <code>imshow</code>, raising if a point is off the grid.</li>
+<li><code>calculate_probability_weighted_intensity(values, probabilities,
+  conditional_on_positive=False)</code> computes <code>sum_h p_h V_h / sum_h p_h</code> per
+  point, or, conditional on inundation, <code>sum over events with V_h &gt; 0</code> in both
+  numerator and denominator with <code>NaN</code> where a point is never affected.</li>
+</ul>
 <h2 id="configuration-behavior">Configuration Behavior<a class="headerlink" href="#configuration-behavior" title="Permanent link">#</a></h2>
-<p>Construction loads base datasets regardless of <code>Config.AUTO_LOAD_DATASETS</code>.
-<code>Config.AUTO_EXECUTE_METHODS</code> does not run component-loss calculations.</p>
+<p>Loading follows <code>Config.AUTO_LOAD_DATASETS</code>. With
+<code>Config.AUTO_EXECUTE_METHODS=True</code>, <code>__post_init__</code> assigns
+<code>clipped_inventory</code>, <code>neighbor_index</code>, <code>neighbor_distance</code>, <code>wind_ids</code> and
+<code>flood_ids</code> after the archetype step.</p>
 <h2 id="minimal-examples">Minimal Examples<a class="headerlink" href="#minimal-examples" title="Permanent link">#</a></h2>
-<p>Automatic initialization:</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">cheersafe.loss_estimation</span><span class="w"> </span><span class="kn">import</span> <span class="n">ComponentLossEstimator</span>
+<p>Automatic execution:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">cheersafe.exposure</span><span class="w"> </span><span class="kn">import</span> <span class="n">HazardMapper</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">estimator</span> <span class="o">=</span> <span class="n">ComponentLossEstimator</span><span class="p">(</span><span class="n">peril</span><span class="o">=</span><span class="s2">&quot;WIND&quot;</span><span class="p">)</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">wind</span><span class="p">,</span> <span class="n">flood</span> <span class="o">=</span> <span class="n">estimator</span><span class="o">.</span><span class="n">get_adjusted_hazard_data</span><span class="p">()</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">mapper</span> <span class="o">=</span> <span class="n">HazardMapper</span><span class="p">(</span><span class="n">average_mode</span><span class="o">=</span><span class="s2">"Nearest"</span><span class="p">,</span> <span class="n">seed</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">mapper</span><span class="o">.</span><span class="n">wind_ids</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">mapper</span><span class="o">.</span><span class="n">wind_ids</span><span class="o">.</span><span class="n">min</span><span class="p">(),</span> <span class="n">mapper</span><span class="o">.</span><span class="n">wind_ids</span><span class="o">.</span><span class="n">max</span><span class="p">())</span>
 </span></code></pre></div>
-<p>Manual dependency control:</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">cheersafe.loss_estimation</span><span class="w"> </span><span class="kn">import</span> <span class="n">BuildingLossEstimator</span><span class="p">,</span> <span class="n">ComponentLossEstimator</span>
+<p>Manual control comparing the two modes on one event:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">building_estimator</span> <span class="o">=</span> <span class="n">BuildingLossEstimator</span><span class="p">(</span><span class="n">peril</span><span class="o">=</span><span class="s2">&quot;WIND&quot;</span><span class="p">)</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="n">component_estimator</span> <span class="o">=</span> <span class="n">ComponentLossEstimator</span><span class="p">(</span>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    <span class="n">building_loss_estimator</span><span class="o">=</span><span class="n">building_estimator</span><span class="p">,</span>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    <span class="n">peril</span><span class="o">=</span><span class="s2">&quot;WIND&quot;</span><span class="p">,</span>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="p">)</span>
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="c1"># For a full run:</span>
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="c1"># component_estimator.component_losses = (</span>
-</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="c1">#     component_estimator.calculate_component_losses()</span>
-</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="c1"># )</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">cheersafe.config</span><span class="w"> </span><span class="kn">import</span> <span class="n">Config</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="kn">from</span><span class="w"> </span><span class="nn">cheersafe.exposure</span><span class="w"> </span><span class="kn">import</span> <span class="n">HazardMapper</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="n">Config</span><span class="o">.</span><span class="n">AUTO_LOAD_DATASETS</span> <span class="o">=</span> <span class="kc">False</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="n">Config</span><span class="o">.</span><span class="n">AUTO_EXECUTE_METHODS</span> <span class="o">=</span> <span class="kc">False</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="n">mapper</span> <span class="o">=</span> <span class="n">HazardMapper</span><span class="p">(</span><span class="n">seed</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="n">mapper</span><span class="o">.</span><span class="n">load_hazard_tables</span><span class="p">()</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="n">mapper</span><span class="o">.</span><span class="n">load_component_combinations</span><span class="p">()</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="n">mapper</span><span class="o">.</span><span class="n">load_inventory</span><span class="p">()</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="n">mapper</span><span class="o">.</span><span class="n">load_hazard_events</span><span class="p">()</span>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="n">mapper</span><span class="o">.</span><span class="n">archetype_inventory</span> <span class="o">=</span> <span class="n">mapper</span><span class="o">.</span><span class="n">calculate_archetypes</span><span class="p">(</span><span class="n">mapper</span><span class="o">.</span><span class="n">inventory</span><span class="p">)</span>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="n">mapper</span><span class="o">.</span><span class="n">clipped_inventory</span> <span class="o">=</span> <span class="n">mapper</span><span class="o">.</span><span class="n">calculate_clipped_inventory</span><span class="p">(</span><span class="n">mapper</span><span class="o">.</span><span class="n">archetype_inventory</span><span class="p">)</span>
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="n">centroids</span> <span class="o">=</span> <span class="n">mapper</span><span class="o">.</span><span class="n">clipped_inventory</span><span class="o">.</span><span class="n">geometry</span><span class="o">.</span><span class="n">centroid</span>
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="n">building_xy</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">column_stack</span><span class="p">([</span><span class="n">centroids</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="n">centroids</span><span class="o">.</span><span class="n">y</span><span class="p">])</span>
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="n">index</span><span class="p">,</span> <span class="n">distance</span> <span class="o">=</span> <span class="n">mapper</span><span class="o">.</span><span class="n">calculate_neighbor_match</span><span class="p">(</span><span class="n">building_xy</span><span class="p">,</span> <span class="n">mapper</span><span class="o">.</span><span class="n">hazard_points_xy</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="n">nearest</span> <span class="o">=</span> <span class="n">mapper</span><span class="o">.</span><span class="n">calculate_event_intensity</span><span class="p">(</span><span class="n">mapper</span><span class="o">.</span><span class="n">hazard_wind</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">index</span><span class="p">,</span> <span class="n">distance</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s2">"Nearest"</span><span class="p">)</span>
+</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="n">weighted</span> <span class="o">=</span> <span class="n">mapper</span><span class="o">.</span><span class="n">calculate_event_intensity</span><span class="p">(</span><span class="n">mapper</span><span class="o">.</span><span class="n">hazard_wind</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">index</span><span class="p">,</span> <span class="n">distance</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s2">"Inverse_d4"</span><span class="p">)</span>
+</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="n">wind_ids</span> <span class="o">=</span> <span class="n">mapper</span><span class="o">.</span><span class="n">calculate_hazard_id</span><span class="p">(</span><span class="n">nearest</span><span class="p">,</span> <span class="n">mapper</span><span class="o">.</span><span class="n">wind_speeds</span><span class="p">,</span> <span class="n">mapper</span><span class="o">.</span><span class="n">wind_to_mph</span><span class="p">)</span>
 </span></code></pre></div>
 <h2 id="related-references">Related References<a class="headerlink" href="#related-references" title="Permanent link">#</a></h2>
 <ul>
-<li>API: <a href="../../API/loss_estimation.html">Loss Estimation</a></li>
-<li>Planned notebook: <a href="../../examples/loss_estimation_workflow.html">Loss Estimation Workflow</a></li>
+<li>API: <a href="../../API/exposure.html">Exposure</a></li>
+<li>Previous step: <a href="archetype_assigner.html">ArchetypeAssigner</a>; next step: <a href="exposure.html">Exposure</a></li>
+<li>Related notebook: <a href="../../examples/eastern_nc_loss_figures.html">Eastern North Carolina Loss Figures</a></li>
 </ul>
 
 
@@ -2774,7 +3262,7 @@ unless a caller does that assignment.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 13, 2026 14:29:00 UTC">May 13, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="September 20, 2026 17:48:30 UTC">September 20, 2026</span>
   </span>
 
     
@@ -2784,7 +3272,7 @@ unless a caller does that assignment.</p>
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 13, 2026 14:29:00 UTC">May 13, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="September 20, 2026 17:48:30 UTC">September 20, 2026</span>
   </span>
 
     
@@ -2842,7 +3330,7 @@ unless a caller does that assignment.</p>
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="building_loss_estimator.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: BuildingLossEstimator">
+          <a href="archetype_assigner.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: ArchetypeAssigner">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2852,20 +3340,20 @@ unless a caller does that assignment.</p>
                 Previous
               </span>
               <div class="md-ellipsis">
-                BuildingLossEstimator
+                ArchetypeAssigner
               </div>
             </div>
           </a>
         
         
           
-          <a href="regional_loss_estimator.html" class="md-footer__link md-footer__link--next" aria-label="Next: RegionalLossEstimator">
+          <a href="exposure.html" class="md-footer__link md-footer__link--next" aria-label="Next: Exposure">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                RegionalLossEstimator
+                Exposure
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -2905,7 +3393,7 @@ unless a caller does that assignment.</p>
       <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["toc.follow", "navigation.top", "navigation.footer", "content.code.annotate", "content.code.copy", "content.code.select", "search.highlight", "search.suggest"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
   </body>

@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://mhmdaskari.github.io/CHEERSafe/examples/loads_failure_check_workflow.html">
+        <link rel="canonical" href="https://mhmdaskari.github.io/CHEERSafe/examples/exposure_workflow.html">
       
       
-        <link rel="prev" href="inventory_building_geometry.html">
+        <link rel="prev" href="fragility_curve_calculation_with_detailed_damage_ratio_analysis.html">
       
       
-        <link rel="next" href="fragility_curve_calculation.html">
+        <link rel="next" href="loss_estimation_workflow.html">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>CHEERSafe Loading and Failure Check Workflow - CHEERSafe: A Python library to assess hurricane damage and loss</title>
+        <title>CHEERSafe Exposure Workflow - CHEERSafe: A Python library to assess hurricane damage and loss</title>
       
     
     
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#cheersafe-loading-and-failure-check-workflow" class="md-skip">
+        <a href="#cheersafe-exposure-workflow" class="md-skip">
           Skip to content
         </a>
       
@@ -118,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              CHEERSafe Loading and Failure Check Workflow
+              CHEERSafe Exposure Workflow
             
           </span>
         </div>
@@ -2211,19 +2211,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="loads_failure_check_workflow.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="loads_failure_check_workflow.html" class="md-nav__link">
         
   
   
@@ -2239,7 +2230,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -2305,10 +2295,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="exposure_workflow.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CHEERSafe Exposure Workflow
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="exposure_workflow.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -2324,6 +2341,103 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#plan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plan
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inputs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inputs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#archetypes-m-and-configurations-c" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Archetypes M and configurations C
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hazard-mapping-and-hazard-ids" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hazard mapping and hazard IDs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zone-assignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zone assignment
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#starr-export" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        STARR export
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#results-pitfalls-and-next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Results, pitfalls, and next steps
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2745,6 +2859,91 @@
   
     
   
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#plan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plan
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inputs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inputs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#archetypes-m-and-configurations-c" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Archetypes M and configurations C
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hazard-mapping-and-hazard-ids" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hazard mapping and hazard IDs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zone-assignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zone assignment
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#starr-export" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        STARR export
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#results-pitfalls-and-next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Results, pitfalls, and next steps
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -3485,34 +3684,64 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </style>
 <!-- End of mermaid configuration --><div class="jupyter-wrapper">
 <div class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=5de3db14">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=title-objective">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="cheersafe-loading-and-failure-check-workflow">CHEERSafe Loading and Failure Check Workflow<a class="anchor-link" href="#cheersafe-loading-and-failure-check-workflow">¶</a></h1>
+<h1 id="cheersafe-exposure-workflow">CHEERSafe Exposure Workflow<a class="anchor-link" href="#cheersafe-exposure-workflow">¶</a></h1><p>This notebook runs the <code>cheersafe.exposure</code> chain end to end: a building inventory is mapped onto the
+structural archetype <code>M</code> and a seeded resistance configuration <code>C</code>, per-event wind and flood intensities
+are assigned from hazard control points to building centroids and converted to continuous hazard IDs
+(<code>Wind_Tr</code>, <code>Flood_Tr</code>), zone ids are attached, and the STARR-compatible export is written and read back.</p>
+<p>Every calculation is called explicitly and its return value assigned by the notebook, following the
+package's strict-return pattern. See the <a href="../docs/users_manual/exposure/index.md">exposure manual</a> for the
+methodology and the <a href="../docs/API/exposure.md">API reference</a> for signatures.</p>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=6fb066f9">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=resource-warning">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>This notebook runs <code>LoadingAndFailureCheck</code> for one building, one wind direction, and one wind speed. Wind speed is passed in mph for the bundled wind-pressure equations.</p>
+<p>!!! warning "Execution profiles"
+<strong>Smoke mode (default)</strong> builds a realistic synthetic case with <code>SyntheticExposureData</code> (2,000 buildings,
+5 events, EPSG:5070, the real 1 km grid origin) and runs in about 20 seconds with no external data.</p>
+<pre><code>**Full mode** (`CHEERSAFE_EXPOSURE_SMOKE=0`) reads the Eastern North Carolina demo inventory
+(2,000 points), the 97 `Old97` hazard layers (63,094 control points each) and the LEAPHI zone layer
+from the `Loss Estimates` folder (`CHEERSAFE_EXPOSURE_DATA`). It needs about 200 MB of RAM and a
+minute. Missing files are reported and the dependent cells are skipped.</code></pre>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=f8e371ef">
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=workflow-plan">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="plan">Plan<a class="anchor-link" href="#plan">¶</a></h2><ol>
+<li>Choose the execution profile and output folder.</li>
+<li>Load (or generate) the inventory, hazard layers and zones.</li>
+<li>Assign archetypes <code>M</code> and configurations <code>C</code>; inspect their distributions.</li>
+<li>Map hazard intensities to buildings and transform them to hazard IDs; compare <code>Nearest</code> and <code>Inverse_d4</code>.</li>
+<li>Assign zone ids.</li>
+<li>Write the STARR export and verify that the files align.</li>
+</ol>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=repository-setup">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-1">
@@ -3525,48 +3754,78 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Repository setup and imports</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pickle</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
 
-<span class="n">repo_root</span> <span class="o">=</span> <span class="n">Path</span><span class="o">.</span><span class="n">cwd</span><span class="p">()</span>
+<span class="n">starting_directory</span> <span class="o">=</span> <span class="n">Path</span><span class="o">.</span><span class="n">cwd</span><span class="p">()</span><span class="o">.</span><span class="n">resolve</span><span class="p">()</span>
+<span class="n">repo_root</span> <span class="o">=</span> <span class="n">starting_directory</span>
 <span class="k">while</span> <span class="ow">not</span> <span class="p">(</span><span class="n">repo_root</span> <span class="o">/</span> <span class="s2">"pyproject.toml"</span><span class="p">)</span><span class="o">.</span><span class="n">exists</span><span class="p">()</span> <span class="ow">and</span> <span class="n">repo_root</span> <span class="o">!=</span> <span class="n">repo_root</span><span class="o">.</span><span class="n">parent</span><span class="p">:</span>
     <span class="n">repo_root</span> <span class="o">=</span> <span class="n">repo_root</span><span class="o">.</span><span class="n">parent</span>
 <span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="n">repo_root</span><span class="p">)</span>
-<span class="n">repo_root</span>
-</pre></div>
-<div class="clipboard-copy-txt" id="cell-1">from pathlib import Path
-import os
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">repo_root</span> <span class="o">/</span> <span class="s2">"src"</span><span class="p">))</span>
 
-repo_root = Path.cwd()
+<span class="kn">import</span><span class="w"> </span><span class="nn">geopandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">gpd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">cheersafe.config</span><span class="w"> </span><span class="kn">import</span> <span class="n">Config</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">cheersafe.exposure</span><span class="w"> </span><span class="kn">import</span> <span class="n">Exposure</span><span class="p">,</span> <span class="n">SyntheticExposureData</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">cheersafe.loss_estimation</span><span class="w"> </span><span class="kn">import</span> <span class="n">DamageProbabilityProvider</span><span class="p">,</span> <span class="n">LossEstimation</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">cheersafe.tools</span><span class="w"> </span><span class="kn">import</span> <span class="n">Utils</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"repo_root=</span><span class="si">{</span><span class="n">repo_root</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-1"># Repository setup and imports
+import json
+import os
+import pickle
+import sys
+import time
+from pathlib import Path
+
+starting_directory = Path.cwd().resolve()
+repo_root = starting_directory
 while not (repo_root / "pyproject.toml").exists() and repo_root != repo_root.parent:
     repo_root = repo_root.parent
 os.chdir(repo_root)
-repo_root
+sys.path.insert(0, str(repo_root / "src"))
+
+import geopandas as gpd
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+
+from cheersafe.config import Config
+from cheersafe.exposure import Exposure, SyntheticExposureData
+from cheersafe.loss_estimation import DamageProbabilityProvider, LossEstimation
+from cheersafe.tools import Utils
+
+print(f"repo_root={repo_root}")</div>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[1]:</div>
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>PosixPath('/home/mammad/Documents/EDU/cope/CHEERSafe/LossModel')</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=93fca054">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs celltag_parameters">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs celltag_parameters" id="cell-id=execution-profile">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="celltoolbar">
+<div class="button_container tags_button_container">
+<span class="tag-container">
+<span class="cell-tag">parameters</span>
+</span>
+</div>
+</div>
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-2">
@@ -3579,32 +3838,73 @@ repo_root
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">cheersafe.config</span><span class="w"> </span><span class="kn">import</span> <span class="n">Config</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Execution profile: smoke mode on a synthetic case by default; full mode reads the external Eastern North Carolina data</span>
+<span class="n">FULL_DATA_ROOT</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"CHEERSAFE_EXPOSURE_DATA"</span><span class="p">,</span> <span class="s2">"../Loss Estimates"</span><span class="p">))</span>
+<span class="n">FULL_INVENTORY</span> <span class="o">=</span> <span class="n">FULL_DATA_ROOT</span> <span class="o">/</span> <span class="s2">"_not_needed_for_reproduction"</span> <span class="o">/</span> <span class="s2">"Inventory"</span> <span class="o">/</span> <span class="s2">"NC_Inventory_v1_AI_Imputed.parquet"</span>
+<span class="n">FULL_HAZARD_DIR</span> <span class="o">=</span> <span class="n">FULL_DATA_ROOT</span> <span class="o">/</span> <span class="s2">"Hazards"</span> <span class="o">/</span> <span class="s2">"Old97"</span>
+<span class="n">FULL_ZONES</span> <span class="o">=</span> <span class="n">FULL_DATA_ROOT</span> <span class="o">/</span> <span class="s2">"Zones"</span> <span class="o">/</span> <span class="s2">"leaphi_zones_20230920.shp"</span>
 
-<span class="n">Config</span><span class="o">.</span><span class="n">reset_flags</span><span class="p">()</span>
-<span class="n">Config</span><span class="o">.</span><span class="n">NUM_OF_WORKERS</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="n">Config</span><span class="o">.</span><span class="n">NUM_OF_WORKERS_SAMPLING</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="n">Config</span><span class="o">.</span><span class="n">RANDOM_SEED</span> <span class="o">=</span> <span class="mi">42</span>
+<span class="n">SMOKE_N_BUILDINGS</span> <span class="o">=</span> <span class="mi">2000</span>
+<span class="n">SMOKE_N_EVENTS</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">SMOKE_SEED</span> <span class="o">=</span> <span class="mi">42</span>
+
+<span class="n">AVERAGE_MODE</span> <span class="o">=</span> <span class="s2">"Nearest"</span>          <span class="c1"># "Nearest" (the verified run) or "Inverse_d4"</span>
+<span class="n">ZONE_ID</span> <span class="o">=</span> <span class="s2">"i_lh740"</span>
+<span class="n">COAST_THRESHOLD_MILES</span> <span class="o">=</span> <span class="mf">2.0</span>
+<span class="n">DROP_UNMATCHED_OCCUPANCY</span> <span class="o">=</span> <span class="kc">False</span>  <span class="c1"># the verified run kept non-wood and non-single-family rows</span>
+
+<span class="n">smoke_flag</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"CHEERSAFE_EXPOSURE_SMOKE"</span><span class="p">,</span> <span class="s2">"1"</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">smoke_flag</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">{</span><span class="s2">"0"</span><span class="p">,</span> <span class="s2">"1"</span><span class="p">}:</span>
+    <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">"CHEERSAFE_EXPOSURE_SMOKE must be '0' or '1'"</span><span class="p">)</span>
+<span class="n">smoke_mode</span> <span class="o">=</span> <span class="n">smoke_flag</span> <span class="o">==</span> <span class="s2">"1"</span>
+<span class="n">output_override</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"CHEERSAFE_EXPOSURE_OUTPUT"</span><span class="p">)</span>
+<span class="n">output_path</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="n">Path</span><span class="p">(</span><span class="n">output_override</span><span class="p">)</span><span class="o">.</span><span class="n">expanduser</span><span class="p">()</span><span class="o">.</span><span class="n">resolve</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">output_override</span>
+    <span class="k">else</span> <span class="p">(</span><span class="n">repo_root</span> <span class="o">/</span> <span class="s2">"Outputs/exposure_workflow"</span><span class="p">)</span><span class="o">.</span><span class="n">resolve</span><span class="p">()</span>
+<span class="p">)</span>
+<span class="n">full_data_root</span> <span class="o">=</span> <span class="p">(</span><span class="n">repo_root</span> <span class="o">/</span> <span class="n">FULL_DATA_ROOT</span><span class="p">)</span><span class="o">.</span><span class="n">resolve</span><span class="p">()</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">FULL_DATA_ROOT</span><span class="o">.</span><span class="n">is_absolute</span><span class="p">()</span> <span class="k">else</span> <span class="n">FULL_DATA_ROOT</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"profile=</span><span class="si">{</span><span class="s1">'smoke'</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">smoke_mode</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="s1">'full'</span><span class="si">}</span><span class="s2">, average_mode=</span><span class="si">{</span><span class="n">AVERAGE_MODE</span><span class="si">}</span><span class="s2">, output=</span><span class="si">{</span><span class="n">output_path</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-2">from cheersafe.config import Config
+<div class="clipboard-copy-txt" id="cell-2"># Execution profile: smoke mode on a synthetic case by default; full mode reads the external Eastern North Carolina data
+FULL_DATA_ROOT = Path(os.environ.get("CHEERSAFE_EXPOSURE_DATA", "../Loss Estimates"))
+FULL_INVENTORY = FULL_DATA_ROOT / "_not_needed_for_reproduction" / "Inventory" / "NC_Inventory_v1_AI_Imputed.parquet"
+FULL_HAZARD_DIR = FULL_DATA_ROOT / "Hazards" / "Old97"
+FULL_ZONES = FULL_DATA_ROOT / "Zones" / "leaphi_zones_20230920.shp"
 
-Config.reset_flags()
-Config.NUM_OF_WORKERS = 1
-Config.NUM_OF_WORKERS_SAMPLING = 1
-Config.RANDOM_SEED = 42
-</div>
+SMOKE_N_BUILDINGS = 2000
+SMOKE_N_EVENTS = 5
+SMOKE_SEED = 42
+
+AVERAGE_MODE = "Nearest"          # "Nearest" (the verified run) or "Inverse_d4"
+ZONE_ID = "i_lh740"
+COAST_THRESHOLD_MILES = 2.0
+DROP_UNMATCHED_OCCUPANCY = False  # the verified run kept non-wood and non-single-family rows
+
+smoke_flag = os.environ.get("CHEERSAFE_EXPOSURE_SMOKE", "1")
+if smoke_flag not in {"0", "1"}:
+    raise ValueError("CHEERSAFE_EXPOSURE_SMOKE must be '0' or '1'")
+smoke_mode = smoke_flag == "1"
+output_override = os.environ.get("CHEERSAFE_EXPOSURE_OUTPUT")
+output_path = (
+    Path(output_override).expanduser().resolve()
+    if output_override
+    else (repo_root / "Outputs/exposure_workflow").resolve()
+)
+full_data_root = (repo_root / FULL_DATA_ROOT).resolve() if not FULL_DATA_ROOT.is_absolute() else FULL_DATA_ROOT
+print(f"profile={'smoke' if smoke_mode else 'full'}, average_mode={AVERAGE_MODE}, output={output_path}")</div>
 </div>
 </div>
 </div>
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=3c4683d1">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=configure">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-3">
@@ -3617,32 +3917,69 @@ Config.RANDOM_SEED = 42
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Snapshot the global configuration touched below, then switch to manual control</span>
+<span class="n">config_snapshot</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="n">name</span><span class="p">:</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">Config</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="p">(</span><span class="s2">"AUTO_LOAD_DATASETS"</span><span class="p">,</span> <span class="s2">"AUTO_EXECUTE_METHODS"</span><span class="p">,</span> <span class="s2">"INPUTS_PATH"</span><span class="p">,</span> <span class="s2">"OUTPUTS_PATH"</span><span class="p">,</span> <span class="s2">"RANDOM_SEED"</span><span class="p">)</span>
+<span class="p">}</span>
 
-<span class="kn">from</span><span class="w"> </span><span class="nn">cheersafe.config</span><span class="w"> </span><span class="kn">import</span> <span class="n">Config</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">cheersafe.loads</span><span class="w"> </span><span class="kn">import</span> <span class="n">LoadingAndFailureCheck</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">restore_state</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">"""Restore the configuration snapshot and the starting directory."""</span>
+    <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">config_snapshot</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="nb">setattr</span><span class="p">(</span><span class="n">Config</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="n">starting_directory</span><span class="p">)</span>
+
+
+<span class="n">Config</span><span class="o">.</span><span class="n">AUTO_LOAD_DATASETS</span> <span class="o">=</span> <span class="kc">False</span>      <span class="c1"># every load_* call below is explicit</span>
+<span class="n">Config</span><span class="o">.</span><span class="n">AUTO_EXECUTE_METHODS</span> <span class="o">=</span> <span class="kc">False</span>    <span class="c1"># every calculate_* result is assigned by this notebook</span>
+<span class="n">Config</span><span class="o">.</span><span class="n">INPUTS_PATH</span> <span class="o">=</span> <span class="s2">"Inputs"</span>          <span class="c1"># the package's JSON tables</span>
+<span class="n">output_path</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">parents</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">config_snapshot</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-3">import matplotlib.pyplot as plt
-import numpy as np
-import pandas as pd
+<div class="clipboard-copy-txt" id="cell-3"># Snapshot the global configuration touched below, then switch to manual control
+config_snapshot = {
+    name: getattr(Config, name)
+    for name in ("AUTO_LOAD_DATASETS", "AUTO_EXECUTE_METHODS", "INPUTS_PATH", "OUTPUTS_PATH", "RANDOM_SEED")
+}
 
-from cheersafe.config import Config
-from cheersafe.loads import LoadingAndFailureCheck
+
+def restore_state() -&gt; None:
+    """Restore the configuration snapshot and the starting directory."""
+    for name, value in config_snapshot.items():
+        setattr(Config, name, value)
+    os.chdir(starting_directory)
+
+
+Config.AUTO_LOAD_DATASETS = False      # every load_* call below is explicit
+Config.AUTO_EXECUTE_METHODS = False    # every calculate_* result is assigned by this notebook
+Config.INPUTS_PATH = "Inputs"          # the package's JSON tables
+output_path.mkdir(parents=True, exist_ok=True)
+print(config_snapshot)</div>
 </div>
 </div>
 </div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=load-data-note">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="inputs">Inputs<a class="anchor-link" href="#inputs">¶</a></h2><p>Smoke mode writes a complete synthetic <code>Inputs</code> tree (inventory, hazard events, zones, the four JSON
+tables and event probabilities). Full mode points at the external Eastern North Carolina files.</p>
 </div>
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=378f9b60">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=load-data">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-4">
@@ -3655,68 +3992,92 @@ from cheersafe.loads import LoadingAndFailureCheck
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">cheersafe.inventory</span><span class="w"> </span><span class="kn">import</span> <span class="n">BuildingInventory</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">canonical_tables</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"wind_speeds"</span><span class="p">:</span> <span class="n">Utils</span><span class="o">.</span><span class="n">from_json</span><span class="p">(</span><span class="s2">"Inputs/WindSpeed.json"</span><span class="p">),</span>
+    <span class="s2">"flood_depths"</span><span class="p">:</span> <span class="n">Utils</span><span class="o">.</span><span class="n">from_json</span><span class="p">(</span><span class="s2">"Inputs/FloodDepth.json"</span><span class="p">),</span>
+    <span class="s2">"damage_states"</span><span class="p">:</span> <span class="n">Utils</span><span class="o">.</span><span class="n">from_json</span><span class="p">(</span><span class="s2">"Inputs/DamageState.json"</span><span class="p">),</span>
+    <span class="s2">"component_combinations"</span><span class="p">:</span> <span class="n">Utils</span><span class="o">.</span><span class="n">from_json</span><span class="p">(</span><span class="s2">"Inputs/ComponentCombination_All.json"</span><span class="p">),</span>
+<span class="p">}</span>
 
-<span class="k">def</span><span class="w"> </span><span class="nf">demo_building</span><span class="p">():</span>
-    <span class="k">return</span> <span class="n">BuildingInventory</span><span class="p">(</span><span class="n">buildings_file_name</span><span class="o">=</span><span class="s2">"BuildingGeometry_Old.json"</span><span class="p">)</span><span class="o">.</span><span class="n">buildings</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-
-<span class="k">def</span><span class="w"> </span><span class="nf">demo_resistances</span><span class="p">(</span><span class="n">building</span><span class="p">):</span>
-    <span class="n">num_panel</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">building</span><span class="o">.</span><span class="n">NumPanel</span><span class="p">))</span>
-    <span class="n">num_connection</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">building</span><span class="o">.</span><span class="n">NumConnection</span><span class="p">))</span>
-    <span class="n">num_opening</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span>
-        <span class="n">building</span><span class="o">.</span><span class="n">DoorFront</span>
-        <span class="o">+</span> <span class="n">building</span><span class="o">.</span><span class="n">DoorBack</span>
-        <span class="o">+</span> <span class="n">building</span><span class="o">.</span><span class="n">DoorGarage</span>
-        <span class="o">+</span> <span class="n">building</span><span class="o">.</span><span class="n">OpeningFront</span>
-        <span class="o">+</span> <span class="n">building</span><span class="o">.</span><span class="n">OpeningBack</span>
-        <span class="o">+</span> <span class="mi">2</span> <span class="o">*</span> <span class="p">(</span><span class="n">building</span><span class="o">.</span><span class="n">OpeningSideH</span> <span class="o">+</span> <span class="n">building</span><span class="o">.</span><span class="n">OpeningSideR</span><span class="p">)</span>
+<span class="n">data_available</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="k">if</span> <span class="n">smoke_mode</span><span class="p">:</span>
+    <span class="n">case_root</span> <span class="o">=</span> <span class="n">output_path</span> <span class="o">/</span> <span class="s2">"synthetic_case"</span>
+    <span class="n">written</span> <span class="o">=</span> <span class="n">SyntheticExposureData</span><span class="o">.</span><span class="n">save_inputs</span><span class="p">(</span>
+        <span class="nb">str</span><span class="p">(</span><span class="n">case_root</span><span class="p">),</span>
+        <span class="n">inventory</span><span class="o">=</span><span class="n">SyntheticExposureData</span><span class="o">.</span><span class="n">make_inventory</span><span class="p">(</span><span class="n">SMOKE_N_BUILDINGS</span><span class="p">,</span> <span class="n">seed</span><span class="o">=</span><span class="n">SMOKE_SEED</span><span class="p">),</span>
+        <span class="n">hazard_events</span><span class="o">=</span><span class="n">SyntheticExposureData</span><span class="o">.</span><span class="n">make_hazard_events</span><span class="p">(</span>
+            <span class="nb">tuple</span><span class="p">(</span><span class="sa">f</span><span class="s2">"h</span><span class="si">{</span><span class="n">index</span><span class="si">}</span><span class="s2">"</span> <span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">SMOKE_N_EVENTS</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)),</span> <span class="n">nx</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">ny</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">seed</span><span class="o">=</span><span class="n">SMOKE_SEED</span>
+        <span class="p">),</span>
+        <span class="n">zones</span><span class="o">=</span><span class="n">SyntheticExposureData</span><span class="o">.</span><span class="n">make_zones</span><span class="p">(</span><span class="n">extent_cells</span><span class="o">=</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">)),</span>
+        <span class="n">hurricane_probabilities</span><span class="o">=</span><span class="n">SyntheticExposureData</span><span class="o">.</span><span class="n">make_hurricane_probabilities</span><span class="p">(</span><span class="n">SMOKE_N_EVENTS</span><span class="p">,</span> <span class="n">seed</span><span class="o">=</span><span class="n">SMOKE_SEED</span><span class="p">),</span>
+        <span class="o">**</span><span class="n">canonical_tables</span><span class="p">,</span>
     <span class="p">)</span>
-    <span class="k">return</span> <span class="p">{</span>
-        <span class="s2">"rRSt"</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">full</span><span class="p">(</span><span class="n">num_panel</span><span class="p">,</span> <span class="mf">225.0</span><span class="p">),</span>
-        <span class="s2">"rRCt"</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">full</span><span class="p">(</span><span class="n">num_panel</span><span class="p">,</span> <span class="mf">70.0</span><span class="p">),</span>
-        <span class="s2">"rRWCt"</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">full</span><span class="p">(</span><span class="n">num_connection</span><span class="p">,</span> <span class="mf">2825.0</span><span class="p">),</span>
-        <span class="s2">"rOt"</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">full</span><span class="p">(</span><span class="n">num_opening</span><span class="p">,</span> <span class="mf">150.0</span><span class="p">),</span>
-        <span class="s2">"rWt"</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">full</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mf">3000.0</span><span class="p">),</span>
-    <span class="p">}</span>
+    <span class="n">inventory_path</span><span class="p">,</span> <span class="n">hazard_dir</span><span class="p">,</span> <span class="n">zones_path</span> <span class="o">=</span> <span class="n">written</span><span class="p">[</span><span class="s2">"inventory"</span><span class="p">],</span> <span class="n">written</span><span class="p">[</span><span class="s2">"hazard_dir"</span><span class="p">],</span> <span class="n">written</span><span class="p">[</span><span class="s2">"zones"</span><span class="p">]</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">inventory_path</span> <span class="o">=</span> <span class="n">full_data_root</span> <span class="o">/</span> <span class="n">FULL_INVENTORY</span><span class="o">.</span><span class="n">relative_to</span><span class="p">(</span><span class="n">FULL_DATA_ROOT</span><span class="p">)</span>
+    <span class="n">hazard_dir</span> <span class="o">=</span> <span class="n">full_data_root</span> <span class="o">/</span> <span class="n">FULL_HAZARD_DIR</span><span class="o">.</span><span class="n">relative_to</span><span class="p">(</span><span class="n">FULL_DATA_ROOT</span><span class="p">)</span>
+    <span class="n">zones_path</span> <span class="o">=</span> <span class="n">full_data_root</span> <span class="o">/</span> <span class="n">FULL_ZONES</span><span class="o">.</span><span class="n">relative_to</span><span class="p">(</span><span class="n">FULL_DATA_ROOT</span><span class="p">)</span>
+    <span class="n">missing</span> <span class="o">=</span> <span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">p</span><span class="p">)</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="p">(</span><span class="n">inventory_path</span><span class="p">,</span> <span class="n">hazard_dir</span><span class="p">,</span> <span class="n">zones_path</span><span class="p">)</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">p</span><span class="o">.</span><span class="n">exists</span><span class="p">()]</span>
+    <span class="k">if</span> <span class="n">missing</span><span class="p">:</span>
+        <span class="n">data_available</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"skipped: missing"</span><span class="p">,</span> <span class="n">missing</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"inventory=</span><span class="si">{</span><span class="n">inventory_path</span><span class="si">}</span><span class="se">\n</span><span class="s2">hazards=</span><span class="si">{</span><span class="n">hazard_dir</span><span class="si">}</span><span class="se">\n</span><span class="s2">zones=</span><span class="si">{</span><span class="n">zones_path</span><span class="si">}</span><span class="se">\n</span><span class="s2">available=</span><span class="si">{</span><span class="n">data_available</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-4">import numpy as np
-from cheersafe.inventory import BuildingInventory
+<div class="clipboard-copy-txt" id="cell-4">canonical_tables = {
+    "wind_speeds": Utils.from_json("Inputs/WindSpeed.json"),
+    "flood_depths": Utils.from_json("Inputs/FloodDepth.json"),
+    "damage_states": Utils.from_json("Inputs/DamageState.json"),
+    "component_combinations": Utils.from_json("Inputs/ComponentCombination_All.json"),
+}
 
-def demo_building():
-    return BuildingInventory(buildings_file_name="BuildingGeometry_Old.json").buildings[0]
-
-def demo_resistances(building):
-    num_panel = int(np.sum(building.NumPanel))
-    num_connection = int(np.sum(building.NumConnection))
-    num_opening = int(
-        building.DoorFront
-        + building.DoorBack
-        + building.DoorGarage
-        + building.OpeningFront
-        + building.OpeningBack
-        + 2 * (building.OpeningSideH + building.OpeningSideR)
+data_available = True
+if smoke_mode:
+    case_root = output_path / "synthetic_case"
+    written = SyntheticExposureData.save_inputs(
+        str(case_root),
+        inventory=SyntheticExposureData.make_inventory(SMOKE_N_BUILDINGS, seed=SMOKE_SEED),
+        hazard_events=SyntheticExposureData.make_hazard_events(
+            tuple(f"h{index}" for index in range(1, SMOKE_N_EVENTS + 1)), nx=4, ny=4, seed=SMOKE_SEED
+        ),
+        zones=SyntheticExposureData.make_zones(extent_cells=(4, 4)),
+        hurricane_probabilities=SyntheticExposureData.make_hurricane_probabilities(SMOKE_N_EVENTS, seed=SMOKE_SEED),
+        **canonical_tables,
     )
-    return {
-        "rRSt": np.full(num_panel, 225.0),
-        "rRCt": np.full(num_panel, 70.0),
-        "rRWCt": np.full(num_connection, 2825.0),
-        "rOt": np.full(num_opening, 150.0),
-        "rWt": np.full(12, 3000.0),
-    }
+    inventory_path, hazard_dir, zones_path = written["inventory"], written["hazard_dir"], written["zones"]
+else:
+    inventory_path = full_data_root / FULL_INVENTORY.relative_to(FULL_DATA_ROOT)
+    hazard_dir = full_data_root / FULL_HAZARD_DIR.relative_to(FULL_DATA_ROOT)
+    zones_path = full_data_root / FULL_ZONES.relative_to(FULL_DATA_ROOT)
+    missing = [str(p) for p in (inventory_path, hazard_dir, zones_path) if not p.exists()]
+    if missing:
+        data_available = False
+        print("skipped: missing", missing)
+print(f"inventory={inventory_path}\nhazards={hazard_dir}\nzones={zones_path}\navailable={data_available}")</div>
 </div>
 </div>
 </div>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=f886f739">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=archetype-note">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="archetypes-m-and-configurations-c">Archetypes M and configurations C<a class="anchor-link" href="#archetypes-m-and-configurations-c">¶</a></h2><p><code>M</code> (1-8) is deterministic from stories, roof shape and garage (Peng 2013, Table 3.1). <code>C</code> (1-192) is one
+row of <code>ComponentCombination_All.json</code>, drawn per building from the construction-period and coast-distance
+rules (Peng 2013, Tables 3.6-3.7) through the seeded <code>Sampling</code> stream, so a seed reproduces the draw.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=archetype">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-5">
@@ -3729,128 +4090,65 @@ def demo_resistances(building):
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">building</span> <span class="o">=</span> <span class="n">demo_building</span><span class="p">()</span>
-<span class="n">resistance</span> <span class="o">=</span> <span class="n">demo_resistances</span><span class="p">(</span><span class="n">building</span><span class="p">)</span>
-<span class="n">check</span> <span class="o">=</span> <span class="n">LoadingAndFailureCheck</span><span class="p">(</span>
-    <span class="n">Building</span><span class="o">=</span><span class="n">building</span><span class="p">,</span>
-    <span class="n">WindOrientation</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
-    <span class="n">WindSpeed</span><span class="o">=</span><span class="mf">95.0</span><span class="p">,</span>
-    <span class="o">**</span><span class="n">resistance</span><span class="p">,</span>
-<span class="p">)</span>
-
-<span class="n">loads</span> <span class="o">=</span> <span class="n">check</span><span class="o">.</span><span class="n">get_final_loads</span><span class="p">()</span>
-<span class="n">resistance_after</span> <span class="o">=</span> <span class="n">check</span><span class="o">.</span><span class="n">get_final_resistance</span><span class="p">()</span>
-<span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
-    <span class="s2">"component"</span><span class="p">:</span> <span class="nb">list</span><span class="p">(</span><span class="n">loads</span><span class="p">),</span>
-    <span class="s2">"load_count"</span><span class="p">:</span> <span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">size</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">loads</span><span class="o">.</span><span class="n">values</span><span class="p">()],</span>
-    <span class="s2">"mean_abs_final_load"</span><span class="p">:</span> <span class="p">[</span><span class="nb">float</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">value</span><span class="p">)))</span> <span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">loads</span><span class="o">.</span><span class="n">values</span><span class="p">()],</span>
-    <span class="s2">"remaining_resistance_count"</span><span class="p">:</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">count_nonzero</span><span class="p">(</span><span class="n">resistance_after</span><span class="p">[</span><span class="n">key</span><span class="p">]))</span> <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">loads</span><span class="p">],</span>
-<span class="p">})</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="k">if</span> <span class="n">data_available</span><span class="p">:</span>
+    <span class="n">exposure</span> <span class="o">=</span> <span class="n">Exposure</span><span class="p">(</span>
+        <span class="n">inventory_path</span><span class="o">=</span><span class="nb">str</span><span class="p">(</span><span class="n">inventory_path</span><span class="p">),</span>
+        <span class="n">hazard_dir</span><span class="o">=</span><span class="nb">str</span><span class="p">(</span><span class="n">hazard_dir</span><span class="p">),</span>
+        <span class="n">zones_path</span><span class="o">=</span><span class="nb">str</span><span class="p">(</span><span class="n">zones_path</span><span class="p">),</span>
+        <span class="n">average_mode</span><span class="o">=</span><span class="n">AVERAGE_MODE</span><span class="p">,</span>
+        <span class="n">zone_id_col</span><span class="o">=</span><span class="n">ZONE_ID</span><span class="p">,</span>
+        <span class="n">coast_threshold_miles</span><span class="o">=</span><span class="n">COAST_THRESHOLD_MILES</span><span class="p">,</span>
+        <span class="n">drop_unmatched_occupancy</span><span class="o">=</span><span class="n">DROP_UNMATCHED_OCCUPANCY</span><span class="p">,</span>
+        <span class="n">seed</span><span class="o">=</span><span class="n">SMOKE_SEED</span><span class="p">,</span>
+    <span class="p">)</span>
+    <span class="n">exposure</span><span class="o">.</span><span class="n">load_hazard_tables</span><span class="p">()</span>
+    <span class="n">exposure</span><span class="o">.</span><span class="n">load_component_combinations</span><span class="p">()</span>
+    <span class="n">exposure</span><span class="o">.</span><span class="n">load_inventory</span><span class="p">()</span>
+    <span class="n">exposure</span><span class="o">.</span><span class="n">load_hazard_events</span><span class="p">()</span>
+    <span class="n">exposure</span><span class="o">.</span><span class="n">load_zones</span><span class="p">()</span>
+    <span class="n">exposure</span><span class="o">.</span><span class="n">archetype_inventory</span> <span class="o">=</span> <span class="n">exposure</span><span class="o">.</span><span class="n">calculate_archetypes</span><span class="p">(</span><span class="n">exposure</span><span class="o">.</span><span class="n">inventory</span><span class="p">)</span>
+    <span class="n">archetypes</span> <span class="o">=</span> <span class="n">exposure</span><span class="o">.</span><span class="n">archetype_inventory</span>
+    <span class="k">assert</span> <span class="n">archetypes</span><span class="p">[</span><span class="s2">"M"</span><span class="p">]</span><span class="o">.</span><span class="n">between</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">8</span><span class="p">)</span><span class="o">.</span><span class="n">all</span><span class="p">()</span> <span class="ow">and</span> <span class="n">archetypes</span><span class="p">[</span><span class="s2">"C"</span><span class="p">]</span><span class="o">.</span><span class="n">between</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">192</span><span class="p">)</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">exposure</span><span class="o">.</span><span class="n">inventory</span><span class="p">)</span><span class="si">}</span><span class="s2"> buildings loaded, </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">archetypes</span><span class="p">)</span><span class="si">}</span><span class="s2"> with complete attributes"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"M counts:"</span><span class="p">,</span> <span class="n">archetypes</span><span class="p">[</span><span class="s2">"M"</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">sort_index</span><span class="p">()</span><span class="o">.</span><span class="n">to_dict</span><span class="p">())</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"top C:"</span><span class="p">,</span> <span class="n">archetypes</span><span class="p">[</span><span class="s2">"C"</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="n">to_dict</span><span class="p">())</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">archetypes</span><span class="p">[[</span><span class="s2">"building_key"</span><span class="p">,</span> <span class="s2">"M"</span><span class="p">,</span> <span class="s2">"C"</span><span class="p">,</span> <span class="s2">"RC"</span><span class="p">,</span> <span class="s2">"RF"</span><span class="p">,</span> <span class="s2">"RTW"</span><span class="p">,</span> <span class="s2">"O"</span><span class="p">,</span> <span class="s2">"W"</span><span class="p">,</span> <span class="s2">"F"</span><span class="p">,</span> <span class="s2">"year_group"</span><span class="p">,</span> <span class="s2">"near_coast"</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-5">building = demo_building()
-resistance = demo_resistances(building)
-check = LoadingAndFailureCheck(
-    Building=building,
-    WindOrientation=0,
-    WindSpeed=95.0,
-    **resistance,
-)
-
-loads = check.get_final_loads()
-resistance_after = check.get_final_resistance()
-pd.DataFrame({
-    "component": list(loads),
-    "load_count": [np.size(value) for value in loads.values()],
-    "mean_abs_final_load": [float(np.mean(np.abs(value))) for value in loads.values()],
-    "remaining_resistance_count": [int(np.count_nonzero(resistance_after[key])) for key in loads],
-})
+<div class="clipboard-copy-txt" id="cell-5">if data_available:
+    exposure = Exposure(
+        inventory_path=str(inventory_path),
+        hazard_dir=str(hazard_dir),
+        zones_path=str(zones_path),
+        average_mode=AVERAGE_MODE,
+        zone_id_col=ZONE_ID,
+        coast_threshold_miles=COAST_THRESHOLD_MILES,
+        drop_unmatched_occupancy=DROP_UNMATCHED_OCCUPANCY,
+        seed=SMOKE_SEED,
+    )
+    exposure.load_hazard_tables()
+    exposure.load_component_combinations()
+    exposure.load_inventory()
+    exposure.load_hazard_events()
+    exposure.load_zones()
+    exposure.archetype_inventory = exposure.calculate_archetypes(exposure.inventory)
+    archetypes = exposure.archetype_inventory
+    assert archetypes["M"].between(1, 8).all() and archetypes["C"].between(1, 192).all()
+    print(f"{len(exposure.inventory)} buildings loaded, {len(archetypes)} with complete attributes")
+    print("M counts:", archetypes["M"].value_counts().sort_index().to_dict())
+    print("top C:", archetypes["C"].value_counts().head(10).to_dict())
+    display(archetypes[["building_key", "M", "C", "RC", "RF", "RTW", "O", "W", "F", "year_group", "near_coast"]].head())</div>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[5]:</div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-<thead>
-<tr style="text-align: right;">
-<th></th>
-<th>component</th>
-<th>load_count</th>
-<th>mean_abs_final_load</th>
-<th>remaining_resistance_count</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<th>0</th>
-<td>Openings</td>
-<td>18</td>
-<td>17.578550</td>
-<td>18</td>
-</tr>
-<tr>
-<th>1</th>
-<td>Walls</td>
-<td>12</td>
-<td>88.965033</td>
-<td>12</td>
-</tr>
-<tr>
-<th>2</th>
-<td>Roof Sheathings</td>
-<td>96</td>
-<td>18.188491</td>
-<td>96</td>
-</tr>
-<tr>
-<th>3</th>
-<td>Roof Coverings</td>
-<td>96</td>
-<td>15.360562</td>
-<td>96</td>
-</tr>
-<tr>
-<th>4</th>
-<td>Roof-Wall Connections</td>
-<td>94</td>
-<td>178.973660</td>
-<td>94</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=e986e7d2">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=plot-archetypes">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-6">
@@ -3863,61 +4161,52 @@ pd.DataFrame({
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
-<span class="n">components</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">loads</span><span class="p">)</span>
-<span class="n">means</span> <span class="o">=</span> <span class="p">[</span><span class="nb">float</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">loads</span><span class="p">[</span><span class="n">name</span><span class="p">])))</span> <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">components</span><span class="p">]</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">components</span><span class="p">,</span> <span class="n">means</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">"tab:orange"</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">"Mean absolute final load"</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">"Final load summary for one wind scenario"</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s2">"x"</span><span class="p">,</span> <span class="n">rotation</span><span class="o">=</span><span class="mi">25</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="k">if</span> <span class="n">data_available</span><span class="p">:</span>
+    <span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">11</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+    <span class="n">archetypes</span><span class="p">[</span><span class="s2">"M"</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">sort_index</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s2">"#4c72b0"</span><span class="p">)</span>
+    <span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">"Archetype M"</span><span class="p">);</span> <span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">"Buildings"</span><span class="p">);</span> <span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">"Structural archetypes"</span><span class="p">)</span>
+    <span class="n">archetypes</span><span class="p">[</span><span class="s2">"C"</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s2">"#dd8452"</span><span class="p">)</span>
+    <span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">"Configuration C (ten most common)"</span><span class="p">);</span> <span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">"Resistance configurations"</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">ax</span> <span class="ow">in</span> <span class="n">axes</span><span class="p">:</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="s2">"y"</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-6">fig, ax = plt.subplots(figsize=(7, 4))
-components = list(loads)
-means = [float(np.mean(np.abs(loads[name]))) for name in components]
-ax.bar(components, means, color="tab:orange")
-ax.set_ylabel("Mean absolute final load")
-ax.set_title("Final load summary for one wind scenario")
-ax.tick_params(axis="x", rotation=25)
-plt.tight_layout()
-plt.show()
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedImage jp-OutputArea-output" tabindex="0">
-<img alt="No description has been provided for this image" class="" src="data:image/png;base64,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7uHo0aPIlSvXf65z7do16OjowMLCIlVjISIiIqL0p3Gy+r///Q8REREAEqaMatCgAVxdXZErVy5s2LBBo22Fh4fD399feRwQEIBr167BzMwMefPmRfPmzXHlyhXs3r0bcXFxeP78OQDAzMwM+vr6OHv2LM6fP48aNWrAyMgIZ8+ehY+PD9q3b4+cOXNqemhEREREpGU07rOanJCQEOTMmVOZESCljh07hho1aiQp79ixI8aMGQNbW9tk1zt69CiqV6+OK1euoE+fPvD19UVUVBRsbW3x008/YdCgQZ/tr5ocTfpNEBERUTphn9X0paV9Vr96ntWPmZmZfdV61atX/+wtXAF8cRkAlCtXDufOnfuqfRMRERGR9tM4WY2IiMDkyZNx+PBhBAcHIz4+Xm25prdcJSIiIiL6HI2T1W7duuH48eP46aefkDdvXo0v/RMRERERpZTGyerevXuxZ88eVK1aNS3iISIiIiJSaDzPas6cOb+6jyoRERERkSY0TlZ/++03jB49GpGRkWkRDxERERGRQuNuADNmzMD9+/eRJ08e2NjYQE9PT235lStXUi04IiIiIsrcNE5WmzRpkgZhEBERERElpXGy+uuvv6ZFHERERERESWjcZ5WIiIiIKL2kqGXVzMwM//zzD3Lnzv2ft1UNCQlJteCIiIiIKHNLUbI6a9YsGBkZAQBmz56dlvEQERERESlSlKxev34dzZs3h4GBAWxtbVGlShXo6mrc3ZWIiIiISCMp6rM6b948hIeHAwBq1KjBS/1ERERElC5S1DxqY2ODuXPnok6dOhARnD17Fjlz5ky2brVq1VI1QCIiIiLKvFQiIv9Vafv27ejVqxeCg4OhUqnwuVVUKhXi4uJSPci0FhYWBhMTE4SGhsLY2DijwyEiIiIAGGOS0RFkLmNC021XmuReKWpZbdKkCZo0aYLw8HAYGxvDz88PFhYWqRIsEREREdHnaDRKKkeOHDh69ChsbW05wIqIiIiI0pzGGaebm1taxEFERERElATvYEVEREREWovJKhERERFpLSarRERERKS1vjpZ9ff3x/79+/H+/XsA+Ox0VkREREREX0vjZPX169eoVasWihYtinr16uHZs2cAgK5du2Lw4MGpHiARERERZV4aJ6s+Pj7Q1dVFYGAgDA0NlfJWrVph3759qRocEREREWVuGierBw4cwJQp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qFy5clrESERERESZlMbJ6syZMxEeHg4AGDt2LMLDw7FhwwYUKVKEMwEQERERUarSOFktVKiQ8v/s2bNj0aJFqRoQEREREVEi3hSAiIiIiLQWk1UiIiIi0lpMVomIiIhIazFZJSIiIiKtxWSViIiIiLSWxrMBxMXFYeXKlTh8+DCCg4MRHx+vtvzIkSOpFhwRERERZW4aJ6sDBgzAypUrUb9+fdjb20OlUqVFXEREREREmier69evx8aNG1GvXr20iIeIiIiISKFxn1V9fX0ULlw4LWIhIiIiIlKjcbI6ePBgzJkzByKSFvEQERERESk07gZw6tQpHD16FHv37kWpUqWgp6entnzr1q2pFhwRERERZW4aJ6umpqZo2rRpWsRCRERERKRG42R1xYoVaRFHssaMGYOxY8eqlRUrVgy+vr4AgA8fPmDw4MFYv349oqKi4OHhgd9//x158uRJtxiJiIiIKO1o/U0BSpUqhWfPnil/p06dUpb5+Phg165d2LRpE44fP46nT5+iWbNmGRgtEREREaUmjVtWAWDz5s3YuHEjAgMDER0drbbsypUrqRJYIl1dXVhaWiYpDw0NxbJly7B27VrUrFkTQEKrb4kSJXDu3DlUrlw5VeMgIiIiovSnccvq3Llz0blzZ+TJkwdXr15FpUqVkCtXLjx48ACenp6pHuC9e/dgZWWFQoUKoV27dggMDAQAXL58GTExMahVq5ZSt3jx4ihQoADOnj37xW1GRUUhLCxM7Y+IiIiItI/Gyervv/+OJUuWYN68edDX18fQoUNx8OBB9O/fH6GhoakanJOTE1auXIl9+/Zh4cKFCAgIgKurK969e4fnz59DX18fpqamauvkyZMHz58//+J2J02aBBMTE+XP2to6VeMmIiIiotShcbIaGBiIKlWqAACyZcuGd+/eAQB++uknrFu3LlWD8/T0RIsWLVCmTBl4eHjg77//xtu3b7Fx48Zv2u7w4cMRGhqq/AUFBaVSxERERESUmjROVi0tLRESEgIAKFCgAM6dOwcACAgISPMbBZiamqJo0aLw9/eHpaUloqOj8fbtW7U6L168SLaP68cMDAxgbGys9kdERERE2kfjZLVmzZrYuXMnAKBz587w8fFB7dq10apVqzSffzU8PBz3799H3rx5Ub58eejp6eHw4cPKcj8/PwQGBsLZ2TlN4yAiIiKi9KHxbABLlixBfHw8AKBv377IlSsXzpw5g0aNGqFnz56pGtyQIUPQsGFDFCxYEE+fPsWvv/6KLFmyoE2bNjAxMUHXrl0xaNAgmJmZwdjYGP369YOzszNnAiAiIiL6QWicrOro6EBH598G2datW6N169apGlSix48fo02bNnj9+jXMzc3h4uKCc+fOwdzcHAAwa9Ys6OjowMvLS+2mAERERET0Y1DJV3Q0PXnyJBYvXoz79+9j8+bNyJcvH1atWgVbW1u4uLikRZxpKiwsDCYmJggNDWX/VdLMGJOMjiBzGZO6M44QkZbjZ2z6SsfPWE1yL437rG7ZsgUeHh7Ili0brl69iqioKAAJk/RPnDjx6yImIiIiIkqGxsnq+PHjsWjRIixduhR6enpKedWqVVP97lVERERElLlpnKz6+fmhWrVqScpNTEySTCNFRERERPQtvmqeVX9//yTlp06dQqFChVIlKCIiIiIi4CuS1e7du2PAgAE4f/48VCoVnj59ijVr1mDIkCHo3bt3WsRIRERERJmUxlNX/fLLL4iPj4e7uzsiIyNRrVo1GBgYYMiQIejXr19axEhEREREmZTGyapKpcLIkSPx888/w9/fH+Hh4ShZsiRy5MiRFvERERERUSamcbKaSF9fHyVLlkzNWIiIiIiI1KQ4We3SpUuK6i1fvvyrgyEiIiIi+liKk9WVK1eiYMGCKFu2LL7ipldERERERBpLcbLau3dvrFu3DgEBAejcuTPat28PMzOztIyNiIiIiDK5FE9dtWDBAjx79gxDhw7Frl27YG1tjZYtW2L//v1saSUiIiKiNKHRPKsGBgZo06YNDh48iDt37qBUqVLo06cPbGxsEB4enlYxEhEREVEmpfFNAZQVdXSgUqkgIoiLi0vNmIiIiIiIAGiYrEZFRWHdunWoXbs2ihYtips3b2L+/PkIDAzkPKtERERElOpSPMCqT58+WL9+PaytrdGlSxesW7cOuXPnTsvYiIiIiCiTS3GyumjRIhQoUACFChXC8ePHcfz48WTrbd26NdWCIyIiIqLMLcXJaocOHaBSqdIyFiIiIiIiNRrdFICIiIiIKD199WwARERERERpjckqEREREWktJqtEREREpLWYrBIRERGR1tLqZHXSpEmoWLEijIyMYGFhgSZNmsDPz0+tTvXq1aFSqdT+evXqlUERExEREVFq0upk9fjx4+jbty/OnTuHgwcPIiYmBnXq1EFERIRave7du+PZs2fK39SpUzMoYiIiIiJKTSmeuioj7Nu3T+3xypUrYWFhgcuXL6NatWpKuaGhISwtLdM7PCIiIiJKY1rdsvqp0NBQAICZmZla+Zo1a5A7d27Y29tj+PDhiIyMzIjwiIiIiCiVaXXL6sfi4+MxcOBAVK1aFfb29kp527ZtUbBgQVhZWeHGjRsYNmwY/Pz8vnjb16ioKERFRSmPw8LC0jR2IiIiIvo6302y2rdvX9y6dQunTp1SK+/Ro4fy/9KlSyNv3rxwd3fH/fv3YWdnl+y2Jk2ahLFjx6ZpvERERET07b6LbgDe3t7YvXs3jh49ivz583+xrpOTEwDA39//s3WGDx+O0NBQ5S8oKChV4yUiIiKi1KHVLasign79+mHbtm04duwYbG1t/3Oda9euAQDy5s372ToGBgYwMDBIrTCJiIiIKI1odbLat29frF27Fjt27ICRkRGeP38OADAxMUG2bNlw//59rF27FvXq1UOuXLlw48YN+Pj4oFq1aihTpkwGR09ERERE30qrk9WFCxcCSJj4/2MrVqxAp06doK+vj0OHDmH27NmIiIiAtbU1vLy88L///S8DoiUiIiKi1KbVyaqIfHG5tbU1jh8/nk7REBEREVF6+y4GWBERERFR5sRklYiIiIi0FpNVIiIiItJaWt1nlYgo3YwxyegIMpcxoRkdARF9J5isZgR+KaYvfikSERF9t9gNgIiIiIi0FpNVIiIiItJa7AZAREQ/Fna1Sl/sakVpjC2rRERERKS1mKwSERERkdZiskpEREREWovJKhERERFpLSarRERERKS1mKwSERERkdZiskpEREREWovJKhERERFpLSarRERERKS1mKwSERERkdZiskpEREREWovJKhERERFpLSarRERERKS1mKwSERERkdZiskpEREREWovJKhERERFprR8mWV2wYAFsbGyQNWtWODk54cKFCxkdEhERERF9ox8iWd2wYQMGDRqEX3/9FVeuXIGDgwM8PDwQHByc0aERERER0Tf4IZLVmTNnonv37ujcuTNKliyJRYsWwdDQEMuXL8/o0IiIiIjoG3z3yWp0dDQuX76MWrVqKWU6OjqoVasWzp49m4GREREREdG30s3oAL7Vq1evEBcXhzx58qiV58mTB76+vsmu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REREGjE0NETBggVRrlw5uLu7AwCqVasGQ0NDvHjxAg8fPoSNjQ1q1KiBXbt2YcKECcoUcc7Oznj79i2ioqIAAB4eHrh27Rru3LkDfX19uLm5Kfvh3aYIYMsqERERaahs2bJwc3PDlStX8ODBAwDAlClTcPz4cdja2sLGxgYA0KFDB/j6+mLdunVK4vngwQPExcXB2NhY2V6+fPlQu3ZttUSVKBH7rBIREZHGzp49i+HDhyMsLAxBQUEwNzeHiYkJChQoAC8vL9SsWRO5c+fGgAEDsHnzZtSqVQtNmzbF7NmzERsbi507d8LMzCyjD4O+A0xWiYiI6KsMGTIEq1evxogRI9C/f3/ExcVhy5YtmD17NvT19XHw4EHo6upi6dKl2LJlCx49egRXV1dMnjwZuXLlyujw6TvBZJWIiIi+yuHDhzFmzBjUrl0bo0ePVsqfP38Od3d3GBgY4Oeff0abNm0QFhYGQ0PDZO9mRfQl7LNKREREX6V69eooVaoUjh8/joCAAABAdHQ0LC0tsXHjRri4uCh9VY2NjZmo0ldhyyoRERF9tR07dmDGjBlo1KgRhgwZotwwgCi18NVEREREX6127drIlSsXtm/fjrdv3zJRpVTHllUiIiL6JqdOnYKlpSUKFy6c0aHQD4jJKhERERFpLbbVExEREZHWYrJKRERERFqLySoRERERaS0mq0RERESktZisEhEREZHWYrJKRERERFqLySoRERERaS0mq0RERESktZisEhEREZHWYrJKRERERFqLySoRERERaS0mq0RERESktf4PaBT/uR9JohMAAAAASUVORK5CYII="/>
+<div class="clipboard-copy-txt" id="cell-6">if data_available:
+    fig, axes = plt.subplots(1, 2, figsize=(11, 4))
+    archetypes["M"].value_counts().sort_index().plot.bar(ax=axes[0], color="#4c72b0")
+    axes[0].set_xlabel("Archetype M"); axes[0].set_ylabel("Buildings"); axes[0].set_title("Structural archetypes")
+    archetypes["C"].value_counts().head(10).plot.bar(ax=axes[1], color="#dd8452")
+    axes[1].set_xlabel("Configuration C (ten most common)"); axes[1].set_title("Resistance configurations")
+    for ax in axes:
+        ax.grid(True, axis="y", alpha=0.3)
+    plt.tight_layout()
+    plt.show()</div>
 </div>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=390e1eda">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=hazard-map-note">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>In manual execution mode, call each calculation method and assign its returned outputs in the dependency order.</p>
+<h2 id="hazard-mapping-and-hazard-ids">Hazard mapping and hazard IDs<a class="anchor-link" href="#hazard-mapping-and-hazard-ids">¶</a></h2><p>Buildings are clipped to the control-point bounding box, matched to their nearest control points, and each
+event's wind (m/s) and flood (m) are assigned and converted to mph and inches before interpolation onto the
+package's discrete hazard IDs. <code>Wind_Tr</code> lies in <code>[1, 25]</code> and <code>Flood_Tr</code> in <code>[1, 136]</code>.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=84065202">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=hazard-map">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-7">
@@ -3930,78 +4219,274 @@ plt.show()
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">Config</span><span class="o">.</span><span class="n">AUTO_EXECUTE_METHODS</span> <span class="o">=</span> <span class="kc">False</span>
-<span class="n">manual</span> <span class="o">=</span> <span class="n">LoadingAndFailureCheck</span><span class="p">(</span><span class="n">Building</span><span class="o">=</span><span class="n">building</span><span class="p">,</span> <span class="n">WindOrientation</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">WindSpeed</span><span class="o">=</span><span class="mf">95.0</span><span class="p">,</span> <span class="o">**</span><span class="n">demo_resistances</span><span class="p">(</span><span class="n">building</span><span class="p">))</span>
-<span class="n">manual</span><span class="o">.</span><span class="n">PressureZoneCoordinate</span><span class="p">,</span> <span class="n">manual</span><span class="o">.</span><span class="n">NumZone</span> <span class="o">=</span> <span class="n">manual</span><span class="o">.</span><span class="n">fn_pressure_zone_coordinate</span><span class="p">()</span>
-<span class="n">manual</span><span class="o">.</span><span class="n">PressureZoneArea</span><span class="p">,</span> <span class="n">manual</span><span class="o">.</span><span class="n">PanelArea</span> <span class="o">=</span> <span class="n">manual</span><span class="o">.</span><span class="n">fn_preprocess_rs</span><span class="p">()</span>
-<span class="n">manual</span><span class="o">.</span><span class="n">qh</span> <span class="o">=</span> <span class="mf">0.00256</span> <span class="o">*</span> <span class="mf">0.85</span> <span class="o">*</span> <span class="n">manual</span><span class="o">.</span><span class="n">WindSpeed</span> <span class="o">**</span> <span class="mi">2</span>
-<span class="n">manual</span><span class="o">.</span><span class="n">pRS</span> <span class="o">=</span> <span class="n">manual</span><span class="o">.</span><span class="n">fn_initial_load_rs</span><span class="p">()</span>
-<span class="n">manual</span><span class="o">.</span><span class="n">pRC</span> <span class="o">=</span> <span class="n">manual</span><span class="o">.</span><span class="n">fn_initial_load_rc</span><span class="p">()</span>
-<span class="n">manual</span><span class="o">.</span><span class="n">pRWC</span> <span class="o">=</span> <span class="n">manual</span><span class="o">.</span><span class="n">fn_initial_load_rwc</span><span class="p">()</span>
-<span class="n">manual</span><span class="o">.</span><span class="n">pO</span> <span class="o">=</span> <span class="n">manual</span><span class="o">.</span><span class="n">fn_initial_load_o</span><span class="p">()</span>
-<span class="n">manual</span><span class="o">.</span><span class="n">pW</span> <span class="o">=</span> <span class="n">manual</span><span class="o">.</span><span class="n">fn_initial_load_w</span><span class="p">()</span>
-<span class="n">initial_resistance</span> <span class="o">=</span> <span class="n">manual</span><span class="o">.</span><span class="n">fn_initial_failure_check</span><span class="p">()</span>
-<span class="n">manual</span><span class="o">.</span><span class="n">rRSt</span> <span class="o">=</span> <span class="n">initial_resistance</span><span class="p">[</span><span class="s2">"Roof Sheathings"</span><span class="p">]</span>
-<span class="n">manual</span><span class="o">.</span><span class="n">rRCt</span> <span class="o">=</span> <span class="n">initial_resistance</span><span class="p">[</span><span class="s2">"Roof Coverings"</span><span class="p">]</span>
-<span class="n">manual</span><span class="o">.</span><span class="n">rRWCt</span> <span class="o">=</span> <span class="n">initial_resistance</span><span class="p">[</span><span class="s2">"Roof-Wall Connections"</span><span class="p">]</span>
-<span class="n">manual</span><span class="o">.</span><span class="n">rOt</span> <span class="o">=</span> <span class="n">initial_resistance</span><span class="p">[</span><span class="s2">"Openings"</span><span class="p">]</span>
-<span class="n">manual</span><span class="o">.</span><span class="n">rWt</span> <span class="o">=</span> <span class="n">initial_resistance</span><span class="p">[</span><span class="s2">"Walls"</span><span class="p">]</span>
-<span class="n">manual</span><span class="o">.</span><span class="n">pInternal</span> <span class="o">=</span> <span class="n">manual</span><span class="o">.</span><span class="n">fn_pressure_internal</span><span class="p">()</span>
-<span class="n">manual</span><span class="o">.</span><span class="n">pfRC</span> <span class="o">=</span> <span class="n">manual</span><span class="o">.</span><span class="n">fn_final_load_rc</span><span class="p">()</span>
-<span class="n">manual</span><span class="o">.</span><span class="n">pfRS</span> <span class="o">=</span> <span class="n">manual</span><span class="o">.</span><span class="n">fn_final_load_rs</span><span class="p">()</span> <span class="k">if</span> <span class="n">manual</span><span class="o">.</span><span class="n">pInternal</span> <span class="k">else</span> <span class="n">manual</span><span class="o">.</span><span class="n">pRS</span>
-<span class="n">manual</span><span class="o">.</span><span class="n">pfRWC</span> <span class="o">=</span> <span class="n">manual</span><span class="o">.</span><span class="n">fn_final_load_rwc</span><span class="p">()</span> <span class="k">if</span> <span class="n">manual</span><span class="o">.</span><span class="n">pInternal</span> <span class="k">else</span> <span class="n">manual</span><span class="o">.</span><span class="n">pRWC</span>
-<span class="n">manual</span><span class="o">.</span><span class="n">pfO</span> <span class="o">=</span> <span class="n">manual</span><span class="o">.</span><span class="n">fn_final_load_o</span><span class="p">()</span> <span class="k">if</span> <span class="n">manual</span><span class="o">.</span><span class="n">pInternal</span> <span class="k">else</span> <span class="n">manual</span><span class="o">.</span><span class="n">pO</span>
-<span class="n">manual</span><span class="o">.</span><span class="n">pfW</span> <span class="o">=</span> <span class="n">manual</span><span class="o">.</span><span class="n">fn_final_load_w</span><span class="p">()</span> <span class="k">if</span> <span class="n">manual</span><span class="o">.</span><span class="n">pInternal</span> <span class="k">else</span> <span class="n">manual</span><span class="o">.</span><span class="n">pW</span>
-<span class="n">manual</span><span class="o">.</span><span class="n">rRWCt</span><span class="p">,</span> <span class="n">manual</span><span class="o">.</span><span class="n">RWCFails</span> <span class="o">=</span> <span class="n">manual</span><span class="o">.</span><span class="n">fn_final_failure_check_rwc</span><span class="p">()</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"internal pressure: </span><span class="si">{</span><span class="n">manual</span><span class="o">.</span><span class="n">pInternal</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"RWC failure flags: </span><span class="si">{</span><span class="n">manual</span><span class="o">.</span><span class="n">RWCFails</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-<span class="n">Config</span><span class="o">.</span><span class="n">reset_flags</span><span class="p">()</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="k">if</span> <span class="n">data_available</span><span class="p">:</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">started</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">perf_counter</span><span class="p">()</span>
+        <span class="n">exposure</span><span class="o">.</span><span class="n">clipped_inventory</span> <span class="o">=</span> <span class="n">exposure</span><span class="o">.</span><span class="n">calculate_clipped_inventory</span><span class="p">(</span><span class="n">exposure</span><span class="o">.</span><span class="n">archetype_inventory</span><span class="p">)</span>
+        <span class="n">centroids</span> <span class="o">=</span> <span class="n">exposure</span><span class="o">.</span><span class="n">clipped_inventory</span><span class="o">.</span><span class="n">geometry</span><span class="o">.</span><span class="n">centroid</span>
+        <span class="n">building_xy</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">column_stack</span><span class="p">([</span><span class="n">centroids</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="n">centroids</span><span class="o">.</span><span class="n">y</span><span class="p">])</span>
+        <span class="n">k_neighbors</span> <span class="o">=</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">AVERAGE_MODE</span> <span class="o">==</span> <span class="s2">"Nearest"</span> <span class="k">else</span> <span class="n">exposure</span><span class="o">.</span><span class="n">idw_neighbors</span>
+        <span class="n">exposure</span><span class="o">.</span><span class="n">neighbor_index</span><span class="p">,</span> <span class="n">exposure</span><span class="o">.</span><span class="n">neighbor_distance</span> <span class="o">=</span> <span class="n">exposure</span><span class="o">.</span><span class="n">calculate_neighbor_match</span><span class="p">(</span>
+            <span class="n">building_xy</span><span class="p">,</span> <span class="n">exposure</span><span class="o">.</span><span class="n">hazard_points_xy</span><span class="p">,</span> <span class="n">k_neighbors</span>
+        <span class="p">)</span>
+        <span class="n">exposure</span><span class="o">.</span><span class="n">wind_ids</span><span class="p">,</span> <span class="n">exposure</span><span class="o">.</span><span class="n">flood_ids</span> <span class="o">=</span> <span class="n">exposure</span><span class="o">.</span><span class="n">calculate_hazard_ids</span><span class="p">(</span>
+            <span class="n">exposure</span><span class="o">.</span><span class="n">neighbor_index</span><span class="p">,</span> <span class="n">exposure</span><span class="o">.</span><span class="n">neighbor_distance</span><span class="p">,</span> <span class="n">exposure</span><span class="o">.</span><span class="n">hazard_wind</span><span class="p">,</span> <span class="n">exposure</span><span class="o">.</span><span class="n">hazard_flood</span>
+        <span class="p">)</span>
+        <span class="k">assert</span> <span class="mf">1.0</span> <span class="o">&lt;=</span> <span class="n">exposure</span><span class="o">.</span><span class="n">wind_ids</span><span class="o">.</span><span class="n">min</span><span class="p">()</span> <span class="ow">and</span> <span class="n">exposure</span><span class="o">.</span><span class="n">wind_ids</span><span class="o">.</span><span class="n">max</span><span class="p">()</span> <span class="o">&lt;=</span> <span class="mf">25.0</span>
+        <span class="k">assert</span> <span class="mf">1.0</span> <span class="o">&lt;=</span> <span class="n">exposure</span><span class="o">.</span><span class="n">flood_ids</span><span class="o">.</span><span class="n">min</span><span class="p">()</span> <span class="ow">and</span> <span class="n">exposure</span><span class="o">.</span><span class="n">flood_ids</span><span class="o">.</span><span class="n">max</span><span class="p">()</span> <span class="o">&lt;=</span> <span class="mf">136.0</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">exposure</span><span class="o">.</span><span class="n">clipped_inventory</span><span class="p">)</span><span class="si">}</span><span class="s2"> buildings inside the hazard bounds, </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">exposure</span><span class="o">.</span><span class="n">event_names</span><span class="p">)</span><span class="si">}</span><span class="s2"> events"</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Wind_Tr range </span><span class="si">{</span><span class="n">exposure</span><span class="o">.</span><span class="n">wind_ids</span><span class="o">.</span><span class="n">min</span><span class="p">()</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">-</span><span class="si">{</span><span class="n">exposure</span><span class="o">.</span><span class="n">wind_ids</span><span class="o">.</span><span class="n">max</span><span class="p">()</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">; "</span>
+              <span class="sa">f</span><span class="s2">"Flood_Tr range </span><span class="si">{</span><span class="n">exposure</span><span class="o">.</span><span class="n">flood_ids</span><span class="o">.</span><span class="n">min</span><span class="p">()</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">-</span><span class="si">{</span><span class="n">exposure</span><span class="o">.</span><span class="n">flood_ids</span><span class="o">.</span><span class="n">max</span><span class="p">()</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">; "</span>
+              <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">time</span><span class="o">.</span><span class="n">perf_counter</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">started</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> s"</span><span class="p">)</span>
+        <span class="c1"># Compare the two averaging modes on the first event</span>
+        <span class="n">index_4</span><span class="p">,</span> <span class="n">distance_4</span> <span class="o">=</span> <span class="n">exposure</span><span class="o">.</span><span class="n">calculate_neighbor_match</span><span class="p">(</span><span class="n">building_xy</span><span class="p">,</span> <span class="n">exposure</span><span class="o">.</span><span class="n">hazard_points_xy</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+        <span class="n">nearest_wind</span> <span class="o">=</span> <span class="n">exposure</span><span class="o">.</span><span class="n">calculate_event_intensity</span><span class="p">(</span><span class="n">exposure</span><span class="o">.</span><span class="n">hazard_wind</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">index_4</span><span class="p">,</span> <span class="n">distance_4</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s2">"Nearest"</span><span class="p">)</span>
+        <span class="n">idw_wind</span> <span class="o">=</span> <span class="n">exposure</span><span class="o">.</span><span class="n">calculate_event_intensity</span><span class="p">(</span><span class="n">exposure</span><span class="o">.</span><span class="n">hazard_wind</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">index_4</span><span class="p">,</span> <span class="n">distance_4</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s2">"Inverse_d4"</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"event </span><span class="si">{</span><span class="n">exposure</span><span class="o">.</span><span class="n">event_names</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2">: mean |Nearest - Inverse_d4| = </span><span class="si">{</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">nearest_wind</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">idw_wind</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2"> m/s"</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">BaseException</span><span class="p">:</span>
+        <span class="n">restore_state</span><span class="p">()</span>
+        <span class="k">raise</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-7">Config.AUTO_EXECUTE_METHODS = False
-manual = LoadingAndFailureCheck(Building=building, WindOrientation=0, WindSpeed=95.0, **demo_resistances(building))
-manual.PressureZoneCoordinate, manual.NumZone = manual.fn_pressure_zone_coordinate()
-manual.PressureZoneArea, manual.PanelArea = manual.fn_preprocess_rs()
-manual.qh = 0.00256 * 0.85 * manual.WindSpeed ** 2
-manual.pRS = manual.fn_initial_load_rs()
-manual.pRC = manual.fn_initial_load_rc()
-manual.pRWC = manual.fn_initial_load_rwc()
-manual.pO = manual.fn_initial_load_o()
-manual.pW = manual.fn_initial_load_w()
-initial_resistance = manual.fn_initial_failure_check()
-manual.rRSt = initial_resistance["Roof Sheathings"]
-manual.rRCt = initial_resistance["Roof Coverings"]
-manual.rRWCt = initial_resistance["Roof-Wall Connections"]
-manual.rOt = initial_resistance["Openings"]
-manual.rWt = initial_resistance["Walls"]
-manual.pInternal = manual.fn_pressure_internal()
-manual.pfRC = manual.fn_final_load_rc()
-manual.pfRS = manual.fn_final_load_rs() if manual.pInternal else manual.pRS
-manual.pfRWC = manual.fn_final_load_rwc() if manual.pInternal else manual.pRWC
-manual.pfO = manual.fn_final_load_o() if manual.pInternal else manual.pO
-manual.pfW = manual.fn_final_load_w() if manual.pInternal else manual.pW
-manual.rRWCt, manual.RWCFails = manual.fn_final_failure_check_rwc()
-
-print(f"internal pressure: {manual.pInternal:.3f}")
-print(f"RWC failure flags: {manual.RWCFails}")
-Config.reset_flags()
+<div class="clipboard-copy-txt" id="cell-7">if data_available:
+    try:
+        started = time.perf_counter()
+        exposure.clipped_inventory = exposure.calculate_clipped_inventory(exposure.archetype_inventory)
+        centroids = exposure.clipped_inventory.geometry.centroid
+        building_xy = np.column_stack([centroids.x, centroids.y])
+        k_neighbors = 1 if AVERAGE_MODE == "Nearest" else exposure.idw_neighbors
+        exposure.neighbor_index, exposure.neighbor_distance = exposure.calculate_neighbor_match(
+            building_xy, exposure.hazard_points_xy, k_neighbors
+        )
+        exposure.wind_ids, exposure.flood_ids = exposure.calculate_hazard_ids(
+            exposure.neighbor_index, exposure.neighbor_distance, exposure.hazard_wind, exposure.hazard_flood
+        )
+        assert 1.0 &lt;= exposure.wind_ids.min() and exposure.wind_ids.max() &lt;= 25.0
+        assert 1.0 &lt;= exposure.flood_ids.min() and exposure.flood_ids.max() &lt;= 136.0
+        print(f"{len(exposure.clipped_inventory)} buildings inside the hazard bounds, {len(exposure.event_names)} events")
+        print(f"Wind_Tr range {exposure.wind_ids.min():.3f}-{exposure.wind_ids.max():.3f}; "
+              f"Flood_Tr range {exposure.flood_ids.min():.3f}-{exposure.flood_ids.max():.3f}; "
+              f"{time.perf_counter() - started:.1f} s")
+        # Compare the two averaging modes on the first event
+        index_4, distance_4 = exposure.calculate_neighbor_match(building_xy, exposure.hazard_points_xy, 4)
+        nearest_wind = exposure.calculate_event_intensity(exposure.hazard_wind[0], index_4, distance_4, mode="Nearest")
+        idw_wind = exposure.calculate_event_intensity(exposure.hazard_wind[0], index_4, distance_4, mode="Inverse_d4")
+        print(f"event {exposure.event_names[0]}: mean |Nearest - Inverse_d4| = {np.abs(nearest_wind - idw_wind).mean():.3f} m/s")
+    except BaseException:
+        restore_state()
+        raise</div>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=plot-hazard">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>internal pressure: 2.828
-RWC failure flags: [0 0 0 0]
-</pre>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-8">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="k">if</span> <span class="n">data_available</span><span class="p">:</span>
+    <span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+    <span class="n">scatter</span> <span class="o">=</span> <span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">building_xy</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">building_xy</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><span class="n">exposure</span><span class="o">.</span><span class="n">wind_ids</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">s</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">"viridis"</span><span class="p">)</span>
+    <span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">exposure</span><span class="o">.</span><span class="n">hazard_points_xy</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">exposure</span><span class="o">.</span><span class="n">hazard_points_xy</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">marker</span><span class="o">=</span><span class="s2">"+"</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s2">"k"</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">25</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">"control points"</span><span class="p">)</span>
+    <span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Wind_Tr for event </span><span class="si">{</span><span class="n">exposure</span><span class="o">.</span><span class="n">event_names</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2"> (</span><span class="si">{</span><span class="n">AVERAGE_MODE</span><span class="si">}</span><span class="s2">)"</span><span class="p">)</span>
+    <span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_aspect</span><span class="p">(</span><span class="s2">"equal"</span><span class="p">);</span> <span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s2">"upper right"</span><span class="p">)</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">colorbar</span><span class="p">(</span><span class="n">scatter</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s2">"Wind hazard ID"</span><span class="p">)</span>
+    <span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">nearest_wind</span><span class="p">,</span> <span class="n">idw_wind</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.6</span><span class="p">)</span>
+    <span class="n">limits</span> <span class="o">=</span> <span class="p">[</span><span class="nb">min</span><span class="p">(</span><span class="n">nearest_wind</span><span class="o">.</span><span class="n">min</span><span class="p">(),</span> <span class="n">idw_wind</span><span class="o">.</span><span class="n">min</span><span class="p">()),</span> <span class="nb">max</span><span class="p">(</span><span class="n">nearest_wind</span><span class="o">.</span><span class="n">max</span><span class="p">(),</span> <span class="n">idw_wind</span><span class="o">.</span><span class="n">max</span><span class="p">())]</span>
+    <span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">limits</span><span class="p">,</span> <span class="n">limits</span><span class="p">,</span> <span class="s2">"k--"</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">"Nearest control point (m/s)"</span><span class="p">);</span> <span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">"Inverse-distance (power 4) average (m/s)"</span><span class="p">)</span>
+    <span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">"Averaging modes on the first event"</span><span class="p">);</span> <span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-8">if data_available:
+    fig, axes = plt.subplots(1, 2, figsize=(12, 5))
+    scatter = axes[0].scatter(building_xy[:, 0], building_xy[:, 1], c=exposure.wind_ids[:, 0], s=6, cmap="viridis")
+    axes[0].scatter(exposure.hazard_points_xy[:, 0], exposure.hazard_points_xy[:, 1], marker="+", c="k", s=25, label="control points")
+    axes[0].set_title(f"Wind_Tr for event {exposure.event_names[0]} ({AVERAGE_MODE})")
+    axes[0].set_aspect("equal"); axes[0].legend(loc="upper right")
+    fig.colorbar(scatter, ax=axes[0], label="Wind hazard ID")
+    axes[1].scatter(nearest_wind, idw_wind, s=6, alpha=0.6)
+    limits = [min(nearest_wind.min(), idw_wind.min()), max(nearest_wind.max(), idw_wind.max())]
+    axes[1].plot(limits, limits, "k--", lw=1)
+    axes[1].set_xlabel("Nearest control point (m/s)"); axes[1].set_ylabel("Inverse-distance (power 4) average (m/s)")
+    axes[1].set_title("Averaging modes on the first event"); axes[1].grid(True, alpha=0.3)
+    plt.tight_layout()
+    plt.show()</div>
 </div>
 </div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=zone-assign-note">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="zone-assignment">Zone assignment<a class="anchor-link" href="#zone-assignment">¶</a></h2><p>Each building takes the id of the zone polygon containing its centroid; buildings outside every zone get <code>-1</code>.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=zone-assign">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-9">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="k">if</span> <span class="n">data_available</span><span class="p">:</span>
+    <span class="n">exposure</span><span class="o">.</span><span class="n">zone_ids</span> <span class="o">=</span> <span class="n">exposure</span><span class="o">.</span><span class="n">calculate_zone_assignment</span><span class="p">(</span><span class="n">exposure</span><span class="o">.</span><span class="n">clipped_inventory</span><span class="p">,</span> <span class="n">exposure</span><span class="o">.</span><span class="n">zones</span><span class="p">,</span> <span class="n">ZONE_ID</span><span class="p">)</span>
+    <span class="n">zone_counts</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">exposure</span><span class="o">.</span><span class="n">zone_ids</span><span class="p">)</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">sort_index</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="p">(</span><span class="n">exposure</span><span class="o">.</span><span class="n">zone_ids</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="si">}</span><span class="s2"> buildings outside every zone; </span><span class="si">{</span><span class="n">zone_counts</span><span class="p">[</span><span class="n">zone_counts</span><span class="o">.</span><span class="n">index</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">size</span><span class="si">}</span><span class="s2"> zones hold buildings"</span><span class="p">)</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">zone_counts</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="s2">"buildings"</span><span class="p">)</span><span class="o">.</span><span class="n">to_frame</span><span class="p">()</span><span class="o">.</span><span class="n">T</span><span class="p">)</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-9">if data_available:
+    exposure.zone_ids = exposure.calculate_zone_assignment(exposure.clipped_inventory, exposure.zones, ZONE_ID)
+    zone_counts = pd.Series(exposure.zone_ids).value_counts().sort_index()
+    print(f"{(exposure.zone_ids == -1).sum()} buildings outside every zone; {zone_counts[zone_counts.index != -1].size} zones hold buildings")
+    display(zone_counts.head(10).rename("buildings").to_frame().T)</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=export-note">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="starr-export">STARR export<a class="anchor-link" href="#starr-export">¶</a></h2><p><code>calculate_starr_inventory</code> assembles the STARR table; <code>save_starr_inputs</code> writes it together with
+<code>Wind_Tr.npy</code>, <code>Flood_Tr.npy</code>, <code>Hurricane_name.npy</code> and a metadata file. The rows of the CSV and of the
+arrays align, which the reload below verifies.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=export">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-10">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="k">if</span> <span class="n">data_available</span><span class="p">:</span>
+    <span class="n">exposure</span><span class="o">.</span><span class="n">starr_inventory</span> <span class="o">=</span> <span class="n">exposure</span><span class="o">.</span><span class="n">calculate_starr_inventory</span><span class="p">(</span><span class="n">exposure</span><span class="o">.</span><span class="n">clipped_inventory</span><span class="p">,</span> <span class="n">exposure</span><span class="o">.</span><span class="n">zone_ids</span><span class="p">)</span>
+    <span class="n">export_paths</span> <span class="o">=</span> <span class="n">exposure</span><span class="o">.</span><span class="n">save_starr_inputs</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">output_path</span> <span class="o">/</span> <span class="s2">"starr"</span><span class="p">))</span>
+    <span class="n">reloaded_table</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">export_paths</span><span class="p">[</span><span class="s2">"inventory_csv"</span><span class="p">])</span>
+    <span class="n">reloaded_wind</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">export_paths</span><span class="p">[</span><span class="s2">"wind_ids"</span><span class="p">],</span> <span class="n">mmap_mode</span><span class="o">=</span><span class="s2">"r"</span><span class="p">)</span>
+    <span class="n">reloaded_names</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">export_paths</span><span class="p">[</span><span class="s2">"event_names"</span><span class="p">])</span>
+    <span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">reloaded_table</span><span class="p">)</span> <span class="o">==</span> <span class="n">reloaded_wind</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="k">assert</span> <span class="nb">list</span><span class="p">(</span><span class="n">reloaded_names</span><span class="p">)</span> <span class="o">==</span> <span class="n">exposure</span><span class="o">.</span><span class="n">event_names</span>
+    <span class="k">assert</span> <span class="nb">list</span><span class="p">(</span><span class="n">reloaded_table</span><span class="o">.</span><span class="n">columns</span><span class="p">[:</span><span class="mi">4</span><span class="p">])</span> <span class="o">==</span> <span class="p">[</span><span class="s2">"building_ID"</span><span class="p">,</span> <span class="s2">"t"</span><span class="p">,</span> <span class="s2">"YearBuilt"</span><span class="p">,</span> <span class="s2">"YearBuiltGroup"</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">export_paths</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">))</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">reloaded_table</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-10">if data_available:
+    exposure.starr_inventory = exposure.calculate_starr_inventory(exposure.clipped_inventory, exposure.zone_ids)
+    export_paths = exposure.save_starr_inputs(str(output_path / "starr"))
+    reloaded_table = pd.read_csv(export_paths["inventory_csv"])
+    reloaded_wind = np.load(export_paths["wind_ids"], mmap_mode="r")
+    reloaded_names = np.load(export_paths["event_names"])
+    assert len(reloaded_table) == reloaded_wind.shape[0]
+    assert list(reloaded_names) == exposure.event_names
+    assert list(reloaded_table.columns[:4]) == ["building_ID", "t", "YearBuilt", "YearBuiltGroup"]
+    print(json.dumps(export_paths, indent=2))
+    display(reloaded_table.head())</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=cleanup">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-11">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Restore the configuration changed above and return to the starting directory</span>
+<span class="n">restore_state</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"configuration restored; working directory:"</span><span class="p">,</span> <span class="n">Path</span><span class="o">.</span><span class="n">cwd</span><span class="p">())</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-11"># Restore the configuration changed above and return to the starting directory
+restore_state()
+print("configuration restored; working directory:", Path.cwd())</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=results-next-steps">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="results-pitfalls-and-next-steps">Results, pitfalls, and next steps<a class="anchor-link" href="#results-pitfalls-and-next-steps">¶</a></h2><ul>
+<li>The export under <code>Outputs/exposure_workflow/starr/</code> is the input of the
+<a href="loss_estimation_workflow.ipynb">loss-estimation workflow</a>; <code>LossEstimation.load_from_exposure(exposure)</code>
+hands the same tables over in memory.</li>
+<li><code>C</code> is drawn from a seeded stream, so the archetype table differs row by row from the frozen 07/07/2026
+Eastern North Carolina export by design; the marginal distributions are the same.</li>
+<li>The building-type and occupancy filters are off by default, as in the verified run; set
+<code>DROP_UNMATCHED_OCCUPANCY = True</code> to keep only wood-frame single-family residences.</li>
+<li>Hazard columns are selected by name (<code>Wind</code>, <code>Flood</code>) and all event files must share the same control
+points; a mismatch raises <code>ValueError</code> in <code>load_hazard_events</code>.</li>
+</ul>
 </div>
 </div>
 </div>
@@ -4035,7 +4520,7 @@ RWC failure flags: [0 0 0 0]
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 13, 2026 14:29:00 UTC">May 13, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="September 20, 2026 17:48:30 UTC">September 20, 2026</span>
   </span>
 
     
@@ -4045,7 +4530,7 @@ RWC failure flags: [0 0 0 0]
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 13, 2026 14:29:00 UTC">May 13, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="September 20, 2026 17:48:30 UTC">September 20, 2026</span>
   </span>
 
     
@@ -4080,7 +4565,7 @@ RWC failure flags: [0 0 0 0]
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="inventory_building_geometry.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: CHEERSafe Inventory and Building Geometry">
+          <a href="fragility_curve_calculation_with_detailed_damage_ratio_analysis.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Fragility Curve Calculation with Detailed Damage Ratio Analysis">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -4090,20 +4575,20 @@ RWC failure flags: [0 0 0 0]
                 Previous
               </span>
               <div class="md-ellipsis">
-                CHEERSafe Inventory and Building Geometry
+                Fragility Curve Calculation with Detailed Damage Ratio Analysis
               </div>
             </div>
           </a>
         
         
           
-          <a href="fragility_curve_calculation.html" class="md-footer__link md-footer__link--next" aria-label="Next: CHEERSafe Demo: Complete Hurricane Damage Analysis Workflow">
+          <a href="loss_estimation_workflow.html" class="md-footer__link md-footer__link--next" aria-label="Next: CHEERSafe Loss Estimation Workflow">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                CHEERSafe Demo: Complete Hurricane Damage Analysis Workflow
+                CHEERSafe Loss Estimation Workflow
               </div>
             </div>
             <div class="md-footer__button md-icon">

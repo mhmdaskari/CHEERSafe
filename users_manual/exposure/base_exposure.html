@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://mhmdaskari.github.io/CHEERSafe/users_manual/damage_probability_calculation/damage_probability_calculation.html">
+        <link rel="canonical" href="https://mhmdaskari.github.io/CHEERSafe/users_manual/exposure/base_exposure.html">
       
       
-        <link rel="prev" href="damage_calculator.html">
+        <link rel="prev" href="index.html">
       
       
-        <link rel="next" href="damage_ratio_exporter.html">
+        <link rel="next" href="archetype_assigner.html">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>DamageProbabilityCalculation - CHEERSafe: A Python library to assess hurricane damage and loss</title>
+        <title>BaseExposure - CHEERSafe: A Python library to assess hurricane damage and loss</title>
       
     
     
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#damageprobabilitycalculation" class="md-skip">
+        <a href="#baseexposure" class="md-skip">
           Skip to content
         </a>
       
@@ -118,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              DamageProbabilityCalculation
+              BaseExposure
             
           </span>
         </div>
@@ -1182,20 +1182,18 @@
                 
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_6" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_6" >
         
           
           <label class="md-nav__link" for="__nav_4_6" id="__nav_4_6_label" tabindex="0">
@@ -1216,7 +1214,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_6_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_6">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1234,7 +1232,7 @@
   
   
     <li class="md-nav__item">
-      <a href="index.html" class="md-nav__link">
+      <a href="../damage_probability_calculation/index.html" class="md-nav__link">
         
   
   
@@ -1262,7 +1260,7 @@
   
   
     <li class="md-nav__item">
-      <a href="damage_calculator.html" class="md-nav__link">
+      <a href="../damage_probability_calculation/damage_calculator.html" class="md-nav__link">
         
   
   
@@ -1287,37 +1285,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    DamageProbabilityCalculation
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="damage_probability_calculation.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../damage_probability_calculation/damage_probability_calculation.html" class="md-nav__link">
         
   
   
@@ -1333,81 +1304,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#inputs" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Inputs
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#outputs-and-returns" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Outputs And Returns
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configuration-behavior" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Configuration Behavior
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#minimal-examples" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Minimal Examples
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#related-references" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Related References
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1420,7 +1316,7 @@
   
   
     <li class="md-nav__item">
-      <a href="damage_ratio_exporter.html" class="md-nav__link">
+      <a href="../damage_probability_calculation/damage_ratio_exporter.html" class="md-nav__link">
         
   
   
@@ -1620,18 +1516,20 @@
                 
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_8" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_8" checked>
         
           
           <label class="md-nav__link" for="__nav_4_8" id="__nav_4_8_label" tabindex="0">
@@ -1652,7 +1550,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_8_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_8_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4_8">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1670,7 +1568,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../exposure/index.html" class="md-nav__link">
+      <a href="index.html" class="md-nav__link">
         
   
   
@@ -1695,10 +1593,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../exposure/base_exposure.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BaseExposure
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="base_exposure.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1714,6 +1639,109 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#inputs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inputs
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Inputs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inventory-column-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inventory column map
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hazard-control-point-layers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hazard control-point layers
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#outputs-and-returns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Outputs And Returns
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration-behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuration Behavior
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#minimal-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Minimal Examples
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related-references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Related References
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1726,7 +1754,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../exposure/archetype_assigner.html" class="md-nav__link">
+      <a href="archetype_assigner.html" class="md-nav__link">
         
   
   
@@ -1754,7 +1782,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../exposure/hazard_mapper.html" class="md-nav__link">
+      <a href="hazard_mapper.html" class="md-nav__link">
         
   
   
@@ -1782,7 +1810,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../exposure/exposure.html" class="md-nav__link">
+      <a href="exposure.html" class="md-nav__link">
         
   
   
@@ -2855,6 +2883,34 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Inputs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inventory-column-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inventory column map
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hazard-control-point-layers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hazard control-point layers
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2921,193 +2977,240 @@
   
 
 
-<h1 id="damageprobabilitycalculation">DamageProbabilityCalculation<a class="headerlink" href="#damageprobabilitycalculation" title="Permanent link">#</a></h1>
-<p><code>DamageProbabilityCalculation</code> is the full Monte Carlo engine for generating
-damage-state probability arrays by building type and component configuration.
-Use it after inventory, loading, damage-ratio, and resistance inputs are ready.</p>
+<h1 id="baseexposure">BaseExposure<a class="headerlink" href="#baseexposure" title="Permanent link">#</a></h1>
+<p><code>BaseExposure</code> loads every input of the exposure workflow: the building
+inventory layer, the per-event hazard control-point layers, an optional zone
+layer and the package's discrete hazard and component tables. <code>InventorySchema</code>
+tells it which inventory columns and category values map onto the archetype
+attributes. Use <code>BaseExposure</code> directly only to inspect inputs; the
+calculations live in the subclasses.</p>
 <h2 id="inputs">Inputs<a class="headerlink" href="#inputs" title="Permanent link">#</a></h2>
-<p>Constructor inputs:</p>
+<p>Path fields left as <code>None</code> resolve under <code>Config.INPUTS_PATH</code> at load time.</p>
 <table>
 <thead>
 <tr>
-<th>Input</th>
-<th>Type</th>
+<th>Field</th>
+<th>Default</th>
 <th>Notes</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>BuildingInventory</code></td>
-<td><code>BuildingInventory</code></td>
-<td>Supplies <code>buildings</code>; each building must already have inventory outputs such as panels and connections available.</td>
+<td><code>inventory_path</code></td>
+<td><code>Inputs/Inventory.parquet</code></td>
+<td>GeoParquet, shapefile or GeoPackage with a CRS. Point or polygon geometry; centroids are used.</td>
 </tr>
 <tr>
-<td><code>Sampling</code></td>
-<td><code>Sampling</code></td>
-<td>Generates Latin-hypercube resistance samples and derived random seeds.</td>
+<td><code>hazard_dir</code></td>
+<td><code>Inputs/Hazards</code></td>
+<td>One control-point layer per event; every file matching <code>hazard_file_pattern</code>.</td>
 </tr>
 <tr>
-<td><code>Covariance</code></td>
-<td><code>Covariance</code></td>
-<td>Builds covariance matrices from component means and CVs.</td>
+<td><code>hazard_file_pattern</code></td>
+<td><code>*.parquet</code></td>
+<td>Glob applied inside <code>hazard_dir</code>.</td>
 </tr>
 <tr>
-<td><code>building_types_to_process</code></td>
-<td><code>list[int]</code> or <code>None</code></td>
-<td>Optional filter. Values are building-type ids such as <code>1</code>.</td>
+<td><code>wind_col</code>, <code>flood_col</code></td>
+<td><code>Wind</code>, <code>Flood</code></td>
+<td>Hazard columns selected by name: wind in m/s, flood depth in m.</td>
 </tr>
 <tr>
-<td><code>cindex_to_process</code></td>
-<td><code>list[int]</code> or <code>None</code></td>
-<td>Optional filter. Public <code>cIndex</code> values are 1-based.</td>
+<td><code>nodata_value</code></td>
+<td><code>-9999.0</code></td>
+<td>Treated as zero hazard during mapping.</td>
+</tr>
+<tr>
+<td><code>zones_path</code></td>
+<td><code>None</code></td>
+<td>Optional polygon layer; <code>None</code> skips zone assignment.</td>
+</tr>
+<tr>
+<td><code>wind_speed_path</code></td>
+<td><code>Inputs/WindSpeed.json</code></td>
+<td><code>[25, 3]</code>: id, mph, m/s.</td>
+</tr>
+<tr>
+<td><code>flood_depth_path</code></td>
+<td><code>Inputs/FloodDepth.json</code></td>
+<td><code>[136, 3]</code>: id, inches, m.</td>
+</tr>
+<tr>
+<td><code>component_combination_path</code></td>
+<td><code>Inputs/ComponentCombination_All.json</code></td>
+<td><code>[192, 6]</code>: component states per configuration <code>C</code>.</td>
+</tr>
+<tr>
+<td><code>output_dir</code></td>
+<td><code>Outputs/exposure</code></td>
+<td>Resolved under <code>Config.OUTPUTS_PATH</code>.</td>
+</tr>
+<tr>
+<td><code>schema</code></td>
+<td><code>InventorySchema()</code></td>
+<td>Column and category mapping described below.</td>
 </tr>
 </tbody>
 </table>
-<p>Loaded file inputs are listed in <a href="index.html">the module overview</a>. The workflow
-also creates <code>LoadingAndFailureCheck</code> and <code>DamageRatioCalculation</code> objects for
-each sampled condition, so their required inventory, pressure coefficient,
-replacement ratio, and damage-ratio inputs must be available too.</p>
-<p>Key indexing and shapes:</p>
+<h3 id="inventory-column-map">Inventory column map<a class="headerlink" href="#inventory-column-map" title="Permanent link">#</a></h3>
+<p><code>InventorySchema</code> lets any inventory be used without renaming columns. Every
+category value that is not listed maps to a missing value.</p>
 <table>
 <thead>
 <tr>
-<th>Value</th>
-<th style="text-align: right;">Shape</th>
-<th>Notes</th>
+<th>Role</th>
+<th>Column field (default)</th>
+<th>Value fields (default)</th>
+<th>Effect</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>wind grid</td>
-<td style="text-align: right;"><code>len(WindSpeeds)</code></td>
-<td>Bundled input has 25 wind-speed rows.</td>
+<td>Building material</td>
+<td><code>bldgtype_col</code> (<code>bldgtype</code>)</td>
+<td><code>wood_frame_values</code> (<code>("W",)</code>)</td>
+<td>Sets <code>is_wood_frame</code>; rows are dropped only when <code>ArchetypeAssigner.drop_unmatched_occupancy</code> is <code>True</code>.</td>
 </tr>
 <tr>
-<td>flood grid</td>
-<td style="text-align: right;"><code>ProbDS_Flood.shape[2]</code></td>
-<td>Bundled input has 136 flood-depth rows.</td>
+<td>Roof shape</td>
+<td><code>roof_col</code> (<code>roof_shape_1</code>)</td>
+<td><code>gable_values</code> (<code>Cross Gable, Complex Gable, Gable</code>), <code>hip_values</code> (<code>Hip, Cross Hip</code>)</td>
+<td>Required; unmapped rows are dropped.</td>
 </tr>
 <tr>
-<td>damage states</td>
-<td style="text-align: right;"><code>len(DamageStates)</code></td>
-<td>Bundled input has 50 states.</td>
+<td>Stories</td>
+<td><code>story_col</code> (<code>Story_AI</code>)</td>
+<td><code>one_story_values</code> (<code>(1,)</code>), <code>two_story_values</code> (<code>(2,)</code>)</td>
+<td>Required.</td>
 </tr>
 <tr>
-<td>per-run output</td>
-<td style="text-align: right;"><code>[wind, flood, damage_state]</code></td>
-<td>Saved for each <code>(building_type, cIndex)</code>.</td>
+<td>Garage</td>
+<td><code>garage_col</code> (<code>Garage</code>)</td>
+<td><code>no_garage_values</code> (<code>(0,)</code>), <code>garage_values</code> (<code>(1,)</code>)</td>
+<td>Required.</td>
 </tr>
 <tr>
-<td>aggregate output</td>
-<td style="text-align: right;"><code>dict[(m, c), array]</code></td>
-<td>Keys are integer building type and 1-based <code>cIndex</code>.</td>
+<td>Occupancy</td>
+<td><code>occupancy_col</code> (<code>PRIM_OCC</code>)</td>
+<td><code>single_family_values</code> (<code>("Single Family Dwelling",)</code>)</td>
+<td>Sets <code>is_single_family</code>; same filter rule as building material.</td>
+</tr>
+<tr>
+<td>Year built</td>
+<td><code>year_col</code> (<code>med_yr_blt</code>)</td>
+<td>numeric</td>
+<td>Required.</td>
+</tr>
+<tr>
+<td>Coast distance</td>
+<td><code>coast_distance_col</code> (<code>Coast_D (miles)</code>)</td>
+<td><code>coast_distance_to_miles</code> (<code>1.0</code>) multiplier</td>
+<td>Required; converted to miles.</td>
+</tr>
+<tr>
+<td>Structure value</td>
+<td><code>structure_value_col</code> (<code>val_struct</code>)</td>
+<td>numeric</td>
+<td>Required.</td>
+</tr>
+<tr>
+<td>Contents value</td>
+<td><code>contents_value_col</code> (<code>val_cont</code>)</td>
+<td>numeric</td>
+<td>Required.</td>
+</tr>
+<tr>
+<td>Building key</td>
+<td><code>building_key_col</code> (<code>fd_id_nsi</code>)</td>
+<td></td>
+<td>Used as <code>building_key</code> when present; otherwise the row position is used.</td>
+</tr>
+<tr>
+<td>Passthrough</td>
+<td><code>passthrough_cols</code> (<code>is_vacant, H_TEN_syn, AGEP_syn, H_HINCP_syn</code>)</td>
+<td></td>
+<td>Copied into the export when present.</td>
 </tr>
 </tbody>
 </table>
+<p>The defaults are the arguments of the verified Eastern North Carolina call.
+The earlier Inventory-Loss Link documentation listed six required attributes
+and omitted roof shape; roof shape is required here because it defines the
+archetype.</p>
+<h3 id="hazard-control-point-layers">Hazard control-point layers<a class="headerlink" href="#hazard-control-point-layers" title="Permanent link">#</a></h3>
+<p>Each event file is a point layer with the same control points in the same
+order. <code>load_hazard_events</code> sorts the files by the integer embedded in their
+names (<code>h1, h2, ..., h97</code>, falling back to lexical order with a warning),
+stacks <code>wind_col</code> and <code>flood_col</code> into <code>(n_events, n_points)</code> arrays in their
+raw units and raises <code>ValueError</code> when a file's control points differ from the
+first one. The bounding box of the control points becomes <code>hazard_bounds</code>.</p>
 <h2 id="outputs-and-returns">Outputs And Returns<a class="headerlink" href="#outputs-and-returns" title="Permanent link">#</a></h2>
+<p>The loaders assign attributes; they return <code>None</code>.</p>
 <table>
 <thead>
 <tr>
 <th>Method</th>
-<th>Returns</th>
-<th>Files or state</th>
+<th>Sets</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>set_building_types_to_process(building_types)</code></td>
-<td><code>None</code></td>
-<td>Stores the building-type filter.</td>
+<td><code>load_hazard_tables()</code></td>
+<td><code>wind_speeds</code>, <code>flood_depths</code></td>
 </tr>
 <tr>
-<td><code>set_cindex_to_process(cindices)</code></td>
-<td><code>None</code></td>
-<td>Stores the 1-based component-index filter. Rejects values below 1.</td>
+<td><code>load_component_combinations()</code></td>
+<td><code>component_combinations</code> (<code>int64</code>, shape <code>(192, 6)</code>)</td>
 </tr>
 <tr>
-<td><code>process_single_iteration(...)</code></td>
-<td><code>(iter_results, detailed_results)</code></td>
-<td>No persistent state.</td>
+<td><code>load_inventory()</code></td>
+<td><code>inventory</code> with a new <code>building_key</code> column (before any filtering)</td>
 </tr>
 <tr>
-<td><code>process_component_combination(building, ComponentCombination, cIndex)</code></td>
-<td><code>(m, cIndex, ProbDS_wfd)</code> or <code>None</code></td>
-<td>Writes <code>ProbDS_wfd_m{m}_c{cIndex}_iter{NUM_OF_ITERATIONS}.pkl</code>; may write detailed CSV.</td>
+<td><code>load_hazard_events()</code></td>
+<td><code>hazard_files</code>, <code>event_names</code>, <code>hazard_points_xy</code>, <code>hazard_crs</code>, <code>hazard_bounds</code>, <code>hazard_wind</code>, <code>hazard_flood</code></td>
 </tr>
 <tr>
-<td><code>get_available_building_types()</code></td>
-<td><code>list[int]</code></td>
-<td>None.</td>
-</tr>
-<tr>
-<td><code>get_available_cindices()</code></td>
-<td><code>list[int]</code></td>
-<td>None.</td>
-</tr>
-<tr>
-<td><code>get_average_damage_probability()</code></td>
-<td><code>True</code></td>
-<td>Writes one pickle per processed <code>(m, cIndex)</code>.</td>
-</tr>
-<tr>
-<td><code>aggregate_results(output_dir=None)</code></td>
-<td><code>dict[(int, int), np.ndarray]</code></td>
-<td>Sets <code>ProbDS_wfd_dict</code> and writes <code>ProbDS_wfd_dictMaxIter{NUM_OF_ITERATIONS}_aggregated.pkl</code>.</td>
+<td><code>load_zones()</code></td>
+<td><code>zones</code> (or <code>None</code>)</td>
 </tr>
 </tbody>
 </table>
-<p>Detailed CSV export is controlled by <code>Config.EXPORT_DETAILED_DAMAGE_RATIOS</code>.
-When enabled, files are named
-<code>DetailedDR_m{m}_c{cIndex}_iter{NUM_OF_ITERATIONS}.csv</code>.</p>
 <h2 id="configuration-behavior">Configuration Behavior<a class="headerlink" href="#configuration-behavior" title="Permanent link">#</a></h2>
-<p><code>Config.AUTO_LOAD_DATASETS=True</code> loads shared probability-calculation datasets
-during initialization. With <code>False</code>, call all required <code>load_*</code> methods before
-running workflow methods. Current limitation: this class also creates
-<code>IterationResult</code> in <code>__post_init__</code> from <code>WindSpeeds</code> and <code>ProbDS_Flood</code>, so a
-plain construction with <code>AUTO_LOAD_DATASETS=False</code> raises before manual
-loaders can be called. Keep auto-loading enabled for this class unless you are
-subclassing or otherwise pre-populating those attributes before <code>__post_init__</code>.</p>
-<p><code>DamageProbabilityCalculation.__post_init__</code> initializes compatibility storage
-but does not call <code>get_average_damage_probability()</code>. <code>Config.AUTO_EXECUTE_METHODS</code>
-affects downstream CHEERSafe objects constructed during the run.</p>
+<p>With <code>Config.AUTO_LOAD_DATASETS=True</code>, <code>__post_init__</code> runs the five loaders
+and sets <code>datasets_loaded</code>. <code>update_outputs()</code> clears the flag and reloads.
+<code>BaseExposure</code> has no calculation step, so <code>Config.AUTO_EXECUTE_METHODS</code> has no
+effect on it.</p>
 <h2 id="minimal-examples">Minimal Examples<a class="headerlink" href="#minimal-examples" title="Permanent link">#</a></h2>
-<p>Automatic workflow for a small filtered run:</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">cheersafe.config</span><span class="w"> </span><span class="kn">import</span> <span class="n">Config</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">cheersafe.inventory</span><span class="w"> </span><span class="kn">import</span> <span class="n">BuildingInventory</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">cheersafe.tools</span><span class="w"> </span><span class="kn">import</span> <span class="n">Sampling</span><span class="p">,</span> <span class="n">Covariance</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="kn">from</span><span class="w"> </span><span class="nn">cheersafe.damage_probability_calculation</span><span class="w"> </span><span class="kn">import</span> <span class="n">DamageProbabilityCalculation</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="n">Config</span><span class="o">.</span><span class="n">AUTO_LOAD_DATASETS</span> <span class="o">=</span> <span class="kc">True</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="n">Config</span><span class="o">.</span><span class="n">NUM_OF_ITERATIONS</span> <span class="o">=</span> <span class="mi">50</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="n">Config</span><span class="o">.</span><span class="n">NUM_OF_WORKERS</span> <span class="o">=</span> <span class="mi">1</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="n">calc</span> <span class="o">=</span> <span class="n">DamageProbabilityCalculation</span><span class="p">(</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    <span class="n">BuildingInventory</span><span class="o">=</span><span class="n">BuildingInventory</span><span class="p">(),</span>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    <span class="n">Sampling</span><span class="o">=</span><span class="n">Sampling</span><span class="p">(),</span>
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>    <span class="n">Covariance</span><span class="o">=</span><span class="n">Covariance</span><span class="p">(),</span>
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="p">)</span>
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="n">calc</span><span class="o">.</span><span class="n">set_building_types_to_process</span><span class="p">([</span><span class="mi">1</span><span class="p">])</span>
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="n">calc</span><span class="o">.</span><span class="n">set_cindex_to_process</span><span class="p">([</span><span class="mi">1</span><span class="p">])</span>
-</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="n">calc</span><span class="o">.</span><span class="n">get_average_damage_probability</span><span class="p">()</span>
-</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="n">prob_by_key</span> <span class="o">=</span> <span class="n">calc</span><span class="o">.</span><span class="n">aggregate_results</span><span class="p">()</span>
+<p>Automatic loading:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">cheersafe.exposure</span><span class="w"> </span><span class="kn">import</span> <span class="n">BaseExposure</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">base</span> <span class="o">=</span> <span class="n">BaseExposure</span><span class="p">(</span><span class="n">zones_path</span><span class="o">=</span><span class="s2">"Inputs/zones.gpkg"</span><span class="p">)</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">base</span><span class="o">.</span><span class="n">event_names</span><span class="p">,</span> <span class="n">base</span><span class="o">.</span><span class="n">hazard_wind</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 </span></code></pre></div>
-<p>Manual-control setup without running the Monte Carlo loop:</p>
+<p>Manual loading with a custom schema:</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">cheersafe.config</span><span class="w"> </span><span class="kn">import</span> <span class="n">Config</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">cheersafe.inventory</span><span class="w"> </span><span class="kn">import</span> <span class="n">BuildingInventory</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">cheersafe.tools</span><span class="w"> </span><span class="kn">import</span> <span class="n">Sampling</span><span class="p">,</span> <span class="n">Covariance</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="kn">from</span><span class="w"> </span><span class="nn">cheersafe.damage_probability_calculation</span><span class="w"> </span><span class="kn">import</span> <span class="n">DamageProbabilityCalculation</span>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="n">Config</span><span class="o">.</span><span class="n">AUTO_LOAD_DATASETS</span> <span class="o">=</span> <span class="kc">True</span>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="n">Config</span><span class="o">.</span><span class="n">AUTO_EXECUTE_METHODS</span> <span class="o">=</span> <span class="kc">False</span>
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="n">calc</span> <span class="o">=</span> <span class="n">DamageProbabilityCalculation</span><span class="p">(</span><span class="n">BuildingInventory</span><span class="p">(),</span> <span class="n">Sampling</span><span class="p">(),</span> <span class="n">Covariance</span><span class="p">())</span>
-</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="n">building_types</span> <span class="o">=</span> <span class="n">calc</span><span class="o">.</span><span class="n">get_available_building_types</span><span class="p">()</span>
-</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="n">cindices</span> <span class="o">=</span> <span class="n">calc</span><span class="o">.</span><span class="n">get_available_cindices</span><span class="p">()</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">cheersafe.exposure</span><span class="w"> </span><span class="kn">import</span> <span class="n">BaseExposure</span><span class="p">,</span> <span class="n">InventorySchema</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="n">Config</span><span class="o">.</span><span class="n">AUTO_LOAD_DATASETS</span> <span class="o">=</span> <span class="kc">False</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="n">schema</span> <span class="o">=</span> <span class="n">InventorySchema</span><span class="p">(</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    <span class="n">roof_col</span><span class="o">=</span><span class="s2">"roof_shape"</span><span class="p">,</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>    <span class="n">gable_values</span><span class="o">=</span><span class="p">(</span><span class="s2">"gable"</span><span class="p">,),</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>    <span class="n">hip_values</span><span class="o">=</span><span class="p">(</span><span class="s2">"hip"</span><span class="p">,),</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>    <span class="n">coast_distance_col</span><span class="o">=</span><span class="s2">"coast_km"</span><span class="p">,</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>    <span class="n">coast_distance_to_miles</span><span class="o">=</span><span class="mf">0.621371</span><span class="p">,</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="p">)</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="n">base</span> <span class="o">=</span> <span class="n">BaseExposure</span><span class="p">(</span><span class="n">inventory_path</span><span class="o">=</span><span class="s2">"my_inventory.gpkg"</span><span class="p">,</span> <span class="n">hazard_dir</span><span class="o">=</span><span class="s2">"my_hazards"</span><span class="p">,</span> <span class="n">schema</span><span class="o">=</span><span class="n">schema</span><span class="p">)</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="n">base</span><span class="o">.</span><span class="n">load_hazard_tables</span><span class="p">()</span>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="n">base</span><span class="o">.</span><span class="n">load_component_combinations</span><span class="p">()</span>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="n">base</span><span class="o">.</span><span class="n">load_inventory</span><span class="p">()</span>
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="n">base</span><span class="o">.</span><span class="n">load_hazard_events</span><span class="p">()</span>
 </span></code></pre></div>
 <h2 id="related-references">Related References<a class="headerlink" href="#related-references" title="Permanent link">#</a></h2>
 <ul>
-<li>API: <a href="../../API/damage_probability_calculation.html">Damage Probability Calculation</a></li>
-<li>Planned notebook: <a href="../../examples/fragility_curve_calculation.html">Fragility Curve Calculation</a></li>
+<li>API: <a href="../../API/exposure.html">Exposure</a></li>
+<li>Input manual: <a href="../inputs.html#exposure-and-building-level-loss-inputs">Exposure And Building-Level Loss Inputs</a></li>
+<li>Next step: <a href="archetype_assigner.html">ArchetypeAssigner</a></li>
 </ul>
 
 
@@ -3131,7 +3234,7 @@ affects downstream CHEERSafe objects constructed during the run.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 13, 2026 14:29:00 UTC">May 13, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="September 20, 2026 17:48:30 UTC">September 20, 2026</span>
   </span>
 
     
@@ -3141,7 +3244,7 @@ affects downstream CHEERSafe objects constructed during the run.</p>
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 13, 2026 14:29:00 UTC">May 13, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="September 20, 2026 17:48:30 UTC">September 20, 2026</span>
   </span>
 
     
@@ -3199,7 +3302,7 @@ affects downstream CHEERSafe objects constructed during the run.</p>
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="damage_calculator.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: DamageCalculator">
+          <a href="index.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Overview">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -3209,20 +3312,20 @@ affects downstream CHEERSafe objects constructed during the run.</p>
                 Previous
               </span>
               <div class="md-ellipsis">
-                DamageCalculator
+                Overview
               </div>
             </div>
           </a>
         
         
           
-          <a href="damage_ratio_exporter.html" class="md-footer__link md-footer__link--next" aria-label="Next: DamageRatioExporter">
+          <a href="archetype_assigner.html" class="md-footer__link md-footer__link--next" aria-label="Next: ArchetypeAssigner">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                DamageRatioExporter
+                ArchetypeAssigner
               </div>
             </div>
             <div class="md-footer__button md-icon">
