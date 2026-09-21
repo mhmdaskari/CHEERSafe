@@ -4490,6 +4490,15 @@ a generator seeded with <code>Config.RANDOM_SEED</code>.</p>
     </table>
 
 
+<details class="notes" open>
+  <summary>Notes</summary>
+  <p><code>scale</code> is applied as NumPy's scale parameter, so the mean of the
+draw is <code>scale * gamma(1 + 1/shape)</code>. Callers that pass an FPHLM
+<em>rate</em> parameter should be aware that the two conventions differ;
+see the note at the call site in
+<code>damage_ratio_calculation.implicit_damage_ratio</code>.</p>
+</details>
+
     </div>
 
 </div>

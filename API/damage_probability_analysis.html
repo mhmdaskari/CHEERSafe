@@ -4087,6 +4087,25 @@
         <p>Calculate fragility curves for different damage states.</p>
 <p>Fragility curves represent the probability of exceeding a certain damage state
 given a specific wind speed.</p>
+<p>KNOWN DISCREPANCY (documented, not yet changed -- fix in a future release):
+    The values returned here are NOT exceedance probabilities. For each damage
+    state this method averages the cumulative distribution across the <em>band</em> of
+    damage-ratio bins between two thresholds and subtracts the result from one,
+    whereas P(delta &gt;= t) is one minus the CDF evaluated at the single bin just
+    below t. The two agree only when the CDF is nearly constant across the band.</p>
+<div class="language-text highlight"><pre><span></span><code>For a concentrated distribution they diverge badly. Example, library
+ProbDS_cwfd_MaxIter3000_V2 at (m=4, c=1): at the deepest flood bin the damage
+ratio is a point mass at 0.72, so P(delta &gt;= 0.46) = 1.0, but this method
+returns 0.25 -- the terminal band spans 24 bins of which 17 sit above the mass.
+On the wind margin of the same pair the error reaches 0.56 in absolute
+probability at 185 mph for the &gt;=46% state.
+
+The correct form is simply the mass at or above the threshold:
+    exceedance = prob[:, ratios &gt;= threshold].sum(axis=1)
+Callers needing exceedance probabilities should use that directly; see
+`Loss Estimates/figure_reproduction/make_fragility_curves.py`, which generates
+the published fragility figure.
+</code></pre></div>
 
 
 <details class="outputs" open>

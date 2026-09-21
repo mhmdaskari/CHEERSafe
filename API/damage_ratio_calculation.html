@@ -3974,6 +3974,18 @@
 <p>This method updates the <code>ProbDS_Flood</code> attribute of the instance by loading data from a JSON file.</p>
 
 
+<details class="notes" open>
+  <summary>Notes</summary>
+  <p>The curves are adopted from Taggart, M. (2007), "Performance based
+design of woodframe structures for flooding", Colorado State
+University. The array is indexed
+<code>[building type, flood configuration, flood depth, damage state]</code>
+with shape <code>[8, 4, 136, 6]</code>. Only the storey count distinguishes
+building types, so types 1-4 share one surface and 5-8 another.
+Flood configuration 4 (house elevated 24 in.) is configuration 1
+translated by 24 in. of depth.</p>
+</details>
+
 <p><span class="doc-section-title">Parameters:</span></p>
     <table>
       <thead>
