@@ -19,7 +19,7 @@
       
       
       <link rel="icon" href="../cheersafe_favicon.svg">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.1">
     
     
       
@@ -27,10 +27,10 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.57a0d79d.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.fb2fffe2.min.css">
       
       
 
@@ -596,6 +596,34 @@
     
   
     Config
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../users_manual/config/model_parameters.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Model Parameters
   
 
     
@@ -3535,8 +3563,8 @@
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="n">num_component</span><span class="p">,</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="n">temp_mean</span><span class="p">,</span>
 </span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="n">temp_cv</span><span class="p">,</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="n">inter_correlation</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="n">intra_correlation</span><span class="o">=</span><span class="mf">0.4</span><span class="p">,</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="n">inter_correlation</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="n">intra_correlation</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
 </span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span>
 </span></code></pre></div>
 
@@ -3580,7 +3608,7 @@ inter-component and intra-component correlations.</p>
                 <code>temp_mean</code>
             </td>
             <td>
-                  <code><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></code>
+                  <code>ndarray</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -3596,7 +3624,7 @@ inter-component and intra-component correlations.</p>
                 <code>temp_cv</code>
             </td>
             <td>
-                  <code><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></code>
+                  <code>ndarray</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -3616,11 +3644,12 @@ inter-component and intra-component correlations.</p>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>Correlation coefficient between elements of different components. Defaults to 0.2.</p>
+                <p>Correlation coefficient between elements of different components.
+Defaults to the model parameter <code>resistance_correlation_different_components</code> (0.2).</p>
               </div>
             </td>
             <td>
-                  <code>0.2</code>
+                  <code>None</code>
             </td>
           </tr>
           <tr class="doc-section-item">
@@ -3632,11 +3661,12 @@ inter-component and intra-component correlations.</p>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>Correlation coefficient between elements of the same component. Defaults to 0.4.</p>
+                <p>Correlation coefficient between elements of the same component.
+Defaults to the model parameter <code>resistance_correlation_same_component</code> (0.4).</p>
               </div>
             </td>
             <td>
-                  <code>0.4</code>
+                  <code>None</code>
             </td>
           </tr>
       </tbody>
@@ -4010,7 +4040,7 @@ inter-component and intra-component correlations.</p>
       <tbody>
           <tr class="doc-section-item">
             <td>
-                  <code><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></code>
+                  <code>ndarray</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -4104,7 +4134,7 @@ print(samples)
                 <code>mean</code>
             </td>
             <td>
-                  <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/array.html#module-array">array</a> - <span title="like">like</span></code>
+                  <code>array - like</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -4120,7 +4150,7 @@ print(samples)
                 <code>covariance</code>
             </td>
             <td>
-                  <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/array.html#module-array">array</a> - <span title="like">like</span></code>
+                  <code>array - like</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -4136,7 +4166,7 @@ print(samples)
                 <code>seed</code>
             </td>
             <td>
-                  <code>(<span title="optional">optional</span>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#int">int</a>)</code>
+                  <code>(optional, <a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#int">int</a>)</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -4493,9 +4523,10 @@ a generator seeded with <code>Config.RANDOM_SEED</code>.</p>
 <details class="notes" open>
   <summary>Notes</summary>
   <p><code>scale</code> is applied as NumPy's scale parameter, so the mean of the
-draw is <code>scale * gamma(1 + 1/shape)</code>. Callers that pass an FPHLM
-<em>rate</em> parameter should be aware that the two conventions differ;
-see the note at the call site in
+draw is <code>scale * gamma(1 + 1/shape)</code>. A density stated with a
+rate parameter <code>alpha</code>, as in FPHLM, corresponds to
+<code>scale = alpha ** (-1/shape)</code>; see the note on
+<code>IMPLICIT_MULTIPLIER_SCALE</code> in
 <code>damage_ratio_calculation.implicit_damage_ratio</code>.</p>
 </details>
 
@@ -5138,10 +5169,10 @@ JSON library.</p>
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["toc.follow", "navigation.top", "navigation.footer", "content.code.annotate", "content.code.copy", "content.code.select", "search.highlight", "search.suggest"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["toc.follow", "navigation.top", "navigation.footer", "content.code.annotate", "content.code.copy", "content.code.select", "search.highlight", "search.suggest"], "search": "../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../assets/javascripts/bundle.a5f9d56c.min.js"></script>
       
     
   <script data-mkdocs-jupyter-mathjax="{&quot;url&quot;: &quot;https://cdn.jsdelivr.net/npm/mathjax@4.1.3/tex-mml-chtml.js&quot;, &quot;version&quot;: 4}">

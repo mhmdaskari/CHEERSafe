@@ -21,7 +21,7 @@
       
       
       <link rel="icon" href="../cheersafe_favicon.svg">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.1">
     
     
       
@@ -29,10 +29,10 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.57a0d79d.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.fb2fffe2.min.css">
       
       
 
@@ -598,6 +598,34 @@
     
   
     Config
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../users_manual/config/model_parameters.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Model Parameters
   
 
     
@@ -3093,6 +3121,17 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#cheersafe.loads.base.OPPOSITE_OF_45_ORIENTATION" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;OPPOSITE_OF_45_ORIENTATION
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#cheersafe.loads.base.BaseFailureCheck" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -3904,6 +3943,17 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#cheersafe.loads.base.OPPOSITE_OF_45_ORIENTATION" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;OPPOSITE_OF_45_ORIENTATION
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#cheersafe.loads.base.BaseFailureCheck" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4167,8 +4217,8 @@
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="n">WindOrientation</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#int">int</a></span><span class="p">,</span>
 </span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="n">WindSpeed</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#float">float</a></span><span class="p">,</span>
 </span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="n">datasets_loaded</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#bool">bool</a></span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="n">G</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#float">float</a></span> <span class="o">=</span> <span class="mf">0.85</span><span class="p">,</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="n">GCpi</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#float">float</a></span> <span class="o">=</span> <span class="mf">0.18</span><span class="p">,</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="n">G</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#float">float</a></span> <span class="o">=</span> <span class="p">(</span><span class="k">lambda</span><span class="p">:</span> <span class="n">gust_factor</span><span class="p">)(),</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="n">GCpi</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#float">float</a></span> <span class="o">=</span> <span class="p">(</span><span class="k">lambda</span><span class="p">:</span> <span class="n">internal_pressure_coefficient</span><span class="p">)(),</span>
 </span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="p">)</span>
 </span></code></pre></div>
 
@@ -4820,8 +4870,8 @@ on each wall.</p>
 </span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="n">WindOrientation</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#int">int</a></span><span class="p">,</span>
 </span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span class="n">WindSpeed</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#float">float</a></span><span class="p">,</span>
 </span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    <span class="n">datasets_loaded</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#bool">bool</a></span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    <span class="n">G</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#float">float</a></span> <span class="o">=</span> <span class="mf">0.85</span><span class="p">,</span>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    <span class="n">GCpi</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#float">float</a></span> <span class="o">=</span> <span class="mf">0.18</span><span class="p">,</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    <span class="n">G</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#float">float</a></span> <span class="o">=</span> <span class="p">(</span><span class="k">lambda</span><span class="p">:</span> <span class="n">gust_factor</span><span class="p">)(),</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    <span class="n">GCpi</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#float">float</a></span> <span class="o">=</span> <span class="p">(</span><span class="k">lambda</span><span class="p">:</span> <span class="n">internal_pressure_coefficient</span><span class="p">)(),</span>
 </span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="p">)</span>
 </span></code></pre></div>
 
@@ -5076,8 +5126,8 @@ issues of dataclass decorator with Python 3.9 and 3.10. Therefore, they are defi
 </span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="n">WindOrientation</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#int">int</a></span><span class="p">,</span>
 </span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span class="n">WindSpeed</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#float">float</a></span><span class="p">,</span>
 </span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    <span class="n">datasets_loaded</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#bool">bool</a></span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    <span class="n">G</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#float">float</a></span> <span class="o">=</span> <span class="mf">0.85</span><span class="p">,</span>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    <span class="n">GCpi</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#float">float</a></span> <span class="o">=</span> <span class="mf">0.18</span><span class="p">,</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    <span class="n">G</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#float">float</a></span> <span class="o">=</span> <span class="p">(</span><span class="k">lambda</span><span class="p">:</span> <span class="n">gust_factor</span><span class="p">)(),</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    <span class="n">GCpi</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#float">float</a></span> <span class="o">=</span> <span class="p">(</span><span class="k">lambda</span><span class="p">:</span> <span class="n">internal_pressure_coefficient</span><span class="p">)(),</span>
 </span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="p">)</span>
 </span></code></pre></div>
 
@@ -5843,8 +5893,8 @@ issues of dataclass decorator with Python 3.9 and 3.10. Therefore, they are defi
 </span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="n">WindOrientation</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#int">int</a></span><span class="p">,</span>
 </span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span class="n">WindSpeed</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#float">float</a></span><span class="p">,</span>
 </span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    <span class="n">datasets_loaded</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#bool">bool</a></span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    <span class="n">G</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#float">float</a></span> <span class="o">=</span> <span class="mf">0.85</span><span class="p">,</span>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    <span class="n">GCpi</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#float">float</a></span> <span class="o">=</span> <span class="mf">0.18</span><span class="p">,</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    <span class="n">G</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#float">float</a></span> <span class="o">=</span> <span class="p">(</span><span class="k">lambda</span><span class="p">:</span> <span class="n">gust_factor</span><span class="p">)(),</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    <span class="n">GCpi</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#float">float</a></span> <span class="o">=</span> <span class="p">(</span><span class="k">lambda</span><span class="p">:</span> <span class="n">internal_pressure_coefficient</span><span class="p">)(),</span>
 </span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="p">)</span>
 </span></code></pre></div>
 
@@ -6206,8 +6256,8 @@ resistance array and side-failure flags.</p>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="n">WindOrientation</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#int">int</a></span><span class="p">,</span>
 </span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="n">WindSpeed</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#float">float</a></span><span class="p">,</span>
 </span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="n">datasets_loaded</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#bool">bool</a></span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="n">G</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#float">float</a></span> <span class="o">=</span> <span class="mf">0.85</span><span class="p">,</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="n">GCpi</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#float">float</a></span> <span class="o">=</span> <span class="mf">0.18</span><span class="p">,</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="n">G</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#float">float</a></span> <span class="o">=</span> <span class="p">(</span><span class="k">lambda</span><span class="p">:</span> <span class="n">gust_factor</span><span class="p">)(),</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="n">GCpi</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#float">float</a></span> <span class="o">=</span> <span class="p">(</span><span class="k">lambda</span><span class="p">:</span> <span class="n">internal_pressure_coefficient</span><span class="p">)(),</span>
 </span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="p">)</span>
 </span></code></pre></div>
 
@@ -6603,8 +6653,8 @@ resistance array and side-failure flags.</p>
 </span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="n">WindOrientation</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#int">int</a></span><span class="p">,</span>
 </span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span class="n">WindSpeed</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#float">float</a></span><span class="p">,</span>
 </span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    <span class="n">datasets_loaded</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#bool">bool</a></span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    <span class="n">G</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#float">float</a></span> <span class="o">=</span> <span class="mf">0.85</span><span class="p">,</span>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    <span class="n">GCpi</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#float">float</a></span> <span class="o">=</span> <span class="mf">0.18</span><span class="p">,</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    <span class="n">G</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#float">float</a></span> <span class="o">=</span> <span class="p">(</span><span class="k">lambda</span><span class="p">:</span> <span class="n">gust_factor</span><span class="p">)(),</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    <span class="n">GCpi</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#float">float</a></span> <span class="o">=</span> <span class="p">(</span><span class="k">lambda</span><span class="p">:</span> <span class="n">internal_pressure_coefficient</span><span class="p">)(),</span>
 </span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="p">)</span>
 </span></code></pre></div>
 
@@ -6946,12 +6996,7 @@ resistance array and side-failure flags.</p>
                 <code>Building</code>
             </td>
             <td>
-                  <code><a class="autorefs autorefs-internal" title="            Building
-
-
-  
-      dataclass
-   (cheersafe.inventory.building.Building)" href="inventory.html#cheersafe.inventory.building.Building">Building</a></code>
+                  <code>Building</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -7125,6 +7170,35 @@ resistance array and side-failure flags.</p>
 
 
 
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><a class="autorefs autorefs-internal" title="            OPPOSITE_OF_45_ORIENTATION
+
+
+  
+      module-attribute
+   (cheersafe.loads.base.OPPOSITE_OF_45_ORIENTATION)" href="#cheersafe.loads.base.OPPOSITE_OF_45_ORIENTATION">OPPOSITE_OF_45_ORIENTATION</a></code></td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Wind direction, in degrees, that shares the wall-load branch of the 45-degree direction.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
 
 <div class="doc doc-children">
 
@@ -7133,6 +7207,32 @@ resistance array and side-failure flags.</p>
 
 
 
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h3 id="cheersafe.loads.base.OPPOSITE_OF_45_ORIENTATION" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <span class="doc doc-object-name doc-attribute-name">OPPOSITE_OF_45_ORIENTATION</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+<a href="#cheersafe.loads.base.OPPOSITE_OF_45_ORIENTATION" class="headerlink" title="Permanent link">#</a></h3>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">OPPOSITE_OF_45_ORIENTATION</span> <span class="o">=</span> <span class="mi">225</span>
+</span></code></pre></div>
+
+    <div class="doc doc-contents ">
+
+        <p>Wind direction, in degrees, that shares the wall-load branch of the 45-degree direction.</p>
+<p>The 45-degree and 225-degree directions load the same pair of walls with windward and leeward
+swapped.</p>
+
+    </div>
+
+</div>
 
 
 
@@ -7308,12 +7408,7 @@ resistance array and side-failure flags.</p>
           <tr class="doc-section-item">
             <td><code><span title="cheersafe.loads.base.BaseLoad.Building">Building</span></code></td>
             <td>
-                  <code><a class="autorefs autorefs-internal" title="            Building
-
-
-  
-      dataclass
-   (cheersafe.inventory.Building)" href="inventory.html#cheersafe.inventory.building.Building">Building</a></code>
+                  <code>Building</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -7670,7 +7765,10 @@ This method can be called when a change is made to some of the inputs of the cla
   </span>
 
 <a href="#cheersafe.loads.base.BaseLoadDefaults" class="headerlink" title="Permanent link">#</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">BaseLoadDefaults</span><span class="p">(</span><span class="n">G</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#float">float</a></span> <span class="o">=</span> <span class="mf">0.85</span><span class="p">,</span> <span class="n">GCpi</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#float">float</a></span> <span class="o">=</span> <span class="mf">0.18</span><span class="p">)</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">BaseLoadDefaults</span><span class="p">(</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="n">G</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#float">float</a></span> <span class="o">=</span> <span class="p">(</span><span class="k">lambda</span><span class="p">:</span> <span class="n">gust_factor</span><span class="p">)(),</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="n">GCpi</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#float">float</a></span> <span class="o">=</span> <span class="p">(</span><span class="k">lambda</span><span class="p">:</span> <span class="n">internal_pressure_coefficient</span><span class="p">)(),</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="p">)</span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -7697,7 +7795,7 @@ This method can be called when a change is made to some of the inputs of the cla
             </td>
             <td>
               <div class="doc-md-description">
-                <p>Gust factor, to be applied to obtain GCp. Default is 0.85.</p>
+                <p>Gust factor, to be applied to obtain GCp. Default is the model parameter <code>gust_factor</code> (0.85).</p>
               </div>
             </td>
           </tr>
@@ -7708,7 +7806,8 @@ This method can be called when a change is made to some of the inputs of the cla
             </td>
             <td>
               <div class="doc-md-description">
-                <p>ASCE-defined internal pressure coefficient. Default is 0.18.</p>
+                <p>ASCE-defined internal pressure coefficient. Default is the model parameter
+<code>internal_pressure_coefficient</code> (0.18).</p>
               </div>
             </td>
           </tr>
@@ -7907,10 +8006,10 @@ This method can be called when a change is made to some of the inputs of the cla
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["toc.follow", "navigation.top", "navigation.footer", "content.code.annotate", "content.code.copy", "content.code.select", "search.highlight", "search.suggest"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["toc.follow", "navigation.top", "navigation.footer", "content.code.annotate", "content.code.copy", "content.code.select", "search.highlight", "search.suggest"], "search": "../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../assets/javascripts/bundle.a5f9d56c.min.js"></script>
       
     
   <script data-mkdocs-jupyter-mathjax="{&quot;url&quot;: &quot;https://cdn.jsdelivr.net/npm/mathjax@4.1.3/tex-mml-chtml.js&quot;, &quot;version&quot;: 4}">
